@@ -22,5 +22,11 @@
 			<groupId>org.springframework.platform</groupId>
 			<artifactId>spring-platform-config-client</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<!-- Only needed at compile time -->
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 </project>

@@ -6,8 +6,8 @@
 		<artifactId>spring-platform-starters</artifactId>
 		<version>1.0.0.BUILD-SNAPSHOT</version>
 	</parent>
-	<artifactId>spring-platform-starter-eureka</artifactId>
-	<name>spring-platform-starter-eureka</name>
+	<artifactId>spring-platform-starter-hystrix</artifactId>
+	<name>spring-platform-starter-hystrix</name>
 	<description>Spring Platform Starter</description>
 	<url>http://projects.spring.io/spring-boot/</url>
 	<organization>
@@ -27,8 +27,24 @@
 			<artifactId>spring-platform-netflix-core</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.netflix.eureka</groupId>
-			<artifactId>eureka-client</artifactId>
+			<groupId>com.netflix.hystrix</groupId>
+			<artifactId>hystrix-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.netflix.hystrix</groupId>
+			<artifactId>hystrix-metrics-event-stream</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.netflix.hystrix</groupId>
+			<artifactId>hystrix-javanica</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.netflix.ribbon</groupId>
+			<artifactId>ribbon-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.netflix.ribbon</groupId>
+			<artifactId>ribbon-eureka</artifactId>
 		</dependency>
 	</dependencies>
 </project>
