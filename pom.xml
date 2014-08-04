@@ -49,7 +49,7 @@
 		    </dependency>
 		    <dependency>
 		      <groupId>org.springframework.platform</groupId>
-			  <artifactId>spring-platform-starter-netflix</artifactId>
+			  <artifactId>spring-platform-starter-eureka</artifactId>
 				<version>1.0.0.BUILD-SNAPSHOT</version>
 		    </dependency>
 		    <dependency>
