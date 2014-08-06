@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.platform</groupId>
+		<artifactId>spring-platform-starters</artifactId>
+		<version>1.0.0.BUILD-SNAPSHOT</version>
+	</parent>
+	<artifactId>spring-platform-starter-zuul</artifactId>
+	<name>spring-platform-starter-zuul</name>
+	<description>Spring Platform Starter</description>
+	<url>http://projects.spring.io/spring-boot/</url>
+	<organization>
+		<name>Pivotal Software, Inc.</name>
+		<url>http://www.spring.io</url>
+	</organization>
+	<properties>
+		<main.basedir>${basedir}/../..</main.basedir>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.platform</groupId>
+			<artifactId>spring-platform-starter</artifactId>
+		</dependency>
+        <dependency>
+            <groupId>org.springframework.platform</groupId>
+            <artifactId>spring-platform-starter-hystrix</artifactId>
+        </dependency>
+		<dependency>
+			<groupId>org.springframework.platform</groupId>
+			<artifactId>spring-platform-netflix-core</artifactId>
+		</dependency>
+        <dependency>
+            <groupId>com.netflix.ribbon</groupId>
+            <artifactId>ribbon-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.netflix.ribbon</groupId>
+            <artifactId>ribbon-eureka</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.netflix.ribbon</groupId>
+            <artifactId>ribbon-httpclient</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.netflix.rxjava</groupId>
+            <artifactId>rxjava-core</artifactId>
+            <!-- TODO: where to put this? netflix-core? -->
+            <version>0.18.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.netflix.zuul</groupId>
+            <artifactId>zuul-core</artifactId>
+        </dependency>
+	</dependencies>
+</project>
