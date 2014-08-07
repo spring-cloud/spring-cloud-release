@@ -51,6 +51,12 @@
         <dependency>
             <groupId>com.netflix.zuul</groupId>
             <artifactId>zuul-core</artifactId>
+            <exclusions>
+            	<exclusion>
+            		<artifactId>groovy-all</artifactId>
+            		<groupId>org.codehaus.groovy</groupId>
+            	</exclusion>
+            </exclusions>
         </dependency>
 	</dependencies>
 </project>
