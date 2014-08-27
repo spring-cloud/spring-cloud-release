@@ -23,6 +23,7 @@
 	</properties>
 	<modules>
 		<module>spring-platform-starter</module>
+		<module>spring-platform-starter-cloudfoundry</module>
 		<module>spring-platform-starter-eureka</module>
 		<module>spring-platform-starter-hystrix</module>
         <module>spring-platform-starter-zuul</module>
@@ -43,9 +44,19 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+			<dependency>
+				<groupId>org.springframework.platform</groupId>
+				<artifactId>spring-platform-cloudfoundry</artifactId>
+				<version>1.0.0.BUILD-SNAPSHOT</version>
+			</dependency>
 		    <dependency>
 		      <groupId>org.springframework.platform</groupId>
 			  <artifactId>spring-platform-starter</artifactId>
+			  <version>1.0.0.BUILD-SNAPSHOT</version>
+		    </dependency>
+		    <dependency>
+		      <groupId>org.springframework.platform</groupId>
+			  <artifactId>spring-platform-starter-cloudfoundry</artifactId>
 				<version>1.0.0.BUILD-SNAPSHOT</version>
 		    </dependency>
 		    <dependency>
