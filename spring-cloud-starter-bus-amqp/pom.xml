@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.springframework.platform</groupId>
-		<artifactId>spring-platform-starters</artifactId>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-starters</artifactId>
 		<version>1.0.0.BUILD-SNAPSHOT</version>
 	</parent>
-	<artifactId>spring-platform-starter-bus-amqp</artifactId>
-	<name>spring-platform-starter-bus-amqp</name>
-	<description>Spring Platform Starter</description>
+	<artifactId>spring-cloud-starter-bus-amqp</artifactId>
+	<name>spring-cloud-starter-bus-amqp</name>
+	<description>Spring Cloud Starter</description>
 	<url>http://projects.spring.io/spring-boot/</url>
 	<organization>
 		<name>Pivotal Software, Inc.</name>
@@ -19,8 +19,8 @@
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.platform</groupId>
-			<artifactId>spring-platform-starter</artifactId>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter</artifactId>
 		</dependency>
         <dependency>
             <groupId>org.springframework.integration</groupId>
@@ -36,8 +36,8 @@
             <artifactId>spring-integration-event</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.platform</groupId>
-            <artifactId>spring-platform-bus</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-bus</artifactId>
             <version>1.0.0.BUILD-SNAPSHOT</version>
         </dependency>
 	</dependencies>

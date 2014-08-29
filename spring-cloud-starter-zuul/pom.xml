@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.springframework.platform</groupId>
-		<artifactId>spring-platform-starters</artifactId>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-starters</artifactId>
 		<version>1.0.0.BUILD-SNAPSHOT</version>
 	</parent>
-	<artifactId>spring-platform-starter-zuul</artifactId>
-	<name>spring-platform-starter-zuul</name>
-	<description>Spring Platform Starter</description>
+	<artifactId>spring-cloud-starter-zuul</artifactId>
+	<name>spring-cloud-starter-zuul</name>
+	<description>Spring Cloud Starter</description>
 	<url>http://projects.spring.io/spring-boot/</url>
 	<organization>
 		<name>Pivotal Software, Inc.</name>
@@ -19,16 +19,16 @@
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.platform</groupId>
-			<artifactId>spring-platform-starter</artifactId>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter</artifactId>
 		</dependency>
         <dependency>
-            <groupId>org.springframework.platform</groupId>
-            <artifactId>spring-platform-starter-hystrix</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix</artifactId>
         </dependency>
 		<dependency>
-			<groupId>org.springframework.platform</groupId>
-			<artifactId>spring-platform-netflix-core</artifactId>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-netflix-core</artifactId>
 		</dependency>
         <dependency>
             <groupId>com.netflix.ribbon</groupId>
