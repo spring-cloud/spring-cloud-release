@@ -26,6 +26,7 @@
         <module>spring-cloud-starter-bus-amqp</module>
 		<module>spring-cloud-starter-cloudfoundry</module>
 		<module>spring-cloud-starter-eureka</module>
+		<module>spring-cloud-starter-eureka-server</module>
 		<module>spring-cloud-starter-hystrix</module>
 		<module>spring-cloud-starter-hystrix-dashboard</module>
         <module>spring-cloud-starter-zuul</module>
@@ -73,6 +74,11 @@
 		    </dependency>
 		    <dependency>
 		      <groupId>org.springframework.cloud</groupId>
+			  <artifactId>spring-cloud-starter-eureka-server</artifactId>
+				<version>1.0.0.BUILD-SNAPSHOT</version>
+		    </dependency>
+		    <dependency>
+		      <groupId>org.springframework.cloud</groupId>
 			  <artifactId>spring-cloud-starter-hystrix</artifactId>
 				<version>1.0.0.BUILD-SNAPSHOT</version>
 		    </dependency>
@@ -89,6 +95,26 @@
 		</dependencies>
 	</dependencyManagement>
 	<build>
+        <pluginManagement>
+          <plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<requiresUnpack>
+						<dependency>
+							<groupId>com.netflix.eureka</groupId>
+							<artifactId>eureka-core</artifactId>
+						</dependency>
+						<dependency>
+							<groupId>com.netflix.eureka</groupId>
+							<artifactId>eureka-client</artifactId>
+						</dependency>
+					</requiresUnpack>
+				</configuration>
+			</plugin>
+          </plugins>
+        </pluginManagement>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

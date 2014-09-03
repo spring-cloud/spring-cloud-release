@@ -6,9 +6,9 @@
 		<artifactId>spring-cloud-starters</artifactId>
 		<version>1.0.0.BUILD-SNAPSHOT</version>
 	</parent>
-	<artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
-	<name>spring-cloud-starter-hystrix-dashboard</name>
-	<description>Spring Cloud Hystrix Dashboard</description>
+	<artifactId>spring-cloud-starter-eureka-server</artifactId>
+	<name>spring-cloud-starter-eureka-server</name>
+	<description>Spring Cloud Starter</description>
 	<url>http://projects.spring.io/spring-boot/</url>
 	<organization>
 		<name>Pivotal Software, Inc.</name>
@@ -19,16 +19,18 @@
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter</artifactId>
+			<exclusions>
+				<exclusion>
+					<artifactId>spring-boot-starter-logging</artifactId>
+					<groupId>org.springframework.boot</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-netflix-hystrix-dashboard</artifactId>
+			<artifactId>spring-cloud-netflix-eureka-server</artifactId>
 		</dependency>
 	</dependencies>
 </project>
