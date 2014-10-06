@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-parent</artifactId>
-		<version>1.1.5.RELEASE</version>
-		<relativePath/>
-	</parent>
 	<groupId>org.springframework.cloud</groupId>
 	<artifactId>spring-cloud-starters</artifactId>
 	<version>1.0.0.BUILD-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Spring Cloud Starters</name>
 	<description>Spring Cloud Starters</description>
-	<url>http://projects.spring.io/spring-boot/</url>
-	<organization>
-		<name>Pivotal Software, Inc.</name>
-		<url>http://www.spring.io</url>
-	</organization>
-	<properties>
-		<main.basedir>${basedir}/..</main.basedir>
-	</properties>
+	<parent>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-build</artifactId>
+		<version>1.0.0.BUILD-SNAPSHOT</version>
+		<relativePath/>
+	</parent>
+
 	<modules>
 		<module>spring-cloud-starter</module>
         <module>spring-cloud-starter-bus-amqp</module>
@@ -29,10 +22,11 @@
 		<module>spring-cloud-starter-eureka-server</module>
 		<module>spring-cloud-starter-hystrix</module>
 		<module>spring-cloud-starter-hystrix-dashboard</module>
-	        <module>spring-cloud-starter-security</module>
-	        <module>spring-cloud-starter-turbine</module>
-        	<module>spring-cloud-starter-zuul</module>
+	    <module>spring-cloud-starter-security</module>
+	    <module>spring-cloud-starter-turbine</module>
+        <module>spring-cloud-starter-zuul</module>
 	</modules>
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -121,6 +115,7 @@
             </dependency>
 		</dependencies>
 	</dependencyManagement>
+
 	<build>
         <pluginManagement>
           <plugins>
@@ -142,6 +137,7 @@
 			</plugin>
           </plugins>
         </pluginManagement>
+
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -169,4 +165,30 @@
 			</plugin>
 		</plugins>
 	</build>
+ 
+   <profiles>
+		<profile>
+			<id>docs</id>
+            <build>
+               <plugins>
+		        <plugin>
+		          <groupId>org.asciidoctor</groupId>
+		          <artifactId>asciidoctor-maven-plugin</artifactId>
+                  <inherited>false</inherited>
+                </plugin>
+			    <plugin>
+				  <groupId>org.apache.maven.plugins</groupId>
+				  <artifactId>maven-antrun-plugin</artifactId>
+                  <inherited>false</inherited>
+                </plugin>
+ 				<plugin>
+				  <groupId>org.codehaus.mojo</groupId>
+				  <artifactId>build-helper-maven-plugin</artifactId>
+                  <inherited>false</inherited>
+                </plugin>
+              </plugins>
+            </build>
+		</profile>
+    </profiles>
+
 </project>
