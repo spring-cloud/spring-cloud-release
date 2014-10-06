@@ -25,6 +25,7 @@
 	    <module>spring-cloud-starter-security</module>
 	    <module>spring-cloud-starter-turbine</module>
         <module>spring-cloud-starter-zuul</module>
+        <module>docs</module>
 	</modules>
 
 	<dependencyManagement>
@@ -165,30 +166,5 @@
 			</plugin>
 		</plugins>
 	</build>
- 
-   <profiles>
-		<profile>
-			<id>docs</id>
-            <build>
-               <plugins>
-		        <plugin>
-		          <groupId>org.asciidoctor</groupId>
-		          <artifactId>asciidoctor-maven-plugin</artifactId>
-                  <inherited>false</inherited>
-                </plugin>
-			    <plugin>
-				  <groupId>org.apache.maven.plugins</groupId>
-				  <artifactId>maven-antrun-plugin</artifactId>
-                  <inherited>false</inherited>
-                </plugin>
- 				<plugin>
-				  <groupId>org.codehaus.mojo</groupId>
-				  <artifactId>build-helper-maven-plugin</artifactId>
-                  <inherited>false</inherited>
-                </plugin>
-              </plugins>
-            </build>
-		</profile>
-    </profiles>
 
 </project>
