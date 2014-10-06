@@ -14,7 +14,7 @@
 	<name>Spring Cloud Starter Docs</name>
 	<description>Spring Cloud Docs</description>
 	<properties>
-        <docs.main>spring-cloud-cli</docs.main>
+        <docs.main>spring-cloud-starters</docs.main>
 		<main.basedir>${basedir}/..</main.basedir>
 	</properties>
     <profiles>
