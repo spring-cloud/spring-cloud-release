@@ -8,7 +8,7 @@
 	</parent>
 	<artifactId>spring-cloud-starter-turbine</artifactId>
 	<name>spring-cloud-starter-turbine</name>
-	<description>Spring Cloud Starter</description>
+	<description>Spring Cloud Starter Turbine</description>
 	<url>http://projects.spring.io/spring-boot/</url>
 	<organization>
 		<name>Pivotal Software, Inc.</name>
