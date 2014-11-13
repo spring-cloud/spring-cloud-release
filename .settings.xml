@@ -36,6 +36,14 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
+        <repository>
+            <id>ext-snapshots</id>
+            <name>External Snapshots</name>
+            <url>http://repo.spring.io/ext-snapshot-local</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
 	  </repositories>
 	  <pluginRepositories>
 		<pluginRepository>
