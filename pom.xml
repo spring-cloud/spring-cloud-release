@@ -2,11 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.springframework.cloud</groupId>
-	<artifactId>spring-cloud-starters</artifactId>
+	<artifactId>spring-cloud-starter-parent</artifactId>
 	<version>1.0.0.BUILD-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>Spring Cloud Starters</name>
-	<description>Spring Cloud Starters</description>
+	<name>Spring Cloud Starter Parent</name>
+	<description>Spring Cloud Starter Parent</description>
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-build</artifactId>
@@ -15,9 +15,9 @@
 	</parent>
 
 	<scm>
-		<url>https://github.com/spring-cloud/spring-cloud-starters</url>
-		<connection>scm:git:git://github.com/spring-cloud/spring-cloud-starters.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com/spring-cloud/spring-cloud-starters.git</developerConnection>
+		<url>https://github.com/spring-cloud/spring-cloud-starter-parent</url>
+		<connection>scm:git:git://github.com/spring-cloud/spring-cloud-starter-parent.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/spring-cloud/spring-cloud-starter-parent.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
