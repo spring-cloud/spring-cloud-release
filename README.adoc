@@ -11,3 +11,7 @@ Spring Cloud Starters are curated sets of dependencies focused on a particular t
 * spring-cloud-starter-hystrix-dashboard
 * spring-cloud-starter-turbine
 * spring-cloud-starter-zuul
+
+== Contributing
+
+link:https://raw.githubusercontent.com/spring-cloud/spring-cloud-build/master/src/main/asciidoc/contributing.adoc[]
