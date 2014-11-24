@@ -3,14 +3,14 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.springframework.cloud</groupId>
 	<artifactId>spring-cloud-starter-parent</artifactId>
-	<version>1.0.0.BUILD-SNAPSHOT</version>
+	<version>1.0.0.M3</version>
 	<packaging>pom</packaging>
 	<name>Spring Cloud Starter Parent</name>
 	<description>Spring Cloud Starter Parent</description>
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-build</artifactId>
-		<version>1.0.0.BUILD-SNAPSHOT</version>
+		<version>1.0.0.M3</version>
 		<relativePath/>
 	</parent>
 
@@ -25,6 +25,7 @@
 		<module>spring-cloud-starter</module>
         <module>spring-cloud-starter-bus-amqp</module>
         <module>spring-cloud-starter-bus-turbine</module>
+        <module>spring-cloud-starter-cloudfoundry</module>
 		<module>spring-cloud-starter-eureka</module>
 		<module>spring-cloud-starter-eureka-server</module>
 		<module>spring-cloud-starter-hystrix</module>
@@ -40,96 +41,96 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-config</artifactId>
-				<version>1.0.0.BUILD-SNAPSHOT</version>
+				<version>1.0.0.M3</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-netflix</artifactId>
-				<version>1.0.0.BUILD-SNAPSHOT</version>
+				<version>1.0.0.M3</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-cloudfoundry</artifactId>
-				<version>1.0.0.BUILD-SNAPSHOT</version>
+				<version>1.0.0.M3</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-security</artifactId>
-				<version>1.0.0.BUILD-SNAPSHOT</version>
+				<version>1.0.0.M3</version>
 			</dependency>
 		    <dependency>
 		      <groupId>org.springframework.cloud</groupId>
 			  <artifactId>spring-cloud-starter-cloudfoundry</artifactId>
-			  <version>1.0.0.BUILD-SNAPSHOT</version>
+			  <version>1.0.0.M3</version>
 		    </dependency>
 		    <dependency>
 		      <groupId>org.springframework.cloud</groupId>
 			  <artifactId>spring-cloud-starter</artifactId>
-			  <version>1.0.0.BUILD-SNAPSHOT</version>
+			  <version>1.0.0.M3</version>
 		    </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-bus-amqp</artifactId>
-                <version>1.0.0.BUILD-SNAPSHOT</version>
+                <version>1.0.0.M3</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-bus-turbine</artifactId>
-                <version>1.0.0.BUILD-SNAPSHOT</version>
+                <version>1.0.0.M3</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-bus-hystrix</artifactId>
-                <version>1.0.0.BUILD-SNAPSHOT</version>
+                <version>1.0.0.M3</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-bus-turbine</artifactId>
-                <version>1.0.0.BUILD-SNAPSHOT</version>
+                <version>1.0.0.M3</version>
             </dependency>
 		    <dependency>
 		      <groupId>org.springframework.cloud</groupId>
 			  <artifactId>spring-cloud-starter-eureka</artifactId>
-				<version>1.0.0.BUILD-SNAPSHOT</version>
+				<version>1.0.0.M3</version>
 		    </dependency>
 		    <dependency>
 		      <groupId>org.springframework.cloud</groupId>
 			  <artifactId>spring-cloud-starter-eureka-server</artifactId>
-				<version>1.0.0.BUILD-SNAPSHOT</version>
+				<version>1.0.0.M3</version>
 		    </dependency>
 		    <dependency>
 		      <groupId>org.springframework.cloud</groupId>
 			  <artifactId>spring-cloud-starter-hystrix</artifactId>
-				<version>1.0.0.BUILD-SNAPSHOT</version>
+				<version>1.0.0.M3</version>
 		    </dependency>
 		    <dependency>
 		      <groupId>org.springframework.cloud</groupId>
 			  <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
-				<version>1.0.0.BUILD-SNAPSHOT</version>
+				<version>1.0.0.M3</version>
 		    </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-security</artifactId>
-                <version>1.0.0.BUILD-SNAPSHOT</version>
+                <version>1.0.0.M3</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-turbine</artifactId>
-                <version>1.0.0.BUILD-SNAPSHOT</version>
+                <version>1.0.0.M3</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-zuul</artifactId>
-                <version>1.0.0.BUILD-SNAPSHOT</version>
+                <version>1.0.0.M3</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-bus</artifactId>
-                <version>1.0.0.BUILD-SNAPSHOT</version>
+                <version>1.0.0.M3</version>
             </dependency>
             <dependency>
               <groupId>org.springframework.integration</groupId>
