@@ -25,6 +25,7 @@
 		<module>spring-cloud-starter</module>
         <module>spring-cloud-starter-bus-amqp</module>
         <module>spring-cloud-starter-bus-turbine</module>
+        <module>spring-cloud-starter-cloudfoundry</module>
 		<module>spring-cloud-starter-eureka</module>
 		<module>spring-cloud-starter-eureka-server</module>
 		<module>spring-cloud-starter-hystrix</module>
