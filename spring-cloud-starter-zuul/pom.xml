@@ -45,8 +45,6 @@
         <dependency>
             <groupId>com.netflix.rxjava</groupId>
             <artifactId>rxjava-core</artifactId>
-            <!-- TODO: where to put this? netflix-core? -->
-            <version>0.18.2</version>
         </dependency>
         <dependency>
             <groupId>com.netflix.zuul</groupId>
