@@ -14,4 +14,4 @@ Spring Cloud Starters are curated sets of dependencies focused on a particular t
 
 == Contributing
 
-link:https://raw.githubusercontent.com/spring-cloud/spring-cloud-build/master/src/main/asciidoc/contributing.adoc[]
+link:https://raw.githubusercontent.com/spring-cloud/spring-cloud-build/master/docs/src/main/asciidoc/contributing.adoc[]
