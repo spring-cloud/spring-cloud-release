@@ -6,9 +6,9 @@
 		<artifactId>spring-cloud-starter-parent</artifactId>
 		<version>1.0.0.BUILD-SNAPSHOT</version>
 	</parent>
-	<artifactId>spring-cloud-starter-bus-turbine</artifactId>
-	<name>spring-cloud-starter-bus-turbine</name>
-	<description>Spring Cloud Starter Bus Turbine</description>
+	<artifactId>spring-cloud-starter-turbine-amqp</artifactId>
+	<name>spring-cloud-starter-turbine-amqp</name>
+	<description>Spring Cloud Starter Turbine AMQP</description>
 	<url>http://projects.spring.io/spring-boot/</url>
 	<organization>
 		<name>Pivotal Software, Inc.</name>
@@ -22,7 +22,7 @@
 		<dependencies>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-bus</artifactId>
+				<artifactId>spring-cloud-netflix-turbine-amqp</artifactId>
 				<version>${project.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
@@ -32,7 +32,21 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-bus-turbine</artifactId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>com.netflix.rxjava</groupId>
+					<artifactId>rxjava-core</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-commons</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-netflix-turbine-amqp</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.integration</groupId>

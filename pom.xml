@@ -24,7 +24,6 @@
 	<modules>
 		<module>spring-cloud-starter</module>
         <module>spring-cloud-starter-bus-amqp</module>
-        <module>spring-cloud-starter-bus-turbine</module>
         <module>spring-cloud-starter-cloudfoundry</module>
 		<module>spring-cloud-starter-eureka</module>
 		<module>spring-cloud-starter-eureka-server</module>
@@ -32,6 +31,7 @@
 		<module>spring-cloud-starter-hystrix-dashboard</module>
 	    <module>spring-cloud-starter-security</module>
 	    <module>spring-cloud-starter-turbine</module>
+		<module>spring-cloud-starter-turbine-amqp</module>
         <module>spring-cloud-starter-zuul</module>
         <module>spring-cloud-starter-zuul-server</module>
         <module>docs</module>
@@ -67,6 +67,11 @@
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-commons</artifactId>
+				<version>1.0.0.BUILD-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-security</artifactId>
 				<version>1.0.0.BUILD-SNAPSHOT</version>
 			</dependency>
@@ -87,17 +92,12 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-bus-turbine</artifactId>
+                <artifactId>spring-cloud-starter-turbine-amqp</artifactId>
                 <version>1.0.0.BUILD-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-bus-hystrix</artifactId>
-                <version>1.0.0.BUILD-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-bus-turbine</artifactId>
                 <version>1.0.0.BUILD-SNAPSHOT</version>
             </dependency>
 		    <dependency>
