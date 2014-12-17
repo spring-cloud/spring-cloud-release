@@ -17,10 +17,25 @@
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
 	</properties>
+	<dependencyManagement>
+		<dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-bus-parent</artifactId>
+                <version>1.0.0.BUILD-SNAPSHOT</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+		</dependencies>
+	</dependencyManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-bus</artifactId>
 		</dependency>
         <dependency>
             <groupId>org.springframework.integration</groupId>
@@ -33,10 +48,6 @@
         <dependency>
             <groupId>org.springframework.integration</groupId>
             <artifactId>spring-integration-event</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-bus</artifactId>
         </dependency>
 	</dependencies>
 </project>
