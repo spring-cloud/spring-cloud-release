@@ -33,7 +33,6 @@
 	    <module>spring-cloud-starter-turbine</module>
 		<module>spring-cloud-starter-turbine-amqp</module>
         <module>spring-cloud-starter-zuul</module>
-        <module>spring-cloud-starter-zuul-server</module>
         <module>docs</module>
 	</modules>
 
