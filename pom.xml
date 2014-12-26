@@ -27,6 +27,7 @@
         <module>spring-cloud-starter-cloudfoundry</module>
 		<module>spring-cloud-starter-eureka</module>
 		<module>spring-cloud-starter-eureka-server</module>
+		<module>spring-cloud-starter-feign</module>
 		<module>spring-cloud-starter-hystrix</module>
 		<module>spring-cloud-starter-hystrix-dashboard</module>
 	    <module>spring-cloud-starter-security</module>
@@ -101,6 +102,11 @@
 		    <dependency>
 		      <groupId>org.springframework.cloud</groupId>
 			  <artifactId>spring-cloud-starter-eureka-server</artifactId>
+				<version>1.0.0.BUILD-SNAPSHOT</version>
+		    </dependency>
+		    <dependency>
+		      <groupId>org.springframework.cloud</groupId>
+			  <artifactId>spring-cloud-starter-feign</artifactId>
 				<version>1.0.0.BUILD-SNAPSHOT</version>
 		    </dependency>
 		    <dependency>
