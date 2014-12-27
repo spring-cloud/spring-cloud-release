@@ -45,6 +45,24 @@
 		<dependency>
 			<groupId>com.netflix.ribbon</groupId>
 			<artifactId>ribbon</artifactId>
+			<exclusions>
+				<exclusion>
+					<artifactId>rx-netty</artifactId>
+					<groupId>com.netflix.rxnetty</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>rx-netty-contexts</artifactId>
+					<groupId>com.netflix.rxnetty</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>rx-netty-servo</artifactId>
+					<groupId>com.netflix.rxnetty</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.netflix.ribbon</groupId>
+			<artifactId>ribbon-httpclient</artifactId>
 		</dependency>
 	</dependencies>
 </project>
