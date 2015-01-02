@@ -86,5 +86,9 @@
 			<groupId>io.reactivex</groupId>
 			<artifactId>rxjava</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-el</artifactId>
+		</dependency>
 	</dependencies>
 </project>
