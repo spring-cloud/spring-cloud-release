@@ -42,9 +42,5 @@
 			<groupId>com.netflix.ribbon</groupId>
 			<artifactId>ribbon-core</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>com.netflix.ribbon</groupId>
-			<artifactId>ribbon-eureka</artifactId>
-		</dependency>
 	</dependencies>
 </project>
