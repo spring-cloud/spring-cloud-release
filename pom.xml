@@ -113,10 +113,6 @@
 						<artifactId>jsr166y</artifactId>
 					</exclusion>
 					<exclusion>
-						<groupId>com.google.inject</groupId>
-						<artifactId>guice</artifactId>
-					</exclusion>
-					<exclusion>
 						<groupId>org.apache.xbean</groupId>
 						<artifactId>xbean-finder</artifactId>
 					</exclusion>
