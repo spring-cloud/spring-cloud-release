@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.springframework.cloud</groupId>
 	<artifactId>spring-cloud-starter-parent</artifactId>
-	<version>1.0.0.BUILD-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Spring Cloud Starter Parent</name>
 	<description>Spring Cloud Starter Parent</description>
@@ -30,6 +28,7 @@
 		<module>spring-cloud-starter-feign</module>
 		<module>spring-cloud-starter-hystrix</module>
 		<module>spring-cloud-starter-hystrix-dashboard</module>
+	    <module>spring-cloud-starter-oauth2</module>
 	    <module>spring-cloud-starter-ribbon</module>
 	    <module>spring-cloud-starter-security</module>
 	    <module>spring-cloud-starter-turbine</module>
@@ -262,6 +261,11 @@
 		    </dependency>
 		    <dependency>
 		      <groupId>org.springframework.cloud</groupId>
+			  <artifactId>spring-cloud-starter-oauth2</artifactId>
+			  <version>1.0.0.BUILD-SNAPSHOT</version>
+		    </dependency>
+		    <dependency>
+		      <groupId>org.springframework.cloud</groupId>
 			  <artifactId>spring-cloud-starter-ribbon</artifactId>
 				<version>1.0.0.BUILD-SNAPSHOT</version>
 		    </dependency>
@@ -285,16 +289,6 @@
                 <artifactId>spring-cloud-starter-zuul-server</artifactId>
                 <version>1.0.0.BUILD-SNAPSHOT</version>
             </dependency>
-		    <dependency>
-			  <groupId>org.springframework.security</groupId>
-			  <artifactId>spring-security-jwt</artifactId>
-              <version>1.0.2.RELEASE</version>
-		    </dependency>
-		    <dependency>
-			  <groupId>org.springframework.security.oauth</groupId>
-			  <artifactId>spring-security-oauth2</artifactId>
-              <version>2.0.5.RELEASE</version>
-		    </dependency>
 		</dependencies>
 	</dependencyManagement>
 

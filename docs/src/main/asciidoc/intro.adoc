@@ -5,7 +5,12 @@ Spring Cloud Starters are curated sets of dependencies focused on a particular t
 * spring-cloud-starter-cloudfoundry
 * spring-cloud-starter-eureka
 * spring-cloud-starter-eureka-server
+* spring-cloud-starter-feign
 * spring-cloud-starter-hystrix
 * spring-cloud-starter-hystrix-dashboard
+* spring-cloud-starter-oauth2
+* spring-cloud-starter-ribbon
+* spring-cloud-starter-security
 * spring-cloud-starter-turbine
+* spring-cloud-starter-turbine-amqp
 * spring-cloud-starter-zuul
