@@ -23,6 +23,11 @@
 			<artifactId>spring-cloud-starter</artifactId>
 		</dependency>
 		<dependency>
+			<!-- Include actuator so that zuul filter can add trace information -->
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-security</artifactId>
 		</dependency>
