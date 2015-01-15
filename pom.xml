@@ -13,9 +13,9 @@
 	</parent>
 
 	<scm>
-		<url>https://github.com/spring-cloud/spring-cloud-starter-parent</url>
-		<connection>scm:git:git://github.com/spring-cloud/spring-cloud-starter-parent.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com/spring-cloud/spring-cloud-starter-parent.git</developerConnection>
+		<url>https://github.com/spring-cloud/spring-cloud-starters</url>
+		<connection>scm:git:git://github.com/spring-cloud/spring-cloud-starters.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/spring-cloud/spring-cloud-starters.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
@@ -39,28 +39,7 @@
 	</modules>
 
 	<build>
-        <pluginManagement>
-          <plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<requiresUnpack>
-						<dependency>
-							<groupId>com.netflix.eureka</groupId>
-							<artifactId>eureka-core</artifactId>
-						</dependency>
-						<dependency>
-							<groupId>com.netflix.eureka</groupId>
-							<artifactId>eureka-client</artifactId>
-						</dependency>
-					</requiresUnpack>
-				</configuration>
-			</plugin>
-          </plugins>
-        </pluginManagement>
-
-		<plugins>
+ 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-enforcer-plugin</artifactId>
