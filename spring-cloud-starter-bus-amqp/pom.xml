@@ -53,5 +53,9 @@
             <groupId>org.springframework.integration</groupId>
             <artifactId>spring-integration-event</artifactId>
         </dependency>
+        <dependency>
+        	<groupId>com.fasterxml.jackson.core</groupId>
+        	<artifactId>jackson-databind</artifactId>
+        </dependency>
 	</dependencies>
 </project>
