@@ -281,6 +281,12 @@
 				<artifactId>spring-cloud-aws-autoconfigure</artifactId>
 				<version>1.0.0.BUILD-SNAPSHOT</version>
 			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-aws-jdbc</artifactId>
+				<version>1.0.0.BUILD-SNAPSHOT</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 	<build>
