@@ -45,5 +45,13 @@
             <groupId>com.netflix.ribbon</groupId>
             <artifactId>ribbon-eureka</artifactId>
         </dependency>
+		<dependency>
+			<groupId>com.thoughtworks.xstream</groupId>
+			<artifactId>xstream</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.netflix.blitz4j</groupId>
+			<artifactId>blitz4j</artifactId>
+		</dependency>
 	</dependencies>
 </project>
