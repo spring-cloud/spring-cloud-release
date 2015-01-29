@@ -5,6 +5,7 @@
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-starter-parent</artifactId>
 		<version>1.0.0.BUILD-SNAPSHOT</version>
+		<relativePath>../spring-cloud-starter-parent</relativePath>
 	</parent>
 	<artifactId>spring-cloud-starter</artifactId>
 	<name>spring-cloud-starter</name>
