@@ -149,6 +149,10 @@
 						<groupId>com.squareup.dagger</groupId>
 						<artifactId>dagger</artifactId>
 					</exclusion>
+					<exclusion>
+						<groupId>com.netflix.blitz4j</groupId>
+						<artifactId>blitz4j</artifactId>
+					</exclusion>
 				</exclusions>
 			</dependency>
 			<dependency>
