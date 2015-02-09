@@ -153,6 +153,10 @@
 						<groupId>com.netflix.blitz4j</groupId>
 						<artifactId>blitz4j</artifactId>
 					</exclusion>
+					<exclusion>
+						<artifactId>hibernate-validator</artifactId>
+						<groupId>org.hibernate</groupId>
+					</exclusion>
 				</exclusions>
 			</dependency>
 			<dependency>
