@@ -11,7 +11,7 @@
 	<name>spring-cloud-starter-parent</name>
 	<description>Spring Cloud Starter</description>
 	<packaging>pom</packaging>
-	<url>http://projects.spring.io/spring-boot/</url>
+	<url>http://projects.spring.io/spring-cloud</url>
 	<organization>
 		<name>Pivotal Software, Inc.</name>
 		<url>http://www.spring.io</url>
