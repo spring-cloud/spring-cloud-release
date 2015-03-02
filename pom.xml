@@ -7,7 +7,7 @@
 	<description>Spring Cloud Starter Build</description>
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
-		<artifactId>spring-cloud-parent</artifactId>
+		<artifactId>spring-cloud-build</artifactId>
 		<version>1.0.0.BUILD-SNAPSHOT</version>
 		<relativePath/>
 	</parent>
