@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-parent</artifactId>
-        <version>1.0.0.BUILD-SNAPSHOT</version>
+        <version>1.0.1.BUILD-SNAPSHOT</version>
         <relativePath>../spring-cloud-starter-parent</relativePath>
     </parent>
     <artifactId>spring-cloud-starter-aws-messaging</artifactId>
