@@ -19,6 +19,10 @@
 		<tag>HEAD</tag>
 	</scm>
 
+	<properties>
+      <bintray.package>starters</bintray.package>
+    </properties>
+
 	<modules>
 		<module>spring-cloud-starter-parent</module>
 		<module>spring-cloud-starter</module>
