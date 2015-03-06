@@ -39,6 +39,10 @@
             <groupId>com.netflix.ribbon</groupId>
             <artifactId>ribbon-httpclient</artifactId>
         </dependency>
+		<dependency>
+			<groupId>com.netflix.ribbon</groupId>
+			<artifactId>ribbon-loadbalancer</artifactId>
+		</dependency>
         <dependency>
             <groupId>com.netflix.rxjava</groupId>
             <artifactId>rxjava-core</artifactId>
