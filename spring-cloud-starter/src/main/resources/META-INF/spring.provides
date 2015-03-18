@@ -1,1 +1,1 @@
-provides: spring-cloud-config-client
+provides: spring-cloud-commons

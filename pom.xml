@@ -26,6 +26,7 @@
 	<modules>
 		<module>spring-cloud-starter-parent</module>
 		<module>spring-cloud-starter</module>
+		<module>spring-cloud-starter-config</module>
         <module>spring-cloud-starter-bus-amqp</module>
         <module>spring-cloud-starter-cloudfoundry</module>
 		<module>spring-cloud-starter-eureka</module>
