@@ -51,10 +51,5 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-ribbon</artifactId>
 		</dependency>
-		<!-- TODO: remove dagger when feign 8.0.0 is released -->
-		<dependency>
-			<groupId>com.squareup.dagger</groupId>
-			<artifactId>dagger</artifactId>
-		</dependency>
 	</dependencies>
 </project>
