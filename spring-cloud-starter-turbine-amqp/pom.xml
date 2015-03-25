@@ -39,6 +39,10 @@
 					<groupId>com.netflix.rxjava</groupId>
 					<artifactId>rxjava-core</artifactId>
 				</exclusion>
+				<exclusion>
+					<artifactId>spring-boot-starter-tomcat</artifactId>
+					<groupId>org.springframework.boot</groupId>
+				</exclusion>
 			</exclusions>
 		</dependency>
 		<dependency>
