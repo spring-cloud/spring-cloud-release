@@ -5,9 +5,10 @@
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-parent</artifactId>
-		<version>1.0.3.BUILD-SNAPSHOT</version>
+		<version>1.0.2.BUILD-SNAPSHOT</version>
 	</parent>
 	<artifactId>spring-cloud-starter-parent</artifactId>
+	<version>1.0.3.BUILD-SNAPSHOT</version>
 	<name>spring-cloud-starter-parent</name>
 	<description>Spring Cloud Starter</description>
 	<packaging>pom</packaging>
@@ -18,78 +19,79 @@
 	</organization>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
+		<spring-cloud-aws.version>1.0.2.BUILD-SNAPSHOT</spring-cloud-aws.version>
+		<spring-cloud-bus.version>1.0.2.BUILD-SNAPSHOT</spring-cloud-bus.version>
+		<spring-cloud-commons.version>1.0.2.BUILD-SNAPSHOT</spring-cloud-commons.version>
+		<spring-cloud-config.version>1.0.2.BUILD-SNAPSHOT</spring-cloud-config.version>
+		<spring-cloud-netflix.version>1.0.3.BUILD-SNAPSHOT</spring-cloud-netflix.version>
+		<spring-cloud-security.version>1.0.2.BUILD-SNAPSHOT</spring-cloud-security.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-config</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-config.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-netflix</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-netflix.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
 
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-cloudfoundry</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-commons</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-commons.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-context</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-commons.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-security</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-security.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-cloudfoundry</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-cloudfoundry.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-commons.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-bus-amqp</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-bus.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-config</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-config.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-turbine-amqp</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-netflix.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-bus-hystrix</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-netflix.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-eureka</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-netflix.version}</version>
 				<exclusions>
 					<exclusion>
 						<groupId>com.google.inject.extensions</groupId>
@@ -172,7 +174,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-eureka-server</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-netflix.version}</version>
 				<exclusions>
 					<exclusion>
 						<groupId>com.google.inject.extensions</groupId>
@@ -247,82 +249,82 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-feign</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-netflix.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-hystrix</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-netflix.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-netflix.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-oauth2</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-security.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-ribbon</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-netflix.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-security</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-netflix.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-turbine</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-netflix.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-zuul</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-netflix.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-zuul-server</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-starters.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-aws-context</artifactId>
-				<version>1.0.1.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-aws.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-aws-autoconfigure</artifactId>
-				<version>1.0.1.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-aws.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-aws</artifactId>
-				<version>1.0.1.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-aws.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-aws-jdbc</artifactId>
-				<version>1.0.1.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-aws.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-aws-messaging</artifactId>
-				<version>1.0.1.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-aws.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-aws-jdbc</artifactId>
-				<version>1.0.1.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-aws.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-aws-messaging</artifactId>
-				<version>1.0.1.BUILD-SNAPSHOT</version>
+				<version>${spring-cloud-aws.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
