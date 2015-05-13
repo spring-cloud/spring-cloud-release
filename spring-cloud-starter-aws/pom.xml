@@ -8,6 +8,7 @@
         <relativePath>../spring-cloud-starter-parent</relativePath>
     </parent>
     <artifactId>spring-cloud-starter-aws</artifactId>
+    <version>${spring-cloud-aws.version}</version>
     <name>spring-cloud-starter-aws</name>
     <description>Spring Cloud Starter AWS</description>
     <url>http://projects.spring.io/spring-cloud</url>
