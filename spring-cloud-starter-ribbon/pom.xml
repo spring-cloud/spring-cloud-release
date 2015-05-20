@@ -44,8 +44,8 @@
 			<artifactId>ribbon-loadbalancer</artifactId>
 		</dependency>
         <dependency>
-            <groupId>com.netflix.rxjava</groupId>
-            <artifactId>rxjava-core</artifactId>
-        </dependency>
+            <groupId>io.reactivex</groupId>
+            <artifactId>rxjava</artifactId>
+		</dependency>
 	</dependencies>
 </project>
