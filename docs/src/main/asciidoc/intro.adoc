@@ -1,4 +1,4 @@
-Spring Cloud Starters are curated sets of dependencies focused on a particular type of workload. Including a starter on your classpath is really just a shorthand for including its dependencies, but it makes it easier to organize your code and easier to remember what the depdnencies are for. (See also http://github.com/spring-projects/spring-boot/tree/master/spring-boot-starters[Spring Boot starter projects].) Starters provided include:
+Spring Cloud Starters are curated sets of dependencies focused on a particular type of workload. Including a starter on your classpath is really just a shorthand for including its dependencies, but it makes it easier to organize your code and easier to remember what the dependencies are for. (See also http://github.com/spring-projects/spring-boot/tree/master/spring-boot-starters[Spring Boot starter projects].) Starters provided include:
 
 * spring-cloud-starter
 * spring-cloud-starter-bus-amqp
