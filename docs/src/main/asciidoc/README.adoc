@@ -10,7 +10,7 @@ Since there is no code to compile in the starters they should do not need to com
 
 ----
 
-$ mvn install
+$ mvn install -s .settings.xml
 ----
 
 and to deploy snapshots to repo.spring.io:
@@ -32,4 +32,3 @@ $ mvn install -P central -DaltReleaseDeploymentRepository=sonatype-nexus-staging
 ----
 
 (the "central" profile is available for all projects in Spring Cloud and it sets up the gpg jar signing, and the repository has to be specified separately for this project because it is a parent of the starter parent which users in turn have as their own parent).
-
