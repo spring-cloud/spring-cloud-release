@@ -8,7 +8,7 @@
 		<version>1.0.1.RELEASE</version>
 	</parent>
 	<artifactId>spring-cloud-starter-parent</artifactId>
-	<version>1.0.2.RELEASE</version>
+	<version>Angel.SR2</version>
 	<name>spring-cloud-starter-parent</name>
 	<description>Spring Cloud Starter</description>
 	<packaging>pom</packaging>
