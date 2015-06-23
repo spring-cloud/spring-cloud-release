@@ -9,6 +9,7 @@
 	</parent>
 	<artifactId>spring-cloud-starter-parent</artifactId>
 	<name>spring-cloud-starter-parent</name>
+    <version>Angel.SR1</version>
 	<description>Spring Cloud Starter</description>
 	<packaging>pom</packaging>
 	<url>http://projects.spring.io/spring-cloud</url>
