@@ -25,6 +25,7 @@
 	</properties>
 
 	<modules>
+		<module>spring-cloud-starter-build</module>
 		<module>spring-cloud-starter-parent</module>
 		<module>spring-cloud-starter</module>
 		<module>spring-cloud-starter-config</module>

@@ -4,12 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
-		<artifactId>spring-cloud-starter-parent</artifactId>
+		<artifactId>spring-cloud-starter-build</artifactId>
 		<version>1.0.3.BUILD-SNAPSHOT</version>
-		<relativePath>../spring-cloud-starter-parent</relativePath>
+		<relativePath>../spring-cloud-starter-build</relativePath>
 	</parent>
 	<artifactId>spring-cloud-starter-aws</artifactId>
-	<version>${spring-cloud-aws.version}</version>
 	<name>spring-cloud-starter-aws</name>
 	<description>Spring Cloud Starter AWS</description>
 	<url>http://projects.spring.io/spring-cloud</url>

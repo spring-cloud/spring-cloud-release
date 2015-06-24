@@ -7,10 +7,10 @@
 		<artifactId>spring-cloud-parent</artifactId>
 		<version>1.0.2.BUILD-SNAPSHOT</version>
 	</parent>
-	<artifactId>spring-cloud-starter-parent</artifactId>
-	<version>Angel.BUILD-SNAPSHOT</version>
-	<name>spring-cloud-starter-parent</name>
-	<description>Spring Cloud Starter</description>
+	<artifactId>spring-cloud-starter-build</artifactId>
+	<version>1.0.3.BUILD-SNAPSHOT</version>
+	<name>spring-cloud-starter-build</name>
+	<description>Spring Cloud Starter Build - a temporary shim for the Angel service releases (in Brixton we plan to split the starters out into their "natural" homes with the things they activate, e.g. eureka part of netflix)</description>
 	<packaging>pom</packaging>
 	<url>http://projects.spring.io/spring-cloud</url>
 	<organization>
