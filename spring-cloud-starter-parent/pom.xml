@@ -90,12 +90,22 @@
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-cloudfoundry</artifactId>
+				<artifactId>spring-cloud-starter</artifactId>
 				<version>1.0.3.BUILD-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter</artifactId>
+				<artifactId>spring-cloud-starter-aws</artifactId>
+				<version>1.0.3.BUILD-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-aws-jdbc</artifactId>
+				<version>1.0.3.BUILD-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-aws-messaging</artifactId>
 				<version>1.0.3.BUILD-SNAPSHOT</version>
 			</dependency>
 			<dependency>
@@ -105,12 +115,12 @@
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-config</artifactId>
+				<artifactId>spring-cloud-starter-cloudfoundry</artifactId>
 				<version>1.0.3.BUILD-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-turbine-amqp</artifactId>
+				<artifactId>spring-cloud-starter-config</artifactId>
 				<version>1.0.3.BUILD-SNAPSHOT</version>
 			</dependency>
 			<dependency>
@@ -308,27 +318,17 @@
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-turbine-amqp</artifactId>
+				<version>1.0.3.BUILD-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-zuul</artifactId>
 				<version>1.0.3.BUILD-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-zuul-server</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-aws</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-aws-jdbc</artifactId>
-				<version>1.0.3.BUILD-SNAPSHOT</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-aws-messaging</artifactId>
 				<version>1.0.3.BUILD-SNAPSHOT</version>
 			</dependency>
 		</dependencies>

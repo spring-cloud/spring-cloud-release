@@ -4,9 +4,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
-		<artifactId>spring-cloud-starter-build</artifactId>
+		<artifactId>spring-cloud-netflix</artifactId>
 		<version>1.0.3.BUILD-SNAPSHOT</version>
-		<relativePath>../spring-cloud-starter-build</relativePath>
+		<relativePath/>
 	</parent>
 	<artifactId>spring-cloud-starter-turbine-amqp</artifactId>
 	<name>spring-cloud-starter-turbine-amqp</name>
@@ -20,17 +20,6 @@
 		<main.basedir>${basedir}/../..</main.basedir>
 		<turbine.version>2.0.0-DP.2</turbine.version>
 	</properties>
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-netflix-turbine-amqp</artifactId>
-				<version>${project.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
