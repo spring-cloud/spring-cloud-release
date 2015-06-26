@@ -26,25 +26,7 @@
 
 	<modules>
 		<module>spring-cloud-starter-parent</module>
-		<module>spring-cloud-starter</module>
-		<module>spring-cloud-starter-config</module>
-		<module>spring-cloud-starter-bus-amqp</module>
-		<module>spring-cloud-starter-cloudfoundry</module>
-		<module>spring-cloud-starter-eureka</module>
-		<module>spring-cloud-starter-eureka-server</module>
-		<module>spring-cloud-starter-feign</module>
-		<module>spring-cloud-starter-hystrix</module>
-		<module>spring-cloud-starter-hystrix-dashboard</module>
-		<module>spring-cloud-starter-oauth2</module>
-		<module>spring-cloud-starter-ribbon</module>
-		<module>spring-cloud-starter-security</module>
-		<module>spring-cloud-starter-turbine</module>
-		<module>spring-cloud-starter-turbine-amqp</module>
-		<module>spring-cloud-starter-zuul</module>
-		<module>docs</module>
-		<module>spring-cloud-starter-aws</module>
-		<module>spring-cloud-starter-aws-jdbc</module>
-		<module>spring-cloud-starter-aws-messaging</module>
+        <module>docs</module>
 	</modules>
 
 	<build>
