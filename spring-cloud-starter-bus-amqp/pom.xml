@@ -5,11 +5,11 @@
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-bus-parent</artifactId>
-		<version>1.0.3.BUILD-SNAPSHOT</version>
+		<version>1.1.0.BUILD-SNAPSHOT</version>
 		<relativePath/>
 	</parent>
 	<artifactId>spring-cloud-starter-bus-amqp</artifactId>
-	<version>1.0.4.BUILD-SNAPSHOT</version>
+	<version>1.1.0.BUILD-SNAPSHOT</version>
 	<name>spring-cloud-starter-bus-amqp</name>
 	<description>Spring Cloud Starter</description>
 	<url>http://projects.spring.io/spring-cloud</url>
