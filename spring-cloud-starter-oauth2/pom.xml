@@ -5,11 +5,11 @@
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-security-parent</artifactId>
-		<version>1.0.2.BUILD-SNAPSHOT</version>
+		<version>1.0.3.BUILD-SNAPSHOT</version>
 		<relativePath/>
 	</parent>
 	<artifactId>spring-cloud-starter-oauth2</artifactId>
-	<version>1.0.3.BUILD-SNAPSHOT</version>
+	<version>1.0.4.BUILD-SNAPSHOT</version>
 	<name>spring-cloud-starter-oauth2</name>
 	<description>Spring Cloud Starter</description>
 	<url>http://projects.spring.io/spring-cloud</url>
