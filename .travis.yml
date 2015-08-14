@@ -13,7 +13,7 @@ install:
 - ./mvnw install -P docs -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true
 - ./docs/src/main/asciidoc/ghpages.sh
 script:
-- '[ "${TRAVIS_PULL_REQUEST}" != "false" ] || ././mvnw --settings .settings.xml deploy -DaltSnapshotDeploymentRepository=repo.spring.io::default::https://repo.spring.io/libs-snapshot-local -P release -nsu -Dmaven.test.redirectTestOutputToFile=true'
+- '[ "${TRAVIS_PULL_REQUEST}" != "false" ] || ./mvnw --settings .settings.xml deploy -DaltSnapshotDeploymentRepository=repo.spring.io::default::https://repo.spring.io/libs-snapshot-local -P release -nsu -Dmaven.test.redirectTestOutputToFile=true'
 - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] || ./mvnw install -nsu -Dmaven.test.redirectTestOutputToFile=true'
 env:
   global:
