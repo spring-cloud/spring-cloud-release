@@ -26,6 +26,7 @@
 		<spring-cloud-config.version>1.1.0.BUILD-SNAPSHOT</spring-cloud-config.version>
 		<spring-cloud-netflix.version>1.1.0.BUILD-SNAPSHOT</spring-cloud-netflix.version>
 		<spring-cloud-security.version>1.1.0.BUILD-SNAPSHOT</spring-cloud-security.version>
+		<spring-cloud-cluster.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-cluster.version>
 		<spring-cloud-lattice.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-lattice.version>
 		<spring-cloud-consul.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-consul.version>
 		<spring-cloud-sleuth.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-sleuth.version>
@@ -45,6 +46,13 @@
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-lattice</artifactId>
 				<version>${spring-cloud-lattice.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-cluster</artifactId>
+				<version>${spring-cloud-cluster.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
