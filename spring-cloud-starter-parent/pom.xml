@@ -19,8 +19,8 @@
 	</organization>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
-		<spring-cloud-aws.version>1.1.0.M1</spring-cloud-aws.version>
-		<spring-cloud-bus.version>1.1.0.M1</spring-cloud-bus.version>
+		<spring-cloud-aws.version>1.0.3.RELEASE</spring-cloud-aws.version>
+		<spring-cloud-bus.version>1.0.2.RELEASE</spring-cloud-bus.version>
 		<spring-cloud-cloudfoundry.version>1.0.0.M1</spring-cloud-cloudfoundry.version>
 		<spring-cloud-commons.version>1.1.0.M1</spring-cloud-commons.version>
 		<spring-cloud-config.version>1.1.0.M1</spring-cloud-config.version>
