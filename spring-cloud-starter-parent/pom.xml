@@ -168,6 +168,16 @@
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-bus-kafka</artifactId>
+				<version>${spring-cloud-bus.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-bus-redis</artifactId>
+				<version>${spring-cloud-bus.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-cloudfoundry</artifactId>
 				<version>${spring-cloud-cloudfoundry.version}</version>
 			</dependency>
