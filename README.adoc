@@ -33,19 +33,19 @@ $ mvn install -s .settings.xml
 and to deploy snapshots to repo.spring.io:
 
 ----
-$ mvn install -DaltSnapshotDeploymentRepository=repo.spring.io::default::https://repo.spring.io/libs-snapshot-local
+$ mvn deploy -DaltSnapshotDeploymentRepository=repo.spring.io::default::https://repo.spring.io/libs-snapshot-local
 ----
 
 for a RELEASE build use
 
 ----
-$ mvn install -DaltReleaseDeploymentRepository=repo.spring.io::default::https://repo.spring.io/libs-release-local
+$ mvn deploy -DaltReleaseDeploymentRepository=repo.spring.io::default::https://repo.spring.io/libs-release-local
 ----
 
 and for Maven Central use
 
 ----
-$ mvn install -P central -DaltReleaseDeploymentRepository=sonatype-nexus-staging::default::https://oss.sonatype.org/service/local/staging/deploy/maven2
+$ mvn deploy -P central -DaltReleaseDeploymentRepository=sonatype-nexus-staging::default::https://oss.sonatype.org/service/local/staging/deploy/maven2
 ----
 
 (the "central" profile is available for all projects in Spring Cloud and it sets up the gpg jar signing, and the repository has to be specified separately for this project because it is a parent of the starter parent which users in turn have as their own parent).
