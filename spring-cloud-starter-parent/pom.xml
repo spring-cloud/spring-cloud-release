@@ -318,11 +318,6 @@
 				<artifactId>spring-cloud-starter-zuul</artifactId>
 				<version>${spring-cloud-netflix.version}</version>
 			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-zuul-server</artifactId>
-				<version>${spring-cloud-netflix.version}</version>
-			</dependency>
 	        <!-- bom dependencies at the bottom so they can be overridden above -->
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
