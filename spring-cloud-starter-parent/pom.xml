@@ -5,10 +5,10 @@
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-parent</artifactId>
-		<version>1.1.0.BUILD-SNAPSHOT</version>
+		<version>1.1.0.M2</version>
 	</parent>
 	<artifactId>spring-cloud-starter-parent</artifactId>
-	<version>Brixton.BUILD-SNAPSHOT</version>
+	<version>Brixton.M2</version>
 	<name>spring-cloud-starter-parent</name>
 	<description>Spring Cloud Starter</description>
 	<packaging>pom</packaging>
@@ -19,19 +19,19 @@
 	</organization>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
-		<spring-cloud-aws.version>1.1.0.BUILD-SNAPSHOT</spring-cloud-aws.version>
-		<spring-cloud-bus.version>1.1.0.BUILD-SNAPSHOT</spring-cloud-bus.version>
-		<spring-cloud-cloudfoundry.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-cloudfoundry.version>
-		<spring-cloud-commons.version>1.1.0.BUILD-SNAPSHOT</spring-cloud-commons.version>
-		<spring-cloud-config.version>1.1.0.BUILD-SNAPSHOT</spring-cloud-config.version>
-		<spring-cloud-netflix.version>1.1.0.BUILD-SNAPSHOT</spring-cloud-netflix.version>
-		<spring-cloud-security.version>1.1.0.BUILD-SNAPSHOT</spring-cloud-security.version>
-		<spring-cloud-cluster.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-cluster.version>
-		<spring-cloud-lattice.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-lattice.version>
-		<spring-cloud-consul.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-consul.version>
-		<spring-cloud-sleuth.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-sleuth.version>
-		<spring-cloud-stream.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-stream.version>
-		<spring-cloud-zookeeper.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-zookeeper.version>
+		<spring-cloud-aws.version>1.1.0.M1</spring-cloud-aws.version>
+		<spring-cloud-bus.version>1.1.0.M2</spring-cloud-bus.version>
+		<spring-cloud-cloudfoundry.version>1.0.0.M2</spring-cloud-cloudfoundry.version>
+		<spring-cloud-commons.version>1.1.0.M2</spring-cloud-commons.version>
+		<spring-cloud-config.version>1.1.0.M2</spring-cloud-config.version>
+		<spring-cloud-netflix.version>1.1.0.M2</spring-cloud-netflix.version>
+		<spring-cloud-security.version>1.1.0.M2</spring-cloud-security.version>
+		<spring-cloud-cluster.version>1.0.0.M2</spring-cloud-cluster.version>
+		<spring-cloud-lattice.version>1.0.0.M1</spring-cloud-lattice.version>
+		<spring-cloud-consul.version>1.0.0.M3</spring-cloud-consul.version>
+		<spring-cloud-sleuth.version>1.0.0.M2</spring-cloud-sleuth.version>
+		<spring-cloud-stream.version>1.0.0.M2</spring-cloud-stream.version>
+		<spring-cloud-zookeeper.version>1.0.0.M2</spring-cloud-zookeeper.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
