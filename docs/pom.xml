@@ -7,9 +7,8 @@
 	<version>1.1.0.BUILD-SNAPSHOT</version>
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
-		<artifactId>spring-cloud-build</artifactId>
+		<artifactId>spring-cloud-starter-build</artifactId>
 		<version>1.1.0.BUILD-SNAPSHOT</version>
-		<relativePath />
 	</parent>
 	<packaging>pom</packaging>
 	<name>Spring Cloud Starter Docs</name>
