@@ -32,6 +32,7 @@
 		<spring-cloud-consul.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-consul.version>
 		<spring-cloud-sleuth.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-sleuth.version>
 		<spring-cloud-stream.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-stream.version>
+		<spring-cloud-task.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-task.version>
 		<spring-cloud-zookeeper.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-zookeeper.version>
 	</properties>
 	<dependencyManagement>
@@ -373,6 +374,13 @@
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-stream-dependencies</artifactId>
 				<version>${spring-cloud-stream.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-task-dependencies</artifactId>
+				<version>${spring-cloud-task.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
