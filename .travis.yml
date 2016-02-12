@@ -10,14 +10,18 @@ before_install:
   - echo "https://$GH_TOKEN:@github.com" > .git/credentials
   - gem install asciidoctor
 install:
-- ./mvnw --settings .settings.xml install -P docs -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true
-- ./docs/src/main/asciidoc/ghpages.sh
+- ./mvnw install -P docs -q -U -DskipTests=true -Dmaven.test.redirectTestOutputToFile=true
+- '[ "${MVN_GOAL}" == "deploy" ] && ./docs/src/main/asciidoc/ghpages.sh'
 script:
-- '[ "${TRAVIS_PULL_REQUEST}" != "false" ] || ./mvnw --settings .settings.xml deploy -DaltSnapshotDeploymentRepository=repo.spring.io::default::https://repo.spring.io/libs-snapshot-local -P release -nsu -Dmaven.test.redirectTestOutputToFile=true'
-- '[ "${TRAVIS_PULL_REQUEST}" = "false" ] || ./mvnw install -nsu -Dmaven.test.redirectTestOutputToFile=true'
+- './mvnw -s .settings.xml $MVN_GOAL $MVN_PROFILE -nsu -Dmaven.test.redirectTestOutputToFile=true'
 env:
   global:
   - GIT_NAME="Dave Syer"
   - GIT_EMAIL=dsyer@pivotal.io
   - CI_DEPLOY_USERNAME=buildmaster
+  - FEATURE_BRANCH=$(echo ${TRAVIS_BRANCH} | grep "^.*/.*$" && echo true || echo false)
+  - MVN_GOAL=$([ "${TRAVIS_PULL_REQUEST}" == "false" -a "${TRAVIS_TAG}" == "" -a "${FEATURE_BRANCH}" == "false" ] && echo deploy || echo install)
+  - VERSION=$(mvn validate | grep Building | head -1 | sed -e 's/.* //')
+  - MILESTONE=$(echo ${VERSION} | egrep 'M|RC' && echo true || echo false)
+  - MVN_PROFILE=$([ "${MILESTONE}" == "true" ] && echo -P milestone)
   - secure: HwFqZ7eBanb79EYgjSksuVekCC7dDiyxsWvEBmxr6uQaJGhNU8ac9LOeH86GO5xpoEaCG7urJu+eO9E84gRe2Qy5Nwauj9Z4OQOoqBwYA4mE5R4x8eVydzC46rzkghmSffYFY3L3LwpByr9HZNPMcCHczr9dQ8B8No5tBopTLu8=
