@@ -6,6 +6,7 @@
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-dependencies-parent</artifactId>
 		<version>1.1.0.BUILD-SNAPSHOT</version>
+		<relativePath/>
 	</parent>
 	<artifactId>spring-cloud-dependencies</artifactId>
 	<version>Brixton.BUILD-SNAPSHOT</version>
