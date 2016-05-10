@@ -276,6 +276,13 @@
 	        <!-- bom dependencies at the bottom so they can be overridden above -->
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-netflix-dependencies</artifactId>
+				<version>${spring-cloud-netflix.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-stream-dependencies</artifactId>
 				<version>${spring-cloud-stream.version}</version>
 				<type>pom</type>
@@ -292,13 +299,6 @@
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-consul-dependencies</artifactId>
 				<version>${spring-cloud-consul.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-netflix-dependencies</artifactId>
-				<version>${spring-cloud-netflix.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
