@@ -2,8 +2,8 @@
 :githubmaster: {github}/tree/master
 :docslink: {githubmaster}/docs/src/main/asciidoc
 :springcloudversion: Brixton.RC2
-:springioplatformversion: 2.0.3.RELEASE
-:springBootVersion: 1.3.3.RELEASE
+:springioplatformversion: 2.0.3.BUILD-SNAPSHOT
+:springBootVersion: 1.3.3.BUILD-SNAPSHOT
 
 = Spring Cloud Starters
 
