@@ -5,28 +5,28 @@
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-dependencies-parent</artifactId>
-		<version>1.1.2.BUILD-SNAPSHOT</version>
+		<version>1.1.1.RELEASE</version>
 		<relativePath/>
 	</parent>
 	<artifactId>spring-cloud-dependencies</artifactId>
-	<version>Brixton.BUILD-SNAPSHOT</version>
+	<version>Brixton.SR1</version>
 	<name>spring-cloud-dependencies</name>
 	<description>Spring Cloud Dependencies</description>
 	<packaging>pom</packaging>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
-		<spring-cloud-aws.version>1.1.1.BUILD-SNAPSHOT</spring-cloud-aws.version>
-		<spring-cloud-bus.version>1.1.1.BUILD-SNAPSHOT</spring-cloud-bus.version>
-		<spring-cloud-cloudfoundry.version>1.0.1.BUILD-SNAPSHOT</spring-cloud-cloudfoundry.version>
-		<spring-cloud-commons.version>1.1.1.BUILD-SNAPSHOT</spring-cloud-commons.version>
-		<spring-cloud-config.version>1.1.1.BUILD-SNAPSHOT</spring-cloud-config.version>
-		<spring-cloud-netflix.version>1.1.1.BUILD-SNAPSHOT</spring-cloud-netflix.version>
-		<spring-cloud-security.version>1.1.1.BUILD-SNAPSHOT</spring-cloud-security.version>
-		<spring-cloud-cluster.version>1.0.1.BUILD-SNAPSHOT</spring-cloud-cluster.version>
-		<spring-cloud-consul.version>1.0.1.BUILD-SNAPSHOT</spring-cloud-consul.version>
-		<spring-cloud-sleuth.version>1.0.1.BUILD-SNAPSHOT</spring-cloud-sleuth.version>
-		<spring-cloud-stream.version>1.0.1.BUILD-SNAPSHOT</spring-cloud-stream.version>
-		<spring-cloud-zookeeper.version>1.0.1.BUILD-SNAPSHOT</spring-cloud-zookeeper.version>
+		<spring-cloud-aws.version>1.1.0.RELEASE</spring-cloud-aws.version>
+		<spring-cloud-bus.version>1.1.0.RELEASE</spring-cloud-bus.version>
+		<spring-cloud-cloudfoundry.version>1.0.0.RELEASE</spring-cloud-cloudfoundry.version>
+		<spring-cloud-commons.version>1.1.1.RELEASE</spring-cloud-commons.version>
+		<spring-cloud-config.version>1.1.1.RELEASE</spring-cloud-config.version>
+		<spring-cloud-netflix.version>1.1.2.RELEASE</spring-cloud-netflix.version>
+		<spring-cloud-security.version>1.1.0.RELEASE</spring-cloud-security.version>
+		<spring-cloud-cluster.version>1.0.0.RELEASE</spring-cloud-cluster.version>
+		<spring-cloud-consul.version>1.0.1.RELEASE</spring-cloud-consul.version>
+		<spring-cloud-sleuth.version>1.0.1.RELEASE</spring-cloud-sleuth.version>
+		<spring-cloud-stream.version>1.0.2.RELEASE</spring-cloud-stream.version>
+		<spring-cloud-zookeeper.version>1.0.1.RELEASE</spring-cloud-zookeeper.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
