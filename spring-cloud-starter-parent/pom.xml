@@ -20,7 +20,7 @@
 	</organization>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
-		<spring-cloud.version>Brixton.SR2</spring-cloud.version>
+		<spring-cloud.version>Brixton.BUILD-SNAPSHOT</spring-cloud.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
