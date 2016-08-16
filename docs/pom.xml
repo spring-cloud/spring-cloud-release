@@ -15,6 +15,7 @@
 	<properties>
 		<docs.main>spring-cloud-starters</docs.main>
 		<main.basedir>${basedir}/..</main.basedir>
+		<docs.whitelisted.branches>Brixton</docs.whitelisted.branches>
 	</properties>
 	<build>
 		<plugins>
