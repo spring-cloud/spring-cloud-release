@@ -25,7 +25,7 @@
 		<spring-cloud-cluster.version>1.0.1.BUILD-SNAPSHOT</spring-cloud-cluster.version>
 		<spring-cloud-consul.version>1.1.0.BUILD-SNAPSHOT</spring-cloud-consul.version>
 		<spring-cloud-sleuth.version>1.0.5.BUILD-SNAPSHOT</spring-cloud-sleuth.version>
-		<spring-cloud-stream.version>1.0.3.BUILD-SNAPSHOT</spring-cloud-stream.version>
+		<spring-cloud-stream.version>Brooklyn.BUILD-SNAPSHOT</spring-cloud-stream.version>
 		<spring-cloud-task.version>1.0.1.BUILD-SNAPSHOT</spring-cloud-task.version>
 		<spring-cloud-zookeeper.version>1.0.3.BUILD-SNAPSHOT</spring-cloud-zookeeper.version>
 	</properties>
