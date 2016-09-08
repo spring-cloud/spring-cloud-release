@@ -7,7 +7,7 @@
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-starter-build</artifactId>
-		<version>Camden.BUILD-SNAPSHOT</version>
+		<version>Camden.RC1</version>
 	</parent>
 	<packaging>pom</packaging>
 	<name>Spring Cloud Starter Docs</name>
