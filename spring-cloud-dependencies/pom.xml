@@ -249,6 +249,13 @@
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-security-dependencies</artifactId>
+				<version>${spring-cloud-security.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-cloudfoundry-dependencies</artifactId>
 				<version>${spring-cloud-cloudfoundry.version}</version>
 				<type>pom</type>
