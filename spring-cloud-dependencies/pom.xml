@@ -34,6 +34,13 @@
 	        <!-- bom dependencies at the bottom so they can be overridden above -->
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-commons-dependencies</artifactId>
+				<version>${spring-cloud-commons.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-netflix-dependencies</artifactId>
 				<version>${spring-cloud-netflix.version}</version>
 				<type>pom</type>
@@ -113,13 +120,6 @@
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-aws-dependencies</artifactId>
 				<version>${spring-cloud-aws.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-commons-dependencies</artifactId>
-				<version>${spring-cloud-commons.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
