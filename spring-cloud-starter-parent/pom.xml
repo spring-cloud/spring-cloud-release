@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>org.springframework.cloud</groupId>
 	<artifactId>spring-cloud-starter-parent</artifactId>
-	<version>Camden.BUILD-SNAPSHOT</version>
+	<version>Camden.RELEASE</version>
 	<name>spring-cloud-starter-parent</name>
 	<description>Spring Cloud Starter Parent</description>
 	<packaging>pom</packaging>
@@ -20,7 +20,7 @@
 	</organization>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
-		<spring-cloud.version>Camden.BUILD-SNAPSHOT</spring-cloud.version>
+		<spring-cloud.version>Camden.RELEASE</spring-cloud.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
