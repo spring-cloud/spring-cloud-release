@@ -1,9 +1,9 @@
 :github: https://github.com/spring-cloud/spring-cloud-release
 :githubmaster: {github}/tree/master
 :docslink: {githubmaster}/docs/src/main/asciidoc
-:springcloudversion: Camden.BUILD-SNAPSHOT
-:springioplatformversion: 2.0.3.BUILD-SNAPSHOT
-:springBootVersion: 1.4.0.BUILD-SNAPSHOT
+:springcloudversion: Camden.SR2
+:springioplatformversion: 2.0.8.RELEASE
+:springBootVersion: 1.4.1.RELEASE
 
 = Spring Cloud Release Train
 
