@@ -1,9 +1,9 @@
 :github: https://github.com/spring-cloud/spring-cloud-release
 :githubmaster: {github}/tree/master
 :docslink: {githubmaster}/docs/src/main/asciidoc
-:springcloudversion: Dalston.M1
-:springioplatformversion: Brussels.BUILD-SNAPSHOT
-:springBootVersion: 1.5.0.RC1
+:springcloudversion: Dalston.BUILD-SNAPSHOT
+:springioplatformversion: 2.0.9.BUILD-SNAPSHOT
+:springBootVersion: 1.5.0.BUILD-SNAPSHOT
 
 = Spring Cloud Release Train
 
