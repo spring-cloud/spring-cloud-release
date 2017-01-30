@@ -2,7 +2,7 @@
 :githubmaster: {github}/tree/master
 :docslink: {githubmaster}/docs/src/main/asciidoc
 :springcloudversion: Dalston.BUILD-SNAPSHOT
-:springioplatformversion: 2.0.9.BUILD-SNAPSHOT
+:springioplatformversion: Brussels-BUILD-SNAPSHOT
 :springBootVersion: 1.5.0.BUILD-SNAPSHOT
 
 = Spring Cloud Release Train
