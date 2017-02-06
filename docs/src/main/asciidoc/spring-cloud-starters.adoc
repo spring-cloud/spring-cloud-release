@@ -1,7 +1,7 @@
 :github: https://github.com/spring-cloud/spring-cloud-release
 :githubmaster: {github}/tree/master
 :docslink: {githubmaster}/docs/src/main/asciidoc
-:springcloudversion: Camden.SR5
+:springcloudversion: Camden.BUILD-SNAPSHOT
 :springioplatformversion: 2.0.9.BUILD-SNAPSHOT
 :springBootVersion: 1.4.2.BUILD-SNAPSHOT
 
