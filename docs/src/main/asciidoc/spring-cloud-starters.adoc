@@ -1,7 +1,7 @@
 :github: https://github.com/spring-cloud/spring-cloud-release
 :githubmaster: {github}/tree/master
 :docslink: {githubmaster}/docs/src/main/asciidoc
-:springcloudversion: Dalston.BUILD-SNAPSHOT
+:springcloudversion: Finchley.BUILD-SNAPSHOT
 :springioplatformversion: Brussels-BUILD-SNAPSHOT
 :springBootVersion: 1.5.0.BUILD-SNAPSHOT
 

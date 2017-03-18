@@ -6,7 +6,7 @@
 	<packaging>pom</packaging>
 	<name>Spring Cloud Starter Build</name>
 	<description>Spring Cloud Starter Build</description>
-	<version>Dalston.BUILD-SNAPSHOT</version>
+	<version>Finchley.BUILD-SNAPSHOT</version>
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-build</artifactId>
