@@ -25,7 +25,7 @@
 		<spring-cloud-security.version>1.2.0.RELEASE</spring-cloud-security.version>
 		<spring-cloud-consul.version>1.2.0.RELEASE</spring-cloud-consul.version>
 		<spring-cloud-sleuth.version>1.2.0.RELEASE</spring-cloud-sleuth.version>
-		<spring-cloud-stream.version>Chelsea.RELEASE</spring-cloud-stream.version>
+		<spring-cloud-stream.version>Chelsea.SR1</spring-cloud-stream.version>
 		<spring-cloud-task.version>1.1.2.RELEASE</spring-cloud-task.version>
 		<spring-cloud-vault.version>1.0.0.RELEASE</spring-cloud-vault.version>
 		<spring-cloud-zookeeper.version>1.1.0.RELEASE</spring-cloud-zookeeper.version>
