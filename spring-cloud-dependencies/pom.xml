@@ -5,31 +5,31 @@
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-dependencies-parent</artifactId>
-		<version>2.0.0.BUILD-SNAPSHOT</version>
+		<version>2.0.0.M1</version>
 		<relativePath/>
 	</parent>
 	<artifactId>spring-cloud-dependencies</artifactId>
-	<version>Finchley.BUILD-SNAPSHOT</version>
+	<version>Finchley.M1</version>
 	<name>spring-cloud-dependencies</name>
 	<description>Spring Cloud Dependencies</description>
 	<packaging>pom</packaging>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
-		<spring-cloud-aws.version>1.2.1.BUILD-SNAPSHOT</spring-cloud-aws.version>
-		<spring-cloud-bus.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-bus.version>
-		<spring-cloud-contract.version>1.1.1.BUILD-SNAPSHOT</spring-cloud-contract.version>
-		<spring-cloud-cloudfoundry.version>1.1.1.BUILD-SNAPSHOT</spring-cloud-cloudfoundry.version>
-		<spring-cloud-commons.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-commons.version>
-		<spring-cloud-config.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-config.version>
-		<spring-cloud-consul.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-consul.version>
-		<spring-cloud-gateway.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-gateway.version>
-		<spring-cloud-netflix.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-netflix.version>
-		<spring-cloud-security.version>1.2.1.BUILD-SNAPSHOT</spring-cloud-security.version>
-		<spring-cloud-sleuth.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-sleuth.version>
-		<spring-cloud-stream.version>Elmhurst.BUILD-SNAPSHOT</spring-cloud-stream.version>
-		<spring-cloud-task.version>1.2.0.BUILD-SNAPSHOT</spring-cloud-task.version>
-		<spring-cloud-vault.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-vault.version>
-		<spring-cloud-zookeeper.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-zookeeper.version>
+		<spring-cloud-aws.version>2.0.0.M1</spring-cloud-aws.version>
+		<spring-cloud-bus.version>2.0.0.M1</spring-cloud-bus.version>
+		<spring-cloud-contract.version>2.0.0.M1</spring-cloud-contract.version>
+		<spring-cloud-cloudfoundry.version>2.0.0.M1</spring-cloud-cloudfoundry.version>
+		<spring-cloud-commons.version>2.0.0.M1</spring-cloud-commons.version>
+		<spring-cloud-config.version>2.0.0.M1</spring-cloud-config.version>
+		<spring-cloud-consul.version>2.0.0.M1</spring-cloud-consul.version>
+		<spring-cloud-gateway.version>1.0.0.M1</spring-cloud-gateway.version>
+		<spring-cloud-netflix.version>2.0.0.M1</spring-cloud-netflix.version>
+		<spring-cloud-security.version>2.0.0.M1</spring-cloud-security.version>
+		<spring-cloud-sleuth.version>2.0.0.M1</spring-cloud-sleuth.version>
+		<spring-cloud-stream.version>Elmhurst.M1</spring-cloud-stream.version>
+		<spring-cloud-task.version>1.2.0.RELEASE</spring-cloud-task.version>
+		<spring-cloud-vault.version>2.0.0.M1</spring-cloud-vault.version>
+		<spring-cloud-zookeeper.version>2.0.0.M1</spring-cloud-zookeeper.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>

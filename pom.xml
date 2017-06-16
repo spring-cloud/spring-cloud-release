@@ -6,11 +6,11 @@
 	<packaging>pom</packaging>
 	<name>Spring Cloud Starter Build</name>
 	<description>Spring Cloud Starter Build</description>
-	<version>Finchley.BUILD-SNAPSHOT</version>
+	<version>Finchley.M1</version>
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-build</artifactId>
-		<version>2.0.0.BUILD-SNAPSHOT</version>
+		<version>2.0.0.M1</version>
 		<relativePath />
 	</parent>
 
