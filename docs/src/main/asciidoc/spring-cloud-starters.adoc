@@ -3,7 +3,7 @@
 :docslink: {githubmaster}/docs/src/main/asciidoc
 :springcloudversion: Finchley.BUILD-SNAPSHOT
 :springioplatformversion: Brussels-BUILD-SNAPSHOT
-:springBootVersion: 1.5.0.BUILD-SNAPSHOT
+:springBootVersion: 1.5.4.BUILD-SNAPSHOT
 
 = Spring Cloud Release Train
 

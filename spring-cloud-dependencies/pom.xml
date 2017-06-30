@@ -17,11 +17,11 @@
 		<main.basedir>${basedir}/../..</main.basedir>
 		<spring-cloud-aws.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-aws.version>
 		<spring-cloud-bus.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-bus.version>
-		<spring-cloud-contract.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-contract.version>
-		<spring-cloud-cloudfoundry.version>2.0.-.BUILD-SNAPSHOT</spring-cloud-cloudfoundry.version>
+		<spring-cloud-cloudfoundry.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-cloudfoundry.version>
 		<spring-cloud-commons.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-commons.version>
 		<spring-cloud-config.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-config.version>
 		<spring-cloud-consul.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-consul.version>
+		<spring-cloud-contract.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-contract.version>
 		<spring-cloud-gateway.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-gateway.version>
 		<spring-cloud-netflix.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-netflix.version>
 		<spring-cloud-security.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-security.version>
