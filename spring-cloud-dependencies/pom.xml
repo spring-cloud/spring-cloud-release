@@ -22,7 +22,7 @@
 		<spring-cloud-commons.version>2.0.0.M1</spring-cloud-commons.version>
 		<spring-cloud-config.version>2.0.0.M1</spring-cloud-config.version>
 		<spring-cloud-consul.version>2.0.0.M1</spring-cloud-consul.version>
-		<spring-cloud-gateway.version>1.0.0.M1</spring-cloud-gateway.version>
+		<spring-cloud-gateway.version>2.0.0.M1</spring-cloud-gateway.version>
 		<spring-cloud-netflix.version>2.0.0.M1</spring-cloud-netflix.version>
 		<spring-cloud-security.version>2.0.0.M1</spring-cloud-security.version>
 		<spring-cloud-sleuth.version>2.0.0.M1</spring-cloud-sleuth.version>
