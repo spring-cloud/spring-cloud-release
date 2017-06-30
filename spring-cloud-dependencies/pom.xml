@@ -18,13 +18,13 @@
 		<spring-cloud-aws.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-aws.version>
 		<spring-cloud-bus.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-bus.version>
 		<spring-cloud-contract.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-contract.version>
-		<spring-cloud-cloudfoundry.version>1.1.1.BUILD-SNAPSHOT</spring-cloud-cloudfoundry.version>
+		<spring-cloud-cloudfoundry.version>2.0.-.BUILD-SNAPSHOT</spring-cloud-cloudfoundry.version>
 		<spring-cloud-commons.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-commons.version>
 		<spring-cloud-config.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-config.version>
 		<spring-cloud-consul.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-consul.version>
-		<spring-cloud-gateway.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-gateway.version>
+		<spring-cloud-gateway.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-gateway.version>
 		<spring-cloud-netflix.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-netflix.version>
-		<spring-cloud-security.version>1.2.1.BUILD-SNAPSHOT</spring-cloud-security.version>
+		<spring-cloud-security.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-security.version>
 		<spring-cloud-sleuth.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-sleuth.version>
 		<spring-cloud-stream.version>Elmhurst.BUILD-SNAPSHOT</spring-cloud-stream.version>
 		<spring-cloud-task.version>1.2.0.BUILD-SNAPSHOT</spring-cloud-task.version>
