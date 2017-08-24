@@ -21,14 +21,14 @@
 		<spring-cloud-commons.version>2.0.0.M2</spring-cloud-commons.version>
 		<spring-cloud-config.version>2.0.0.M2</spring-cloud-config.version>
 		<spring-cloud-consul.version>2.0.0.M1</spring-cloud-consul.version>
-		<spring-cloud-contract.version>2.0.0.M1</spring-cloud-contract.version>
+		<spring-cloud-contract.version>2.0.0.M2</spring-cloud-contract.version>
 		<spring-cloud-gateway.version>2.0.0.M2</spring-cloud-gateway.version>
 		<spring-cloud-netflix.version>2.0.0.M2</spring-cloud-netflix.version>
 		<spring-cloud-security.version>2.0.0.M1</spring-cloud-security.version>
-		<spring-cloud-sleuth.version>2.0.0.M1</spring-cloud-sleuth.version>
+		<spring-cloud-sleuth.version>2.0.0.M2</spring-cloud-sleuth.version>
 		<spring-cloud-stream.version>Elmhurst.M1</spring-cloud-stream.version>
 		<spring-cloud-task.version>2.0.0.M1</spring-cloud-task.version>
-		<spring-cloud-vault.version>2.0.0.M1</spring-cloud-vault.version>
+		<spring-cloud-vault.version>2.0.0.M2</spring-cloud-vault.version>
 		<spring-cloud-zookeeper.version>2.0.0.M1</spring-cloud-zookeeper.version>
 	</properties>
 	<dependencyManagement>
