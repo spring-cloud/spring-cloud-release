@@ -29,7 +29,7 @@
 		<spring-cloud-stream.version>Ditmars.M2</spring-cloud-stream.version>
 		<spring-cloud-task.version>1.2.0.RELEASE</spring-cloud-task.version>
 		<spring-cloud-vault.version>1.1.0.M1</spring-cloud-vault.version>
-		<spring-cloud-zookeeper.version>1.2.0.RELEASE</spring-cloud-zookeeper.version>
+		<spring-cloud-zookeeper.version>1.2.0.M1</spring-cloud-zookeeper.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
