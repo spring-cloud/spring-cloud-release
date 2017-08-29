@@ -1,0 +1,42 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Spring Cloud Release Train</title><link rel="stylesheet" type="text/css" href="css/manual-singlepage.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div lang="en" class="book"><div class="titlepage"><div><div><h1 class="title"><a name="d0e3"></a>Spring Cloud Release Train</h1></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="preface"><a href="#d0e9"></a></span></dt><dt><span class="chapter"><a href="#_using_spring_cloud_dependencies_with_spring_io_platform">1. Using Spring Cloud Dependencies with Spring IO Platform</a></span></dt></dl></div><div class="preface"><div class="titlepage"><div><div><h1 class="title"><a name="d0e9" href="#d0e9"></a></h1></div></div></div><p>Spring Cloud Release Train is a curated set of dependencies across a
+range of Spring Cloud projects. You consume it by using the
+spring-cloud-dependencies POM to manage dependencies in Maven or
+Gradle. The release trains have names, not versions, to avoid
+confusion with the sub-projects. The names are an alphabetic sequence
+(so you can sort them chronologically) with names of London Tube
+stations ("Angel" is the first release, "Brixton" is the second).</p></div><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="_using_spring_cloud_dependencies_with_spring_io_platform" href="#_using_spring_cloud_dependencies_with_spring_io_platform"></a>1.&nbsp;Using Spring Cloud Dependencies with Spring IO Platform</h1></div></div></div><p>The Spring IO Platform is a modular, enterprise-grade curated set of dependencies. To use the Spring Cloud Starters with Spring IO Platform, you must import the Spring Cloud Dependencies bill of materials (BOM) first.</p><p>To use version BrusselsSR1 of the Spring IO Platform and Spring Cloud Release Train Edgware.BUILD-SNAPSHOT with Maven, update the pom.xml as follows:</p><pre class="programlisting"><span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;dependencyManagement&gt;</span>
+    <span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;dependencies&gt;</span>
+        <span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;dependency&gt;</span>
+            <span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;groupId&gt;</span>org.springframework.cloud<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/groupId&gt;</span>
+            <span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;artifactId&gt;</span>spring-cloud-dependencies<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/artifactId&gt;</span>
+            <span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;version&gt;</span>Edgware.BUILD-SNAPSHOT<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/version&gt;</span>
+            <span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;type&gt;</span>pom<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/type&gt;</span>
+            <span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;scope&gt;</span>import<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/scope&gt;</span>
+        <span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/dependency&gt;</span>
+        <span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;dependency&gt;</span>
+            <span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;groupId&gt;</span>io.spring.platform<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/groupId&gt;</span>
+            <span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;artifactId&gt;</span>platform-bom<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/artifactId&gt;</span>
+            <span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;version&gt;</span>BrusselsSR1<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/version&gt;</span>
+            <span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;type&gt;</span>pom<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/type&gt;</span>
+            <span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;scope&gt;</span>import<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/scope&gt;</span>
+        <span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/dependency&gt;</span>
+    <span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/dependencies&gt;</span>
+<span xmlns:d="http://docbook.org/ns/docbook" class="hl-tag">&lt;/dependencyManagement&gt;</span></pre><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="images/note.png"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>The Spring Cloud Dependencies BOM must go first, so that its dependencies have precedence of the Spring IO Platform dependencies.</p></td></tr></table></div><p>For gradle, update the build.gradle as follows:</p><pre class="programlisting">buildscript {
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath(<span xmlns:d="http://docbook.org/ns/docbook" class="hl-string">"org.springframework.boot:spring-boot-gradle-plugin:1.5.2.RELEASE"</span>)
+	}
+}
+
+apply plugin: <span xmlns:d="http://docbook.org/ns/docbook" class="hl-string">'spring-boot'</span>
+
+dependencyManagement {
+	imports {
+		mavenBom <span xmlns:d="http://docbook.org/ns/docbook" class="hl-string">"org.springframework.cloud:spring-cloud-dependencies:Edgware.BUILD-SNAPSHOT"</span>
+		mavenBom <span xmlns:d="http://docbook.org/ns/docbook" class="hl-string">'io.spring.platform:platform-bom:BrusselsSR1'</span>
+	}
+}</pre><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="images/note.png"></td><th align="left">Note</th></tr><tr><td align="left" valign="top"><p>Spring Cloud is released under the non-restrictive Apache 2.0 license. If you would like to contribute to this section of the documentation or if you find an error, please find the source code and issue trackers in the project at <a class="link" href="https://github.com/spring-cloud/spring-cloud-release/tree/master/docs/src/main/asciidoc" target="_top">github</a>.</p></td></tr></table></div></div></div></body></html>
