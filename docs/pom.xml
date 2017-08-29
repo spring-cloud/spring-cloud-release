@@ -15,7 +15,7 @@
 	<properties>
 		<docs.main>spring-cloud-starters</docs.main>
 		<main.basedir>${basedir}/..</main.basedir>
-		<docs.whitelisted.branches>Brixton,Camden,Dalston</docs.whitelisted.branches>
+		<docs.whitelisted.branches>Brixton,Camden,Dalston,Finchley</docs.whitelisted.branches>
 	</properties>
 	<build>
 		<plugins>
@@ -36,6 +36,10 @@
 						<groupId>org.asciidoctor</groupId>
 						<artifactId>asciidoctor-maven-plugin</artifactId>
 						<inherited>false</inherited>
+					</plugin>
+					<plugin>
+						<groupId>com.agilejava.docbkx</groupId>
+						<artifactId>docbkx-maven-plugin</artifactId>
 					</plugin>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
