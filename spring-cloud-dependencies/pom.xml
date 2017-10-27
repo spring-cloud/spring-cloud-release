@@ -15,7 +15,7 @@
 	<packaging>pom</packaging>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
-		<spring-cloud-aws.version>2.0.0.M2</spring-cloud-aws.version>
+		<spring-cloud-aws.version>2.0.0.M1</spring-cloud-aws.version>
 		<spring-cloud-bus.version>2.0.0.M2</spring-cloud-bus.version>
 		<spring-cloud-cloudfoundry.version>2.0.0.M1</spring-cloud-cloudfoundry.version>
 		<spring-cloud-commons.version>2.0.0.M3</spring-cloud-commons.version>
