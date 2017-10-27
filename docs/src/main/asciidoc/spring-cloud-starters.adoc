@@ -1,9 +1,9 @@
 :github: https://github.com/spring-cloud/spring-cloud-release
 :githubmaster: {github}/tree/master
 :docslink: {githubmaster}/docs/src/main/asciidoc
-:springcloudversion: Finchley.BUILD-SNAPSHOT
-:springioplatformversion: Brussels-BUILD-SNAPSHOT
-:springBootVersion: 1.5.4.BUILD-SNAPSHOT
+:springcloudversion: Finchley.M3
+:springioplatformversion: Brussels-RC1
+:springBootVersion: 2.0.0.M5
 
 = Spring Cloud Release Train
 
