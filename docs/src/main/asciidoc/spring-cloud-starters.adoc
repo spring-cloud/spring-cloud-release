@@ -1,9 +1,9 @@
 :github: https://github.com/spring-cloud/spring-cloud-release
 :githubmaster: {github}/tree/master
 :docslink: {githubmaster}/docs/src/main/asciidoc
-:springcloudversion: Edgware.BUILD-SNAPSHOT
+:springcloudversion: Edgware.RELEASE
 :springioplatformversion: BrusselsSR1
-:springBootVersion: 1.5.2.RELEASE
+:springBootVersion: 1.5.8.RELEASE
 
 = Spring Cloud Release Train
 
