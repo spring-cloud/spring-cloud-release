@@ -17,7 +17,7 @@
 		<main.basedir>${basedir}/../..</main.basedir>
 		<spring-cloud-aws.version>2.0.0.M3</spring-cloud-aws.version>
 		<spring-cloud-bus.version>2.0.0.M5</spring-cloud-bus.version>
-		<spring-cloud-cloudfoundry.version>2.0.0.M2</spring-cloud-cloudfoundry.version>
+		<spring-cloud-cloudfoundry.version>2.0.0.M3</spring-cloud-cloudfoundry.version>
 		<spring-cloud-commons.version>2.0.0.M6</spring-cloud-commons.version>
 		<spring-cloud-config.version>2.0.0.M6</spring-cloud-config.version>
 		<spring-cloud-consul.version>2.0.0.M5</spring-cloud-consul.version>
