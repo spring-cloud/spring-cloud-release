@@ -29,7 +29,7 @@
 		<spring-cloud-sleuth.version>2.0.0.M7</spring-cloud-sleuth.version>
 		<spring-cloud-stream.version>Elmhurst.RC1</spring-cloud-stream.version>
 		<spring-cloud-task.version>2.0.0.M3</spring-cloud-task.version>
-		<spring-cloud-vault.version>2.0.0.M5</spring-cloud-vault.version>
+		<spring-cloud-vault.version>2.0.0.M6</spring-cloud-vault.version>
 		<spring-cloud-zookeeper.version>2.0.0.M6</spring-cloud-zookeeper.version>
 	</properties>
 	<dependencyManagement>
