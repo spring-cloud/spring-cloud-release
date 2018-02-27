@@ -24,7 +24,7 @@
 		<spring-cloud-contract.version>2.0.0.M7</spring-cloud-contract.version>
 		<spring-cloud-gateway.version>2.0.0.M7</spring-cloud-gateway.version>
 		<spring-cloud-netflix.version>2.0.0.M7</spring-cloud-netflix.version>
-        <spring-cloud-openfeign.version>2.0.0.M1</spring-cloud-openfeign.version>
+		<spring-cloud-openfeign.version>2.0.0.M1</spring-cloud-openfeign.version>
 		<spring-cloud-security.version>2.0.0.M2</spring-cloud-security.version>
 		<spring-cloud-sleuth.version>2.0.0.M7</spring-cloud-sleuth.version>
 		<spring-cloud-stream.version>Elmhurst.RC1</spring-cloud-stream.version>
