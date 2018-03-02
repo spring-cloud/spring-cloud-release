@@ -2,7 +2,7 @@
 :githubmaster: {github}/tree/master
 :docslink: {githubmaster}/docs/src/main/asciidoc
 :springcloudversion: Finchley.BUILD-SNAPSHOT
-:springioplatformversion: Brussels-BUILD-SNAPSHOT
+:springioplatformversion: Cairo-BUILD-SNAPSHOT
 :springBootVersion: 2.0.0.BUILD-SNAPSHOT
 
 = Spring Cloud Release Train
