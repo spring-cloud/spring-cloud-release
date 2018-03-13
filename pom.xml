@@ -86,7 +86,7 @@
 				<repository>
 					<id>spring-releases</id>
 					<name>Spring Releases</name>
-					<url>https://repo.spring.io/release</url>
+					<url>https://repo.spring.io/libs-release-local</url>
 					<snapshots>
 						<enabled>false</enabled>
 					</snapshots>
@@ -115,7 +115,7 @@
 				<pluginRepository>
 					<id>spring-releases</id>
 					<name>Spring Releases</name>
-					<url>https://repo.spring.io/release</url>
+					<url>https://repo.spring.io/libs-release-local</url>
 					<snapshots>
 						<enabled>false</enabled>
 					</snapshots>
