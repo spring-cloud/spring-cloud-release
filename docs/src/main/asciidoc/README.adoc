@@ -19,7 +19,7 @@ and to deploy snapshots to repo.spring.io:
 $ mvn install -DaltSnapshotDeploymentRepository=repo.spring.io::default::https://repo.spring.io/libs-snapshot-local
 ----
 
-for a.BUILD-SNAPSHOT build use
+for a RELEASE build use
 
 ----
 $ mvn install -DaltReleaseDeploymentRepository=repo.spring.io::default::https://repo.spring.io/libs-release-local
