@@ -37,11 +37,6 @@
 						<artifactId>maven-dependency-plugin</artifactId>
 					</plugin>
 					<plugin>
-						<groupId>org.asciidoctor</groupId>
-						<artifactId>asciidoctor-maven-plugin</artifactId>
-						<inherited>false</inherited>
-					</plugin>
-					<plugin>
 						<groupId>com.agilejava.docbkx</groupId>
 						<artifactId>docbkx-maven-plugin</artifactId>
 					</plugin>
