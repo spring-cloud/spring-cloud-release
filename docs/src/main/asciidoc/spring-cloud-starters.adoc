@@ -1,7 +1,7 @@
 :github: https://github.com/spring-cloud/spring-cloud-release
 :githubmaster: {github}/tree/master
 :docslink: {githubmaster}/docs/src/main/asciidoc
-:springcloudversion: Finchley.RELEASE
+:springcloudversion: Finchley.BUILD-SNAPSHOT
 :springioplatformversion: Cairo-SR2
 :springBootVersion: 2.0.3.RELEASE
 
