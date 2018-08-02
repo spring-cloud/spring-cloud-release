@@ -1,9 +1,9 @@
 :github: https://github.com/spring-cloud/spring-cloud-release
 :githubmaster: {github}/tree/master
 :docslink: {githubmaster}/docs/src/main/asciidoc
-:springcloudversion: Finchley.BUILD-SNAPSHOT
-:springioplatformversion: Cairo-SR2
-:springBootVersion: 2.0.3.RELEASE
+:springcloudversion: Greenwich.BUILD-SNAPSHOT
+:springioplatformversion: Cairo-SR3
+:springBootVersion: 2.1.0.M1
 
 = Spring Cloud Release Train
 
