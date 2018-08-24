@@ -21,14 +21,14 @@
 		<spring-cloud-commons.version>2.1.0.BUILD-SNAPSHOT</spring-cloud-commons.version>
 		<spring-cloud-config.version>2.1.0.BUILD-SNAPSHOT</spring-cloud-config.version>
 		<spring-cloud-consul.version>2.1.0.BUILD-SNAPSHOT</spring-cloud-consul.version>
-		<spring-cloud-contract.version>2.0.1.BUILD-SNAPSHOT</spring-cloud-contract.version>
+		<spring-cloud-contract.version>2.1.0.BUILD-SNAPSHOT</spring-cloud-contract.version>
 		<spring-cloud-function.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-function.version>
 		<spring-cloud-gateway.version>2.1.0.BUILD-SNAPSHOT</spring-cloud-gateway.version>
 		<spring-cloud-kubernetes.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-kubernetes.version>
 		<spring-cloud-netflix.version>2.1.0.BUILD-SNAPSHOT</spring-cloud-netflix.version>
 		<spring-cloud-openfeign.version>2.1.0.BUILD-SNAPSHOT</spring-cloud-openfeign.version>
 		<spring-cloud-security.version>2.0.1.BUILD-SNAPSHOT</spring-cloud-security.version>
-		<spring-cloud-sleuth.version>2.0.1.BUILD-SNAPSHOT</spring-cloud-sleuth.version>
+		<spring-cloud-sleuth.version>2.1.0.BUILD-SNAPSHOT</spring-cloud-sleuth.version>
 		<spring-cloud-stream.version>Fishtown.BUILD-SNAPSHOT</spring-cloud-stream.version>
 		<spring-cloud-task.version>2.0.0.RELEASE</spring-cloud-task.version>
 		<spring-cloud-vault.version>2.0.1.BUILD-SNAPSHOT</spring-cloud-vault.version>
