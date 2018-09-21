@@ -22,6 +22,7 @@ releaser.fixed-versions[spring-cloud-contract]=2.1.0.M1
 releaser.fixed-versions[spring-cloud-gcp]=1.1.0.M2
 releaser.fixed-versions[spring-cloud-vault]=2.1.0.M1
 releaser.fixed-versions[spring-cloud-release]=Greenwich.M1
+releaser.meta-release.projects-to-skip=spring-boot,spring-cloud-stream,spring-cloud-task,spring-cloud-security
 ```
 
 
