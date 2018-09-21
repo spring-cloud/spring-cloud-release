@@ -19,7 +19,7 @@ releaser.fixed-versions[spring-cloud-security]=2.0.0.RELEASE
 releaser.fixed-versions[spring-cloud-sleuth]=2.1.0.M1
 releaser.fixed-versions[spring-cloud-zookeeper]=2.1.0.M1
 releaser.fixed-versions[spring-cloud-contract]=2.1.0.M1
-releaser.fixed-versions[spring-cloud-gcp]=1.1.0.M1
+releaser.fixed-versions[spring-cloud-gcp]=1.1.0.M2
 releaser.fixed-versions[spring-cloud-vault]=2.1.0.M1
 releaser.fixed-versions[spring-cloud-release]=Greenwich.M1
 ```
@@ -32,6 +32,6 @@ releaser.fixed-versions[spring-cloud-release]=Greenwich.M1
 
 ## TASK_NAMES
 ```
-spring-cloud-commons,spring-cloud-bus,spring-cloud-config,spring-cloud-netflix,spring-cloud-cloudfoundry,spring-cloud-kubernetes,spring-cloud-openfeign,spring-cloud-consul,spring-cloud-gateway,spring-cloud-sleuth,spring-cloud-zookeeper,spring-cloud-contract,spring-cloud-vault,spring-cloud-release
+spring-cloud-commons,spring-cloud-bus,spring-cloud-config,spring-cloud-netflix,spring-cloud-cloudfoundry,spring-cloud-kubernetes,spring-cloud-openfeign,spring-cloud-consul,spring-cloud-gateway,spring-cloud-sleuth,spring-cloud-zookeeper,spring-cloud-contract,spring-cloud-vault,spring-cloud-gcp,spring-cloud-release
 
 ```
