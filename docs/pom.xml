@@ -7,7 +7,7 @@
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-starter-build</artifactId>
-		<version>Greenwich.RC1</version>
+		<version>Greenwich.BUILD-SNAPSHOT</version>
 	</parent>
 	<packaging>pom</packaging>
 	<name>Spring Cloud Starter Docs</name>
