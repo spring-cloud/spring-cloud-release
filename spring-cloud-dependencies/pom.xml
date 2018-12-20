@@ -5,11 +5,11 @@
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-dependencies-parent</artifactId>
-		<version>2.1.0.RC2</version>
+		<version>2.1.0.RC3</version>
 		<relativePath/>
 	</parent>
 	<artifactId>spring-cloud-dependencies</artifactId>
-	<version>Greenwich.M2</version>
+	<version>Greenwich.RC1</version>
 	<name>spring-cloud-dependencies</name>
 	<description>Spring Cloud Dependencies</description>
 	<packaging>pom</packaging>
@@ -22,7 +22,7 @@
 		<!-- <spring-cloud-config.version>2.1.0.BUILD-SNAPSHOT</spring-cloud-config.version>
 		<spring-cloud-consul.version>2.1.0.BUILD-SNAPSHOT</spring-cloud-consul.version>
 		<spring-cloud-contract.version>2.0.1.BUILD-SNAPSHOT</spring-cloud-contract.version> -->
-		<spring-cloud-function.version>2.0.0.RC2</spring-cloud-function.version>
+		<spring-cloud-function.version>2.0.0.RC3</spring-cloud-function.version>
 		<!-- <spring-cloud-gateway.version>2.1.0.BUILD-SNAPSHOT</spring-cloud-gateway.version>
 		<spring-cloud-kubernetes.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-kubernetes.version>
 		<spring-cloud-netflix.version>2.1.0.BUILD-SNAPSHOT</spring-cloud-netflix.version>
