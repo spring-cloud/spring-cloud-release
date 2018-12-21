@@ -6,11 +6,11 @@
 	<packaging>pom</packaging>
 	<name>Spring Cloud Starter Build</name>
 	<description>Spring Cloud Starter Build</description>
-	<version>Greenwich.BUILD-SNAPSHOT</version>
+	<version>Greenwich.RC2</version>
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-build</artifactId>
-		<version>2.1.0.BUILD-SNAPSHOT</version>
+		<version>2.1.0.RC3</version>
 		<relativePath />
 	</parent>
 
