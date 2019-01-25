@@ -24,7 +24,7 @@
 		<spring-cloud-contract.version>2.1.1.BUILD-SNAPSHOT</spring-cloud-contract.version>
 		<spring-cloud-function.version>2.0.1.BUILD-SNAPSHOT</spring-cloud-function.version>
 		<spring-cloud-gateway.version>2.1.1.BUILD-SNAPSHOT</spring-cloud-gateway.version>
-		<spring-cloud-gcp.version>1.1.1.BUILD-SNAPSHOT</spring-cloud-gcp.version>
+		<spring-cloud-gcp.version>1.1.0.BUILD-SNAPSHOT</spring-cloud-gcp.version>
 		<spring-cloud-kubernetes.version>1.0.1.BUILD-SNAPSHOT</spring-cloud-kubernetes.version>
 		<spring-cloud-netflix.version>2.1.1.BUILD-SNAPSHOT</spring-cloud-netflix.version>
 		<spring-cloud-openfeign.version>2.1.1.BUILD-SNAPSHOT</spring-cloud-openfeign.version>
