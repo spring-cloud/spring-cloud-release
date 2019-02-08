@@ -6,4 +6,4 @@ language: java
 before_install:
   - gem install asciidoctor
 script:
-- ./mvnw clean install -P docs -q -U -Dmaven.test.redirectTestOutputToFile=true
+  - ./mvnw clean install -P docs -q -U -Dmaven.test.redirectTestOutputToFile=true
