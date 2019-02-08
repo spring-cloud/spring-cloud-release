@@ -1,0 +1,5 @@
+#Fri Feb 08 18:08:04 UTC 2019
+configuration*?=56B4748E8C7F0710D6EB13D7594D3AA434CDB380
+module-resource*?\:https\://raw.githubusercontent.com/spring-cloud/spring-cloud-build/master/spring-cloud-build-tools/src/checkstyle/checkstyle-suppressions.xml=9DEA7A1E43E0EFC2FF220CA3032C9A482741BE18
+module-resource*?\:file\:/opt/jenkins/data/workspace/spring-cloud-jdk11-spring-cloud-release-master-ci/docs/target/checkstyle-header.txt=5406B79542A0F0AF68419F6CECE454DED3F9D2BB
+module-resource*?\:/opt/jenkins/data/workspace/spring-cloud-jdk11-spring-cloud-release-master-ci/src/checkstyle/checkstyle-suppressions.xml=35622F2F099E63A93BA37DBA21C51FD635DCA2F2
