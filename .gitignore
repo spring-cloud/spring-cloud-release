@@ -15,3 +15,5 @@ target/
 *.ipr
 *.iws
 .factorypath
+.vscode
+bin/
