@@ -1,6 +1,6 @@
 ==== Adding Project Lombok Agent
 
-Spring Cloud uses http://projectlombok.org/features/index.html[Project Lombok]
+Spring Cloud uses https://projectlombok.org/features/index.html[Project Lombok]
 to generate getters and setters etc. Compiling from the command line this
 shouldn't cause any problems, but in an IDE you need to add an agent
 to the JVM. Full instructions can be found in the Lombok website. The
