@@ -19,7 +19,7 @@
 		<spring-cloud-bus.version>2.1.1.RELEASE</spring-cloud-bus.version>
 		<spring-cloud-cloudfoundry.version>2.1.1.RELEASE</spring-cloud-cloudfoundry.version>
 		<spring-cloud-commons.version>2.1.1.RELEASE</spring-cloud-commons.version>
-		<spring-cloud-config.version>2.1.1.RELEASE</spring-cloud-config.version>
+		<spring-cloud-config.version>2.1.2.RELEASE</spring-cloud-config.version>
 		<spring-cloud-consul.version>2.1.1.RELEASE</spring-cloud-consul.version>
 		<spring-cloud-contract.version>2.1.1.RELEASE</spring-cloud-contract.version>
 		<spring-cloud-function.version>2.0.1.RELEASE</spring-cloud-function.version>
