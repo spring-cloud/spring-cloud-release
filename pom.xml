@@ -15,9 +15,9 @@
 	</parent>
 
 	<scm>
-		<url>https://github.com/spring-cloud/spring-cloud-starters</url>
-		<connection>scm:git:git://github.com/spring-cloud/spring-cloud-starters.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com/spring-cloud/spring-cloud-starters.git</developerConnection>
+		<url>https://github.com/spring-cloud/spring-cloud-release</url>
+		<connection>scm:git:git://github.com/spring-cloud/spring-cloud-release.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/spring-cloud/spring-cloud-release.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
