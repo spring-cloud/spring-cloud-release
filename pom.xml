@@ -28,7 +28,7 @@
 	<modules>
 		<module>spring-cloud-dependencies</module>
 		<module>spring-cloud-starter-parent</module>
-<!--		<module>docs</module>-->
+		<module>docs</module>
 	</modules>
 
 	<build>
