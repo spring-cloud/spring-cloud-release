@@ -20,6 +20,7 @@
 		<spring-cloud-build.version>2.2.0.BUILD-SNAPSHOT</spring-cloud-build.version>
 		<spring-cloud-cloudfoundry.version>2.2.0.BUILD-SNAPSHOT</spring-cloud-cloudfoundry.version>
 		<spring-cloud-commons.version>2.2.0.BUILD-SNAPSHOT</spring-cloud-commons.version>
+		<spring-cloud-circuitbreaker.version>0.0.1.BUILD-SNAPSHOT</spring-cloud-circuitbreaker.version>
 		<spring-cloud-config.version>2.2.0.BUILD-SNAPSHOT</spring-cloud-config.version>
 		<spring-cloud-consul.version>2.2.0.BUILD-SNAPSHOT</spring-cloud-consul.version>
 		<spring-cloud-contract.version>2.2.0.BUILD-SNAPSHOT</spring-cloud-contract.version>
@@ -65,6 +66,13 @@
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-task-dependencies</artifactId>
 				<version>${spring-cloud-task.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-circuitbreaker-dependencies</artifactId>
+				<version>${spring-cloud-circuitbreaker.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
