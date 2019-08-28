@@ -20,7 +20,7 @@
 		<spring-cloud-build.version>2.2.0.BUILD-SNAPSHOT</spring-cloud-build.version>
 		<spring-cloud-cloudfoundry.version>2.2.0.BUILD-SNAPSHOT</spring-cloud-cloudfoundry.version>
 		<spring-cloud-commons.version>2.2.0.BUILD-SNAPSHOT</spring-cloud-commons.version>
-		<spring-cloud-circuitbreaker.version>0.0.1.BUILD-SNAPSHOT</spring-cloud-circuitbreaker.version>
+		<spring-cloud-circuitbreaker.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-circuitbreaker.version>
 		<spring-cloud-config.version>2.2.0.BUILD-SNAPSHOT</spring-cloud-config.version>
 		<spring-cloud-consul.version>2.2.0.BUILD-SNAPSHOT</spring-cloud-consul.version>
 		<spring-cloud-contract.version>2.2.0.BUILD-SNAPSHOT</spring-cloud-contract.version>
