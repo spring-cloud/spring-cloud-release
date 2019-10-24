@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>org.springframework.cloud</groupId>
 	<artifactId>spring-cloud-starter-parent</artifactId>
-	<version>Hoxton.BUILD-SNAPSHOT</version>
+	<version>Hoxton.RC1</version>
 	<name>spring-cloud-starter-parent</name>
 	<description>Spring Cloud Starter Parent</description>
 	<packaging>pom</packaging>
@@ -20,7 +20,7 @@
 	</organization>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
-		<spring-cloud.version>Hoxton.BUILD-SNAPSHOT</spring-cloud.version>
+		<spring-cloud.version>Hoxton.RC1</spring-cloud.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
