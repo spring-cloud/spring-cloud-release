@@ -4,7 +4,7 @@
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
 <title>Spring Cloud Release Train</title>
-<date>2017-08-29</date>
+<date>2019-11-19</date>
 </info>
 <preface>
 <title></title>
@@ -19,20 +19,20 @@ stations ("Angel" is the first release, "Brixton" is the second).</simpara>
 <chapter xml:id="_using_spring_cloud_dependencies_with_spring_io_platform">
 <title>Using Spring Cloud Dependencies with Spring IO Platform</title>
 <simpara>The Spring IO Platform is a modular, enterprise-grade curated set of dependencies. To use the Spring Cloud Starters with Spring IO Platform, you must import the Spring Cloud Dependencies bill of materials (BOM) first.</simpara>
-<simpara>To use version BrusselsSR1 of the Spring IO Platform and Spring Cloud Release Train Edgware.BUILD-SNAPSHOT with Maven, update the pom.xml as follows:</simpara>
+<simpara>To use version Cairo-SR3 of the Spring IO Platform and Spring Cloud Release Train Greenwich.BUILD-SNAPSHOT with Maven, update the pom.xml as follows:</simpara>
 <programlisting language="xml" linenumbering="unnumbered">&lt;dependencyManagement&gt;
     &lt;dependencies&gt;
         &lt;dependency&gt;
             &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
             &lt;artifactId&gt;spring-cloud-dependencies&lt;/artifactId&gt;
-            &lt;version&gt;Edgware.BUILD-SNAPSHOT&lt;/version&gt;
+            &lt;version&gt;Greenwich.BUILD-SNAPSHOT&lt;/version&gt;
             &lt;type&gt;pom&lt;/type&gt;
             &lt;scope&gt;import&lt;/scope&gt;
         &lt;/dependency&gt;
         &lt;dependency&gt;
             &lt;groupId&gt;io.spring.platform&lt;/groupId&gt;
             &lt;artifactId&gt;platform-bom&lt;/artifactId&gt;
-            &lt;version&gt;BrusselsSR1&lt;/version&gt;
+            &lt;version&gt;Cairo-SR3&lt;/version&gt;
             &lt;type&gt;pom&lt;/type&gt;
             &lt;scope&gt;import&lt;/scope&gt;
         &lt;/dependency&gt;
@@ -47,7 +47,7 @@ stations ("Angel" is the first release, "Brixton" is the second).</simpara>
 		mavenCentral()
 	}
 	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.2.RELEASE")
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.6.RELEASE")
 	}
 }
 
@@ -55,8 +55,8 @@ apply plugin: 'spring-boot'
 
 dependencyManagement {
 	imports {
-		mavenBom "org.springframework.cloud:spring-cloud-dependencies:Edgware.BUILD-SNAPSHOT"
-		mavenBom 'io.spring.platform:platform-bom:BrusselsSR1'
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:Greenwich.BUILD-SNAPSHOT"
+		mavenBom 'io.spring.platform:platform-bom:Cairo-SR3'
 	}
 }</programlisting>
 <note>
