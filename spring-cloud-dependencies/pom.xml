@@ -9,7 +9,7 @@
 		<relativePath/>
 	</parent>
 	<artifactId>spring-cloud-dependencies</artifactId>
-	<version>Hoxton.BUILD-SNAPSHOT</version>
+	<version>Ilford.BUILD-SNAPSHOT</version>
 	<name>spring-cloud-dependencies</name>
 	<description>Spring Cloud Dependencies</description>
 	<packaging>pom</packaging>
