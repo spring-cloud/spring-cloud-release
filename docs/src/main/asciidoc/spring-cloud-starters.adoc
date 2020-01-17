@@ -1,65 +1,11 @@
 :github: https://github.com/spring-cloud/spring-cloud-release
 :githubmaster: {github}/tree/master
 :docslink: {githubmaster}/docs/src/main/asciidoc
-:springcloudversion: Greenwich.BUILD-SNAPSHOT
-:springioplatformversion: Cairo-SR3
-:springBootVersion: 2.1.0.M1
+:springcloudversion: Hoxton.SR1
+:springBootVersion: 2.1.13.RELEASE
 
 = Spring Cloud Release Train
 
 include::intro.adoc[]
-
-== Using Spring Cloud Dependencies with Spring IO Platform
-
-The Spring IO Platform is a modular, enterprise-grade curated set of dependencies. To use the Spring Cloud Starters with Spring IO Platform, you must import the Spring Cloud Dependencies bill of materials (BOM) first.
-
-To use version {springioplatformversion} of the Spring IO Platform and Spring Cloud Release Train {springcloudversion} with Maven, update the pom.xml as follows:
-
-[source,xml,indent=0,subs="verbatim,attributes"]
-----
-<dependencyManagement>
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-dependencies</artifactId>
-            <version>{springcloudversion}</version>
-            <type>pom</type>
-            <scope>import</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.spring.platform</groupId>
-            <artifactId>platform-bom</artifactId>
-            <version>{springioplatformversion}</version>
-            <type>pom</type>
-            <scope>import</scope>
-        </dependency>
-    </dependencies>
-</dependencyManagement>
-----
-
-NOTE: The Spring Cloud Dependencies BOM must go first, so that its dependencies have precedence of the Spring IO Platform dependencies.
-
-For gradle, update the build.gradle as follows:
-
-[source,groovy,indent=0,subs="verbatim,attributes"]
-----
-buildscript {
-	repositories {
-		mavenCentral()
-	}
-	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:{springBootVersion}")
-	}
-}
-
-apply plugin: 'spring-boot'
-
-dependencyManagement {
-	imports {
-		mavenBom "org.springframework.cloud:spring-cloud-dependencies:{springcloudversion}"
-		mavenBom 'io.spring.platform:platform-bom:{springioplatformversion}'
-	}
-}
-----
 
 include::https://raw.githubusercontent.com/spring-cloud/spring-cloud-build/master/docs/src/main/asciidoc/contributing-docs.adoc[]
