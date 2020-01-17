@@ -90,15 +90,9 @@ $(addBlockSwitches);
 </script>
 
 </head>
-<body class="book toc2 toc-left">
+<body class="book">
 <div id="header">
 <h1>Spring Cloud Release Train</h1>
-<div id="toc" class="toc2">
-<div id="toctitle">Table of Contents</div>
-<ul class="sectlevel1">
-<li><a href="#_using_spring_cloud_dependencies_with_spring_io_platform">Using Spring Cloud Dependencies with Spring IO Platform</a></li>
-</ul>
-</div>
 </div>
 <div id="content">
 <div id="preamble">
@@ -111,75 +105,6 @@ Gradle. The release trains have names, not versions, to avoid
 confusion with the sub-projects. The names are an alphabetic sequence
 (so you can sort them chronologically) with names of London Tube
 stations ("Angel" is the first release, "Brixton" is the second).</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_using_spring_cloud_dependencies_with_spring_io_platform"><a class="link" href="#_using_spring_cloud_dependencies_with_spring_io_platform">Using Spring Cloud Dependencies with Spring IO Platform</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The Spring IO Platform is a modular, enterprise-grade curated set of dependencies. To use the Spring Cloud Starters with Spring IO Platform, you must import the Spring Cloud Dependencies bill of materials (BOM) first.</p>
-</div>
-<div class="paragraph">
-<p>To use version Cairo-SR3 of the Spring IO Platform and Spring Cloud Release Train Greenwich.BUILD-SNAPSHOT with Maven, update the pom.xml as follows:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependencyManagement&gt;
-    &lt;dependencies&gt;
-        &lt;dependency&gt;
-            &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;
-            &lt;artifactId&gt;spring-cloud-dependencies&lt;/artifactId&gt;
-            &lt;version&gt;Greenwich.BUILD-SNAPSHOT&lt;/version&gt;
-            &lt;type&gt;pom&lt;/type&gt;
-            &lt;scope&gt;import&lt;/scope&gt;
-        &lt;/dependency&gt;
-        &lt;dependency&gt;
-            &lt;groupId&gt;io.spring.platform&lt;/groupId&gt;
-            &lt;artifactId&gt;platform-bom&lt;/artifactId&gt;
-            &lt;version&gt;Cairo-SR3&lt;/version&gt;
-            &lt;type&gt;pom&lt;/type&gt;
-            &lt;scope&gt;import&lt;/scope&gt;
-        &lt;/dependency&gt;
-    &lt;/dependencies&gt;
-&lt;/dependencyManagement&gt;</code></pre>
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-The Spring Cloud Dependencies BOM must go first, so that its dependencies have precedence of the Spring IO Platform dependencies.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>For gradle, update the build.gradle as follows:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">buildscript {
-	repositories {
-		mavenCentral()
-	}
-	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.0.M1")
-	}
-}
-
-apply plugin: 'spring-boot'
-
-dependencyManagement {
-	imports {
-		mavenBom "org.springframework.cloud:spring-cloud-dependencies:Greenwich.BUILD-SNAPSHOT"
-		mavenBom 'io.spring.platform:platform-bom:Cairo-SR3'
-	}
-}</code></pre>
-</div>
 </div>
 <div class="admonitionblock note">
 <table>
