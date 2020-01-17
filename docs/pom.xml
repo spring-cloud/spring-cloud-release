@@ -15,7 +15,7 @@
 	<properties>
 		<docs.main>spring-cloud-starters</docs.main>
 		<main.basedir>${basedir}/..</main.basedir>
-		<docs.whitelisted.branches>Edgware,Finchley,Greenwich</docs.whitelisted.branches>
+		<docs.whitelisted.branches>Greenwich</docs.whitelisted.branches>
 	</properties>
 	<build>
 		<plugins>
