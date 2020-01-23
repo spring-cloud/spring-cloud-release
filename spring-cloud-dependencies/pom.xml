@@ -23,7 +23,7 @@
 		<spring-cloud-config.version>3.0.0.BUILD-SNAPSHOT</spring-cloud-config.version>
 		<spring-cloud-consul.version>3.0.0.BUILD-SNAPSHOT</spring-cloud-consul.version>
 		<spring-cloud-contract.version>3.0.0.BUILD-SNAPSHOT</spring-cloud-contract.version>
-		<spring-cloud-function.version>3.0.2.BUILD-SNAPSHOT`</spring-cloud-function.version>
+		<spring-cloud-function.version>3.0.2.BUILD-SNAPSHOT</spring-cloud-function.version>
 		<spring-cloud-gateway.version>3.0.0.BUILD-SNAPSHOT</spring-cloud-gateway.version>
 		<spring-cloud-kubernetes.version>2.0.0.BUILD-SNAPSHOT</spring-cloud-kubernetes.version>
 		<spring-cloud-netflix.version>3.0.0.BUILD-SNAPSHOT</spring-cloud-netflix.version>
@@ -153,13 +153,6 @@
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-aws-dependencies</artifactId>
-				<version>${spring-cloud-aws.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-openfeign-dependencies</artifactId>
 				<version>${spring-cloud-openfeign.version}</version>
 				<type>pom</type>
@@ -169,13 +162,6 @@
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-kubernetes-dependencies</artifactId>
 				<version>${spring-cloud-kubernetes.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-gcp-dependencies</artifactId>
-				<version>${spring-cloud-gcp.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
