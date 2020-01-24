@@ -47,7 +47,7 @@ stations ("Angel" is the first release, "Brixton" is the second).</simpara>
 		mavenCentral()
 	}
 	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.6.RELEASE")
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.12.RELEASE")
 	}
 }
 
