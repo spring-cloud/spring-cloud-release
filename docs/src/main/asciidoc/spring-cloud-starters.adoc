@@ -3,7 +3,7 @@
 :docslink: {githubmaster}/docs/src/main/asciidoc
 :springcloudversion: Greenwich.BUILD-SNAPSHOT
 :springioplatformversion: Cairo-SR3
-:springBootVersion: 2.1.6.RELEASE
+:springBootVersion: 2.1.12.RELEASE
 
 = Spring Cloud Release Train
 
