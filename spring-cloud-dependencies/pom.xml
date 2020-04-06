@@ -5,17 +5,17 @@
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-dependencies-parent</artifactId>
-		<version>2.2.3.RELEASE</version>
+		<version>3.0.0.M1</version>
 		<relativePath/>
 	</parent>
 	<artifactId>spring-cloud-dependencies</artifactId>
-	<version>HOXTON.SR3</version>
+	<version>2020-1.M1</version>
 	<name>spring-cloud-dependencies</name>
 	<description>Spring Cloud Dependencies</description>
 	<packaging>pom</packaging>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
-		<spring-cloud-function.version>3.0.3.RELEASE</spring-cloud-function.version>
+		<spring-cloud-function.version>3.1.0.M1</spring-cloud-function.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
