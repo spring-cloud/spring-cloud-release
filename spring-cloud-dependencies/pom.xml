@@ -35,7 +35,7 @@
 		<spring-cloud-stream-core.version>3.1.0.BUILD-SNAPSHOT</spring-cloud-stream-core.version>
 		<spring-cloud-stream-binder-rabbit.version>3.1.0.BUILD-SNAPSHOT</spring-cloud-stream-binder-rabbit.version>
 		<spring-cloud-stream-binder-kafka.version>3.1.0.BUILD-SNAPSHOT</spring-cloud-stream-binder-kafka.version>
-		<spring-cloud-task.version>2.3.0.BUILD-SNAPSHOT</spring-cloud-task.version>
+		<spring-cloud-task.version>2.3.0-SNAPSHOT</spring-cloud-task.version>
 		<spring-cloud-vault.version>3.0.0-SNAPSHOT</spring-cloud-vault.version>
 		<spring-cloud-zookeeper.version>3.0.0-SNAPSHOT</spring-cloud-zookeeper.version>
 		<spring-cloud-cli.version>3.0.0-SNAPSHOT</spring-cloud-cli.version>
