@@ -17,7 +17,7 @@
 		<main.basedir>${basedir}/../..</main.basedir>
 		<spring-cloud-aws.version>2.2.3.BUILD-SNAPSHOT</spring-cloud-aws.version>
 		<spring-cloud-bus.version>2.2.3.BUILD-SNAPSHOT</spring-cloud-bus.version>
-		<spring-cloud-build.version>2.3.0.RELEASE</spring-cloud-build.version>
+		<spring-cloud-build.version>2.3.1.BUILD-SNAPSHOT</spring-cloud-build.version>
 		<spring-cloud-cloudfoundry.version>2.2.3.BUILD-SNAPSHOT</spring-cloud-cloudfoundry.version>
 		<spring-cloud-commons.version>2.2.4.BUILD-SNAPSHOT</spring-cloud-commons.version>
 		<spring-cloud-circuitbreaker.version>1.0.4.BUILD-SNAPSHOT</spring-cloud-circuitbreaker.version>
