@@ -1,0 +1,134 @@
+= Spring Cloud
+
+include::_attributes.adoc[]
+include::_spring-cloud-2020-0-attributes.adoc[]
+
+:basedir: {project-root}
+:stream_basedir: {basedir}
+:project-full-name: Spring Cloud
+:project-name: spring-cloud
+
+Spring Cloud provides tools for developers to quickly build some of
+the common patterns in distributed systems (e.g. configuration
+management, service discovery, circuit breakers, intelligent routing,
+micro-proxy, control bus). Coordination of
+distributed systems leads to boiler plate patterns, and using Spring
+Cloud developers can quickly stand up services and applications that
+implement those patterns. They will work well in any distributed
+environment, including the developer's own laptop, bare metal data
+centres, and managed platforms such as Cloud Foundry.
+
+Release Train Version: *{spring-cloud-version}*
+
+Supported Boot Version: *{spring-boot-version}*
+
+== Features
+
+Spring Cloud focuses on providing good out of box experience for typical use cases
+and extensibility mechanism to cover others.
+
+* Distributed/versioned configuration
+* Service registration and discovery
+* Routing
+* Service-to-service calls
+* Load balancing
+* Circuit Breakers
+* Distributed messaging
+
+[[cloud-documentation-versions]]
+== Release Train Versions
+
+.Release Train Project Versions
+|===
+|Project Name| Project Version
+
+include::_spring-cloud-2020-0-versions.adoc[]
+|===
+
+:project-root: {basedir}/commons
+:project-version: {spring-cloud-commons-version}
+include::{basedir}/commons/docs/src/main/asciidoc/spring-cloud-commons.adoc[leveloffset=+1]
+
+:project-root: {basedir}/config
+:project-version: {spring-cloud-config-version}
+include::{basedir}/config/docs/src/main/asciidoc/spring-cloud-config.adoc[leveloffset=+1]
+
+:project-root: {basedir}/netflix
+:project-version: {spring-cloud-netflix-version}
+include::{basedir}/netflix/docs/src/main/asciidoc/spring-cloud-netflix.adoc[leveloffset=+1]
+
+:project-root: {basedir}/openfeign
+:project-version: {spring-cloud-openfeign-version}
+include::{basedir}/openfeign/docs/src/main/asciidoc/spring-cloud-openfeign.adoc[leveloffset=+1]
+
+:project-root: {basedir}/bus
+:project-version: {spring-cloud-bus-version}
+include::{basedir}/bus/docs/src/main/asciidoc/spring-cloud-bus.adoc[leveloffset=+1]
+
+:project-root: {basedir}/sleuth
+:project-version: {spring-cloud-sleuth-version}
+include::{basedir}/sleuth/docs/src/main/asciidoc/spring-cloud-sleuth.adoc[leveloffset=+1]
+
+:project-root: {basedir}/consul
+:project-version: {spring-cloud-consul-version}
+include::{basedir}/consul/docs/src/main/asciidoc/spring-cloud-consul.adoc[leveloffset=+1]
+
+:project-root: {basedir}/zookeeper
+:project-version: {spring-cloud-zookeeper-version}
+include::{basedir}/zookeeper/docs/src/main/asciidoc/spring-cloud-zookeeper.adoc[leveloffset=+1]
+
+:project-root: {basedir}/cli
+:project-version: {spring-cloud-cli-version}
+include::{basedir}/cli/docs/src/main/asciidoc/spring-cloud-cli.adoc[leveloffset=+1]
+
+:project-root: {basedir}/security
+:project-version: {spring-cloud-security-version}
+include::{basedir}/security/docs/src/main/asciidoc/spring-cloud-security.adoc[leveloffset=+1]
+
+:project-root: {basedir}/cloudfoundry
+:project-version: {spring-cloud-cloudfoundry-version}
+include::{basedir}/cloudfoundry/docs/src/main/asciidoc/spring-cloud-cloudfoundry.adoc[leveloffset=+1]
+
+:project-root: {basedir}/contract
+:project-version: {spring-cloud-contract-version}
+include::{basedir}/contract/docs/src/main/asciidoc/_index_single.adoc[leveloffset=+1]
+
+:project-root: {basedir}/vault
+:project-version: {spring-cloud-vault-version}
+include::{basedir}/vault/docs/src/main/asciidoc/spring-cloud-vault.adoc[leveloffset=+1]
+
+:project-root: {basedir}/gateway
+:project-version: {spring-cloud-gateway-version}
+include::{basedir}/gateway/docs/src/main/asciidoc/spring-cloud-gateway.adoc[leveloffset=+1]
+
+:project-root: {basedir}/function
+:project-version: {spring-cloud-function-version}
+include::{basedir}/function/docs/src/main/asciidoc/spring-cloud-function.adoc[leveloffset=+1]
+
+:project-root: {basedir}/kubernetes
+:project-version: {spring-cloud-kubernetes-version}
+include::{basedir}/kubernetes/docs/src/main/asciidoc/spring-cloud-kubernetes.adoc[leveloffset=+1]
+
+:project-root: {basedir}/gcp
+:project-version: {spring-cloud-gcp-version}
+include::{basedir}/gcp/docs/src/main/asciidoc/spring-cloud-gcp.adoc[leveloffset=+1]
+
+:project-root: {basedir}/circuitbreaker
+:project-version: {spring-cloud-circuitbreaker-version}
+include::{basedir}/circuitbreaker/docs/src/main/asciidoc/spring-cloud-circuitbreaker.adoc[leveloffset=+1]
+
+:project-root: {basedir}/stream-core
+:project-version: {spring-cloud-stream-version}
+include::{basedir}/stream-core/docs/src/main/asciidoc/spring-cloud-stream.adoc[leveloffset=+1]
+
+:project-root: {basedir}/stream-binder-rabbit
+:project-version: {spring-cloud-stream-version}
+include::{basedir}/stream-binder-rabbit/docs/src/main/asciidoc/spring-cloud-stream-binder-rabbit.adoc[leveloffset=+1]
+
+:project-root: {basedir}/stream-binder-kafka
+:project-version: {spring-cloud-stream-version}
+include::{basedir}/stream-binder-kafka/docs/src/main/asciidoc/spring-cloud-stream-binder-kafka.adoc[leveloffset=+1]
+
+= Appendix: Compendium of Configuration Properties
+
+include::configprops.adoc[leveloffset=+1]
