@@ -4,7 +4,6 @@ include::_attributes.adoc[]
 include::_spring-cloud-attributes.adoc[]
 
 :basedir: {project-root}
-:stream_basedir: {basedir}
 :project-full-name: Spring Cloud
 :project-name: spring-cloud
 
@@ -45,11 +44,13 @@ and extensibility mechanism to cover others.
 include::_spring-cloud-versions.adoc[]
 |===
 
-{{#each projects}}
-:project-root: {basedir}/{{name}}-docs
-:project-version: { {{name}}-version }
-include::{basedir}/{{name}}-docs/{{name}}.adoc[leveloffset=+1]
-{{/each}}
+{{=<% %>=}}
+<%#each springCloudProjects%>
+:project-root: {unpackedDocsBaseDir}/<%name%>-docs
+:project-version: {<%name%>-version}
+include::{unpackedDocsBaseDir}/<%name%>-docs/<%name%>.adoc[leveloffset=+1]
+<%/each%>
+<%={{ }}=%>
 
 = Appendix: Compendium of Configuration Properties
 

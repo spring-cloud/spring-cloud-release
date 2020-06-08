@@ -18,15 +18,18 @@ package org.springframework.cloud.internal;
 
 import java.util.Objects;
 
-class Project {
+class ConfigurationProperty {
 
 	final String name;
 
-	final String version;
+	final String defaultValue;
 
-	Project(String name, String version) {
+	final String description;
+
+	ConfigurationProperty(String name, String defaultValue, String description) {
 		this.name = name;
-		this.version = version;
+		this.defaultValue = defaultValue;
+		this.description = description;
 	}
 
 	@Override
@@ -37,28 +40,27 @@ class Project {
 		if (o == null || getClass() != o.getClass()) {
 			return false;
 		}
-		Project project = (Project) o;
-		return Objects.equals(name, project.name)
-				&& Objects.equals(version, project.version);
+		ConfigurationProperty that = (ConfigurationProperty) o;
+		return Objects.equals(name, that.name)
+				&& Objects.equals(description, that.description)
+				&& Objects.equals(defaultValue, that.defaultValue);
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(name, version);
+		return Objects.hash(name, description, defaultValue);
 	}
 
 	public String getName() {
 		return name;
 	}
 
-	public String getVersion() {
-		return version;
+	public String getDescription() {
+		return description;
 	}
 
-	@Override
-	public String toString() {
-		return "Project{" + "name='" + this.name + '\'' + ", version='" + this.version
-				+ '\'' + '}';
+	public String getDefaultValue() {
+		return defaultValue;
 	}
 
 }

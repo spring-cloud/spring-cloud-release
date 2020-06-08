@@ -4,7 +4,8 @@ include::_attributes.adoc[]
 include::_spring-cloud-attributes.adoc[]
 
 :basedir: {project-root}
-:stream_basedir: {basedir}
+:project-full-name: Spring Cloud
+:project-name: spring-cloud
 
 Spring Cloud provides tools for developers to quickly build some of
 the common patterns in distributed systems (e.g. configuration
@@ -33,14 +34,24 @@ and extensibility mechanism to cover others.
 * Circuit Breakers
 * Distributed messaging
 
-The reference documentation consists of the following sections:
+[[cloud-documentation-versions]]
+== Release Train Versions
 
-[horizontal]
-<<legal.adoc#legal-information,Legal>> :: Legal information.
-<<documentation-overview.adoc,Documentation Overview>> :: About the Documentation, Getting Help, First Steps, and more.
-include::_spring-cloud-links.adoc[]
+.Release Train Project Versions
+|===
+|Project Name| Project Version
+
+include::_spring-cloud-versions.adoc[]
+|===
+
+{{=<% %>=}}
+<%#each springCloudProjects%>
+:project-root: {unpackedDocsBaseDir}/<%name%>-docs
+:project-version: {<%name%>-version}
+include::{unpackedDocsBaseDir}/<%name%>-docs/<%name%>.adoc[leveloffset=+1]
+<%/each%>
+<%={{ }}=%>
 
 = Appendix: Compendium of Configuration Properties
 
-// need to combine all configprops from all files into a single table
-link:configprops.html[Spring Cloud configuration properties]
+include::configprops.adoc[leveloffset=+1]

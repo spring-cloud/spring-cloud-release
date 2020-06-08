@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2019 the original author or authors.
+ * Copyright 2013-2020 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,46 +20,72 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import com.github.jknack.handlebars.Template;
 
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
+import static org.springframework.cloud.internal.Logger.info;
+
 /**
  * @author Marcin Grzejszczak
  */
 class TemplateGenerator {
 
-	static final File OUTPUT_FOLDER = new File("target/train-docs");
+	final File outputFolder;
 
-	TemplateGenerator() {
-		OUTPUT_FOLDER.mkdirs();
+	TemplateGenerator(File outputFolder) {
+		this.outputFolder = outputFolder;
+		this.outputFolder.mkdirs();
 	}
 
-	File generate(List<Project> projects) {
+	File generate(List<Project> projects,
+			List<ConfigurationProperty> configurationProperties) {
 		PathMatchingResourcePatternResolver resourceLoader = new PathMatchingResourcePatternResolver();
+		List<Project> projectsWithoutDocs = projects.stream()
+				.map(p -> new Project(p.name.replace("-docs", ""), p.version))
+				.collect(Collectors.toList());
 		try {
-			Resource[] resources = resourceLoader.getResources("templates/spring-cloud/*.hbs");
+			Resource[] resources = resourceLoader
+					.getResources("templates/spring-cloud/*.hbs");
 			for (Resource resource : resources) {
 				File templateFile = resource.getFile();
-				File outputFile = new File(OUTPUT_FOLDER, templateFile.getName().replace(".hbs", ".adoc"));
+				File outputFile = new File(outputFolder, renameTemplate(templateFile));
 				Template template = template(templateFile.getName().replace(".hbs", ""));
 				Map<String, Object> map = new HashMap<>();
 				map.put("projects", projects);
-				map.put("properties", new HashMap<>());
+				map.put("projectsWithoutDocs", projectsWithoutDocs);
+				map.put("springCloudProjects",
+						projectsWithoutDocs.stream().filter(
+								project -> project.name.startsWith("spring-cloud-"))
+								.collect(Collectors.toCollection(LinkedList::new)));
+				map.put("properties", configurationProperties);
 				String applied = template.apply(map);
 				Files.write(outputFile.toPath(), applied.getBytes());
+				info("Successfully rendered [" + outputFile.getAbsolutePath() + "]");
 			}
 		}
 		catch (IOException e) {
 			throw new IllegalStateException(e);
 		}
-		return this.OUTPUT_FOLDER;
+		return outputFolder;
 	}
 
+	private String renameTemplate(File templateFile) {
+		String templateName = templateFile.getName();
+		if (templateName.endsWith("-pdf.hbs")) {
+			return templateName.replace("-pdf.hbs", ".pdfadoc");
+		}
+		else if (templateName.endsWith("-single.hbs")) {
+			return templateName.replace("-single.hbs", ".htmlsingleadoc");
+		}
+		return templateName.replace(".hbs", ".adoc");
+	}
 
 	private Template template(String template) {
 		return HandlebarsHelper.template(template);
