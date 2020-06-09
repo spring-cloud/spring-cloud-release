@@ -5,3 +5,17 @@ Gradle. The release trains have names, not versions, to avoid
 confusion with the sub-projects. The names are an alphabetic sequence
 (so you can sort them chronologically) with names of London Tube
 stations ("Angel" is the first release, "Brixton" is the second).
+
+== Generating release train documentation
+
+In order to generate the release train documentation, please update the project with versions for a given release train and then execute the following command:
+
+```bash
+$ ./mvnw clean install -Pdocs,train-docs -pl train-docs
+```
+
+In order to upload the documentation to the documentation server just execute the following command:
+
+```bash
+$ ./mvnw clean deploy -Pdocs,train-docs -pl train-docs
+```
