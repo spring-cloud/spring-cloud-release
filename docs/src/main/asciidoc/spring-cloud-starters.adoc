@@ -1,9 +1,3 @@
-:github: https://github.com/spring-cloud/spring-cloud-release
-:githubmaster: {github}/tree/master
-:docslink: {githubmaster}/docs/src/main/asciidoc
-:springcloudversion: Hoxton.SR1
-:springBootVersion: 2.1.13.RELEASE
-
 = Spring Cloud Release Train
 
 include::intro.adoc[]
