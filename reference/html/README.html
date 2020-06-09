@@ -5,7 +5,7 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.8">
-<title>Contributing</title>
+<title>Generating release train documentation</title>
 <link rel="stylesheet" href="css/spring.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -114,6 +114,7 @@ $(globalSwitch);
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
+<li><a href="#_generating_release_train_documentation">Generating release train documentation</a></li>
 <li><a href="#_contributing">Contributing</a>
 <ul class="sectlevel2">
 <li><a href="#_sign_the_contributor_license_agreement">Sign the Contributor License Agreement</a></li>
@@ -138,6 +139,27 @@ Gradle. The release trains have names, not versions, to avoid
 confusion with the sub-projects. The names are an alphabetic sequence
 (so you can sort them chronologically) with names of London Tube
 stations ("Angel" is the first release, "Brixton" is the second).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_generating_release_train_documentation"><a class="link" href="#_generating_release_train_documentation">Generating release train documentation</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In order to generate the release train documentation, please update the project with versions for a given release train and then execute the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ ./mvnw clean install -Pdocs,train-docs -pl train-docs</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In order to upload the documentation to the documentation server just execute the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ ./mvnw clean deploy -Pdocs,train-docs -pl train-docs</code></pre>
+</div>
 </div>
 </div>
 </div>

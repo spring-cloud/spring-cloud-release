@@ -109,9 +109,15 @@ $(globalSwitch);
 </script>
 
 </head>
-<body class="book">
+<body class="book toc2 toc-left">
 <div id="header">
 <h1>Spring Cloud Release Train</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_generating_release_train_documentation">Generating release train documentation</a></li>
+</ul>
+</div>
 </div>
 <div id="content">
 <div id="preamble">
@@ -125,6 +131,27 @@ confusion with the sub-projects. The names are an alphabetic sequence
 (so you can sort them chronologically) with names of London Tube
 stations ("Angel" is the first release, "Brixton" is the second).</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_generating_release_train_documentation"><a class="link" href="#_generating_release_train_documentation">Generating release train documentation</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In order to generate the release train documentation, please update the project with versions for a given release train and then execute the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ ./mvnw clean install -Pdocs,train-docs -pl train-docs</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In order to upload the documentation to the documentation server just execute the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ ./mvnw clean deploy -Pdocs,train-docs -pl train-docs</code></pre>
+</div>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -132,7 +159,7 @@ stations ("Angel" is the first release, "Brixton" is the second).</p>
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Spring Cloud is released under the non-restrictive Apache 2.0 license. If you would like to contribute to this section of the documentation or if you find an error, please find the source code and issue trackers in the project at <a href="https://github.com/spring-cloud/spring-cloud-release/tree/master/docs/src/main/asciidoc">github</a>.
+Spring Cloud is released under the non-restrictive Apache 2.0 license. If you would like to contribute to this section of the documentation or if you find an error, please find the source code and issue trackers in the project at {docslink}[github].
 </td>
 </tr>
 </table>
