@@ -44,8 +44,8 @@ public class GenerateReleaseTrainDocsTests {
 				"spring-cloud-consul", "spring-cloud-contract", "spring-cloud-function",
 				"spring-cloud-gateway", "spring-cloud-kubernetes", "spring-cloud-netflix",
 				"spring-cloud-openfeign", "spring-cloud-security", "spring-cloud-sleuth",
-				"spring-cloud-stream", "spring-cloud-task", "spring-cloud-vault",
-				"spring-cloud-zookeeper", "spring-cloud-cli");
+				"spring-cloud-task", "spring-cloud-vault", "spring-cloud-zookeeper",
+				"spring-cloud-cli");
 		BDDAssertions.then(projects)
 				.contains(new Project("spring-cloud-bus", "1.2.3-SNAPSHOT"));
 	}

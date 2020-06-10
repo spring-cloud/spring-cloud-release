@@ -68,8 +68,11 @@ public class GenerateReleaseTrainDocs {
 	List<Project> mavenPropertiesToDocsProjects(File file) {
 		Model model = PomReader.readPom(file);
 		Properties properties = model.getProperties();
+		// Due to issues with Stream docs in Hoxton we just remove spring cloud stream
+		// from the docs
 		return properties.entrySet().stream()
-				.filter(e -> e.getKey().toString().endsWith(".version"))
+				.filter(e -> e.getKey().toString().endsWith(".version")
+						&& !e.getKey().toString().contains("spring-cloud-stream"))
 				.map(e -> new Project(e.getKey().toString().replace(".version", ""),
 						e.getValue().toString()))
 				.collect(Collectors.toCollection(LinkedList::new));
