@@ -112,6 +112,7 @@ class ArtifactFetcher {
 		}
 		else {
 			sourcesUrls.add(sourcesUrl + "v" + version + ".zip");
+			sourcesUrls.add(sourcesUrl + version + ".zip");
 		}
 		return sourcesUrls;
 	}
