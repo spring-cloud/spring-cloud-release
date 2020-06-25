@@ -38,16 +38,19 @@ public class GenerateReleaseTrainDocsTests {
 		List<Project> projects = new GenerateReleaseTrainDocs()
 				.mavenPropertiesToDocsProjects(testPom);
 
-		BDDAssertions.then(projects).extracting("name").containsOnly("spring-cloud-bus",
-				"spring-cloud-build", "spring-cloud-cloudfoundry", "spring-cloud-commons",
-				"spring-cloud-circuitbreaker", "spring-cloud-config",
-				"spring-cloud-consul", "spring-cloud-contract", "spring-cloud-function",
-				"spring-cloud-gateway", "spring-cloud-kubernetes", "spring-cloud-netflix",
-				"spring-cloud-openfeign", "spring-cloud-security", "spring-cloud-sleuth",
-				"spring-cloud-task", "spring-cloud-vault", "spring-cloud-zookeeper",
-				"spring-cloud-cli");
+		BDDAssertions.then(projects).extracting("name").containsOnly(
+				"spring-cloud-foo-bus", "spring-cloud-foo-build",
+				"spring-cloud-foo-cloudfoundry", "spring-cloud-foo-commons",
+				"spring-cloud-foo-circuitbreaker", "spring-cloud-foo-config",
+				"spring-cloud-foo-consul", "spring-cloud-foo-contract",
+				"spring-cloud-foo-function", "spring-cloud-foo-gateway",
+				"spring-cloud-foo-kubernetes", "spring-cloud-foo-netflix",
+				"spring-cloud-foo-openfeign", "spring-cloud-foo-security",
+				"spring-cloud-foo-sleuth", "spring-cloud-foo-task",
+				"spring-cloud-foo-vault", "spring-cloud-foo-zookeeper",
+				"spring-cloud-foo-cli");
 		BDDAssertions.then(projects)
-				.contains(new Project("spring-cloud-bus", "1.2.3-SNAPSHOT"));
+				.contains(new Project("spring-cloud-foo-bus", "2.2.3.BUILD-SNAPSHOT"));
 	}
 
 	@Test
@@ -68,8 +71,9 @@ public class GenerateReleaseTrainDocsTests {
 	void should_generate_adocs_from_templates() {
 		File file = new File("target/test-train-docs");
 		FileSystemUtils.deleteRecursively(file);
-		List<Project> projects = Arrays.asList(new Project("spring-cloud-foo", "1.0.0"),
-				new Project("spring-cloud-bar", "2.0.0"),
+		List<Project> projects = Arrays.asList(
+				new Project("spring-cloud-foo-foo", "1.0.0"),
+				new Project("spring-cloud-foo-bar", "2.0.0"),
 				new Project("spring-boot", "3.0.0"),
 				new Project("spring-cloud", "4.0.0"));
 		List<ConfigurationProperty> configurationProperties = Arrays.asList(
