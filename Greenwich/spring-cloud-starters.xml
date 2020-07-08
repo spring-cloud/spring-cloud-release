@@ -4,7 +4,7 @@
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
 <info>
 <title>Spring Cloud Release Train</title>
-<date>2020-01-31</date>
+<date>2020-07-08</date>
 </info>
 <preface>
 <title></title>
@@ -60,7 +60,7 @@ dependencyManagement {
 	}
 }</programlisting>
 <note>
-<simpara>Spring Cloud is released under the non-restrictive Apache 2.0 license. If you would like to contribute to this section of the documentation or if you find an error, please find the source code and issue trackers in the project at <link xl:href="https://github.com/spring-cloud/spring-cloud-release/tree/master/docs/src/main/asciidoc">github</link>.</simpara>
+<simpara>Spring Cloud is released under the non-restrictive Apache 2.0 license. If you would like to contribute to this section of the documentation or if you find an error, please find the source code and issue trackers in the project at {github-project}[github].</simpara>
 </note>
 </chapter>
 </book>
