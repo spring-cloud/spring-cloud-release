@@ -17,7 +17,7 @@
 		<upload-docs-zip.phase>deploy</upload-docs-zip.phase>
 
 		<maven.version>3.6.3</maven.version>
-		<handlebars.version>4.0.6</handlebars.version>
+		<handlebars.version>4.2.0</handlebars.version>
 		<asciidoctorj.version>2.1.0</asciidoctorj.version>
 		<commons-io.version>2.7</commons-io.version>
 	</properties>
