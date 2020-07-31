@@ -8,7 +8,7 @@
 		<artifactId>spring-cloud-starter-build</artifactId>
 		<version>2020.0.0-SNAPSHOT</version>
 	</parent>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 	<name>Spring Cloud Starter Docs</name>
 	<description>Spring Cloud Docs</description>
 	<properties>
