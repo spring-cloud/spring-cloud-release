@@ -50,7 +50,7 @@ public class GenerateReleaseTrainDocsTests {
 				"spring-cloud-foo-vault", "spring-cloud-foo-zookeeper",
 				"spring-cloud-foo-cli");
 		BDDAssertions.then(projects)
-				.contains(new Project("spring-cloud-foo-bus", "2.2.3.BUILD-SNAPSHOT"));
+				.contains(new Project("spring-cloud-foo-bus", "2.2.3.RELEASE"));
 	}
 
 	@Test
