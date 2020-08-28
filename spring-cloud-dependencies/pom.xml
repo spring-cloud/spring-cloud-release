@@ -9,13 +9,13 @@
 		<relativePath/>
 	</parent>
 	<artifactId>spring-cloud-dependencies</artifactId>
-	<version>HOXTON.SR7</version>
+	<version>HOXTON.SR8</version>
 	<name>spring-cloud-dependencies</name>
 	<description>Spring Cloud Dependencies</description>
 	<packaging>pom</packaging>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
-		<spring-cloud-function.version>3.0.9.RELEASE</spring-cloud-function.version>
+		<spring-cloud-function.version>3.0.10.RELEASE</spring-cloud-function.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
