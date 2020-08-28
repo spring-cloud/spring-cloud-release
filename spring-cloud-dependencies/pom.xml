@@ -15,28 +15,28 @@
 	<packaging>pom</packaging>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
-		<spring-cloud-aws.version>2.2.4.BUILD-SNAPSHOT</spring-cloud-aws.version>
-		<spring-cloud-bus.version>2.2.4.BUILD-SNAPSHOT</spring-cloud-bus.version>
+		<spring-cloud-aws.version>2.2.5.BUILD-SNAPSHOT</spring-cloud-aws.version>
+		<spring-cloud-bus.version>2.2.3.RELEASE</spring-cloud-bus.version>
 		<spring-cloud-build.version>2.3.1.RELEASE</spring-cloud-build.version>
-		<spring-cloud-cloudfoundry.version>2.2.4.BUILD-SNAPSHOT</spring-cloud-cloudfoundry.version>
-		<spring-cloud-commons.version>2.2.5.BUILD-SNAPSHOT</spring-cloud-commons.version>
-		<spring-cloud-circuitbreaker.version>1.0.5.BUILD-SNAPSHOT</spring-cloud-circuitbreaker.version>
-		<spring-cloud-config.version>2.2.5.BUILD-SNAPSHOT</spring-cloud-config.version>
-		<spring-cloud-consul.version>2.2.5.BUILD-SNAPSHOT</spring-cloud-consul.version>
-		<spring-cloud-contract.version>2.2.5.BUILD-SNAPSHOT</spring-cloud-contract.version>
-		<spring-cloud-function.version>3.0.9.RELEASE</spring-cloud-function.version>
-		<spring-cloud-gateway.version>2.2.5.BUILD-SNAPSHOT</spring-cloud-gateway.version>
-		<spring-cloud-gcp.version>1.2.5.BUILD-SNAPSHOT</spring-cloud-gcp.version>
-		<spring-cloud-kubernetes.version>1.1.6.BUILD-SNAPSHOT</spring-cloud-kubernetes.version>
-		<spring-cloud-netflix.version>2.2.5.BUILD-SNAPSHOT</spring-cloud-netflix.version>
-		<spring-cloud-openfeign.version>2.2.5.BUILD-SNAPSHOT</spring-cloud-openfeign.version>
-		<spring-cloud-security.version>2.2.5.BUILD-SNAPSHOT</spring-cloud-security.version>
-		<spring-cloud-sleuth.version>2.2.5.BUILD-SNAPSHOT</spring-cloud-sleuth.version>
-		<spring-cloud-stream.version>Horsham.SR7</spring-cloud-stream.version>
+		<spring-cloud-cloudfoundry.version>2.2.3.RELEASE</spring-cloud-cloudfoundry.version>
+		<spring-cloud-commons.version>2.2.6.BUILD-SNAPSHOT</spring-cloud-commons.version>
+		<spring-cloud-circuitbreaker.version>1.0.4.RELEASE</spring-cloud-circuitbreaker.version>
+		<spring-cloud-config.version>2.2.6.BUILD-SNAPSHOT</spring-cloud-config.version>
+		<spring-cloud-consul.version>2.2.4.RELEASE</spring-cloud-consul.version>
+		<spring-cloud-contract.version>2.2.4.RELEASE</spring-cloud-contract.version>
+		<spring-cloud-function.version>3.0.10.RELEASE</spring-cloud-function.version>
+		<spring-cloud-gateway.version>2.2.6.BUILD-SNAPSHOT</spring-cloud-gateway.version>
+		<spring-cloud-gcp.version>1.2.6.BUILD-SNAPSHOT</spring-cloud-gcp.version>
+		<spring-cloud-kubernetes.version>1.1.7.BUILD-SNAPSHOT</spring-cloud-kubernetes.version>
+		<spring-cloud-netflix.version>2.2.6.BUILD-SNAPSHOT</spring-cloud-netflix.version>
+		<spring-cloud-openfeign.version>2.2.6.BUILD-SNAPSHOT</spring-cloud-openfeign.version>
+		<spring-cloud-security.version>2.2.4.RELEASE</spring-cloud-security.version>
+		<spring-cloud-sleuth.version>2.2.6.BUILD-SNAPSHOT</spring-cloud-sleuth.version>
+		<spring-cloud-stream.version>Horsham.SR8</spring-cloud-stream.version>
 		<spring-cloud-task.version>2.2.3.RELEASE</spring-cloud-task.version>
-		<spring-cloud-vault.version>2.2.5.BUILD-SNAPSHOT</spring-cloud-vault.version>
-		<spring-cloud-zookeeper.version>2.2.4.BUILD-SNAPSHOT</spring-cloud-zookeeper.version>
-		<spring-cloud-cli.version>2.2.3.BUILD-SNAPSHOT</spring-cloud-cli.version>
+		<spring-cloud-vault.version>2.2.6.BUILD-SNAPSHOT</spring-cloud-vault.version>
+		<spring-cloud-zookeeper.version>2.2.3.RELEASE</spring-cloud-zookeeper.version>
+		<spring-cloud-cli.version>2.2.2.RELEASE</spring-cloud-cli.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
