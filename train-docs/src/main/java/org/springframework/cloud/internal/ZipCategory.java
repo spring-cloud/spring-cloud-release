@@ -63,8 +63,7 @@ final class ZipCategory {
 		List<File> unzippedFiles = new ArrayList<>();
 		try (InputStream fileInputStream = Files.newInputStream(self.toPath())) {
 			try (ZipInputStream zipInput = new ZipInputStream(fileInputStream)) {
-				for (ZipEntry entry = zipInput
-						.getNextEntry(); entry != null; entry = zipInput.getNextEntry()) {
+				for (ZipEntry entry = zipInput.getNextEntry(); entry != null; entry = zipInput.getNextEntry()) {
 					if (!entry.isDirectory()) {
 						final File file = new File(destination, entry.getName());
 						if (file.getParentFile() != null) {

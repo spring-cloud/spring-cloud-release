@@ -38,8 +38,7 @@ class Project {
 			return false;
 		}
 		Project project = (Project) o;
-		return Objects.equals(name, project.name)
-				&& Objects.equals(version, project.version);
+		return Objects.equals(name, project.name) && Objects.equals(version, project.version);
 	}
 
 	@Override
@@ -57,8 +56,7 @@ class Project {
 
 	@Override
 	public String toString() {
-		return "Project{" + "name='" + this.name + '\'' + ", version='" + this.version
-				+ '\'' + '}';
+		return "Project{" + "name='" + this.name + '\'' + ", version='" + this.version + '\'' + '}';
 	}
 
 }

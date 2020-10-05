@@ -44,8 +44,7 @@ final class PomReader {
 	 */
 	public static Model readPom(File pom) {
 		if (!pom.exists()) {
-			throw new IllegalStateException(
-					"File [" + pom.getAbsolutePath() + "] not found");
+			throw new IllegalStateException("File [" + pom.getAbsolutePath() + "] not found");
 		}
 		String fileText = "";
 		try (Reader reader = new FileReader(pom)) {
@@ -57,11 +56,9 @@ final class PomReader {
 		}
 		catch (XmlPullParserException | IOException e) {
 			if (pom.isFile() && fileText.length() == 0) {
-				throw new IllegalStateException(
-						"File [" + pom.getAbsolutePath() + "] is empty", e);
+				throw new IllegalStateException("File [" + pom.getAbsolutePath() + "] is empty", e);
 			}
-			throw new IllegalStateException(
-					"Failed to read file: " + pom.getAbsolutePath(), e);
+			throw new IllegalStateException("Failed to read file: " + pom.getAbsolutePath(), e);
 		}
 	}
 

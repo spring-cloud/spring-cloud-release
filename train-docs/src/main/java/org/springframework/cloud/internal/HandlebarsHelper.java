@@ -34,8 +34,7 @@ final class HandlebarsHelper {
 
 	public static Template template(String templateName) {
 		try {
-			Handlebars handlebars = new Handlebars(
-					new ClassPathTemplateLoader("/templates/spring-cloud/"));
+			Handlebars handlebars = new Handlebars(new ClassPathTemplateLoader("/templates/spring-cloud/"));
 			handlebars.registerHelper("replace", StringHelpers.replace);
 			handlebars.registerHelper("capitalizeFirst", StringHelpers.capitalizeFirst);
 			return handlebars.compile(templateName);

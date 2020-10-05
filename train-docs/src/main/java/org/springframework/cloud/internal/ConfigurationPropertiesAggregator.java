@@ -28,31 +28,25 @@ import org.springframework.util.StringUtils;
 
 class ConfigurationPropertiesAggregator {
 
-	private static final List<String> wordsToIgnore = Arrays.asList("|===",
-			"|Name | Default | Description");
+	private static final List<String> wordsToIgnore = Arrays.asList("|===", "|Name | Default | Description");
 
 	List<ConfigurationProperty> mergedConfigurationProperties(Path unpackedDocs) {
 		try {
-			return Files.walk(unpackedDocs)
-					.filter(path -> path.endsWith("_configprops.adoc")).flatMap(path -> {
-						try {
-							return Files.readAllLines(path).stream()
-									.filter(s -> !StringUtils.isEmpty(s)
-											&& !wordsToIgnore.contains(s))
-									.map(s -> {
-										// |foo|bar|baz -> foo|bar|baz -> split ->
-										// foo,bar,baz
-										String[] strings = s.substring(1).split("\\|");
-										return new ConfigurationProperty(
-												strings[0].trim(), strings[1].trim(),
-												strings[2].trim());
-									});
-						}
-						catch (IOException e) {
-							throw new IllegalStateException(e);
-						}
-					}).sorted(Comparator.comparing(o -> o.name))
-					.collect(Collectors.toList());
+			return Files.walk(unpackedDocs).filter(path -> path.endsWith("_configprops.adoc")).flatMap(path -> {
+				try {
+					return Files.readAllLines(path).stream()
+							.filter(s -> !StringUtils.isEmpty(s) && !wordsToIgnore.contains(s)).map(s -> {
+								// |foo|bar|baz -> foo|bar|baz -> split ->
+								// foo,bar,baz
+								String[] strings = s.substring(1).split("\\|");
+								return new ConfigurationProperty(strings[0].trim(), strings[1].trim(),
+										strings[2].trim());
+							});
+				}
+				catch (IOException e) {
+					throw new IllegalStateException(e);
+				}
+			}).sorted(Comparator.comparing(o -> o.name)).collect(Collectors.toList());
 		}
 		catch (IOException e) {
 			throw new IllegalStateException(e);

@@ -41,8 +41,7 @@ class ConfigurationProperty {
 			return false;
 		}
 		ConfigurationProperty that = (ConfigurationProperty) o;
-		return Objects.equals(name, that.name)
-				&& Objects.equals(description, that.description)
+		return Objects.equals(name, that.name) && Objects.equals(description, that.description)
 				&& Objects.equals(defaultValue, that.defaultValue);
 	}
 

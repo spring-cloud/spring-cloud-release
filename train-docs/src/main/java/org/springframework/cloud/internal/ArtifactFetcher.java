@@ -53,12 +53,9 @@ class ArtifactFetcher {
 		File outputZip = new File(downloadedZipsFolder, projectName + ".zip");
 		for (String url : urls) {
 			try {
-				info(projectName + ": Fetching sources from [" + url
-						+ "]. Please wait...");
-				FileUtils.copyURLToFile(new URL(url), outputZip, CONNECT_TIMEOUT,
-						READ_TIMEOUT);
-				info(projectName + ": Successfully fetched a zip from [" + url + "] to ["
-						+ outputZip + "]");
+				info(projectName + ": Fetching sources from [" + url + "]. Please wait...");
+				FileUtils.copyURLToFile(new URL(url), outputZip, CONNECT_TIMEOUT, READ_TIMEOUT);
+				info(projectName + ": Successfully fetched a zip from [" + url + "] to [" + outputZip + "]");
 				break;
 			}
 			catch (IOException ex) {
@@ -66,9 +63,8 @@ class ArtifactFetcher {
 			}
 		}
 		if (!outputZip.exists()) {
-			error(projectName
-					+ ": Exception occurred while trying to download an artifact with name ["
-					+ projectName + "] and version [" + version + "]");
+			error(projectName + ": Exception occurred while trying to download an artifact with name [" + projectName
+					+ "] and version [" + version + "]");
 			return null;
 		}
 		return unpackDocs(projectName, outputZip);
@@ -105,8 +101,7 @@ class ArtifactFetcher {
 		if (releaseType == ReleaseType.SNAPSHOT) {
 			// 2.0.0-SNAPSHOT or 2.0.0-BUILD-SNAPSHOT -> 2.0.x
 			String[] splitVersion = version.split("\\.");
-			sourcesUrls
-					.add(sourcesUrl + splitVersion[0] + "." + splitVersion[1] + ".x.zip");
+			sourcesUrls.add(sourcesUrl + splitVersion[0] + "." + splitVersion[1] + ".x.zip");
 			// fallback
 			sourcesUrls.add(sourcesUrl + "master.zip");
 		}

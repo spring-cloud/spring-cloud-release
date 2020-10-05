@@ -42,25 +42,21 @@ public class GenerateReleaseTrainDocs {
 		String repoUrl = args[2];
 		File unzippedDocs = new File(args[3]);
 		File generatedTrainDocs = new File(args[4]);
-		new GenerateReleaseTrainDocs().generate(bomPath, starterParentPath, repoUrl,
-				unzippedDocs, generatedTrainDocs);
+		new GenerateReleaseTrainDocs().generate(bomPath, starterParentPath, repoUrl, unzippedDocs, generatedTrainDocs);
 	}
 
 	GenerateReleaseTrainDocs() {
 		this.service = Executors.newFixedThreadPool(4);
 	}
 
-	void generate(File bomPath, File starterParentPath, String repoUrl, File unzippedDocs,
-			File generatedTrainDocs) {
+	void generate(File bomPath, File starterParentPath, String repoUrl, File unzippedDocs, File generatedTrainDocs) {
 		List<Project> projects = mavenPropertiesToDocsProjects(bomPath);
 		info("Found the following projects [" + projects + "]");
 		List<File> outputFolders = downloadSources(unzippedDocs, projects, repoUrl);
 		projects.add(springBootVersion(starterParentPath));
 		projects.sort(Comparator.comparing(o -> o.name));
-		List<ConfigurationProperty> configurationProperties = mergeConfigurationProperties(
-				unzippedDocs);
-		File file = renderAsciidocTemplates(generatedTrainDocs, projects,
-				configurationProperties);
+		List<ConfigurationProperty> configurationProperties = mergeConfigurationProperties(unzippedDocs);
+		File file = renderAsciidocTemplates(generatedTrainDocs, projects, configurationProperties);
 		info("Rendered docs templates to [" + file + "]");
 		new ResourcesCopier().copy(outputFolders, file);
 	}
@@ -68,10 +64,8 @@ public class GenerateReleaseTrainDocs {
 	List<Project> mavenPropertiesToDocsProjects(File file) {
 		Model model = PomReader.readPom(file);
 		Properties properties = model.getProperties();
-		return properties.entrySet().stream()
-				.filter(e -> e.getKey().toString().endsWith(".version"))
-				.map(e -> new Project(e.getKey().toString().replace(".version", ""),
-						e.getValue().toString()))
+		return properties.entrySet().stream().filter(e -> e.getKey().toString().endsWith(".version"))
+				.map(e -> new Project(e.getKey().toString().replace(".version", ""), e.getValue().toString()))
 				.collect(Collectors.toCollection(LinkedList::new));
 	}
 
@@ -80,8 +74,7 @@ public class GenerateReleaseTrainDocs {
 		return new Project("spring-boot", model.getParent().getVersion());
 	}
 
-	List<File> downloadSources(File outputFolder, List<Project> projects,
-			String repoUrl) {
+	List<File> downloadSources(File outputFolder, List<Project> projects, String repoUrl) {
 		ArtifactFetcher fetcher = new ArtifactFetcher(outputFolder, repoUrl);
 		try {
 			List<Future<File>> futures = new LinkedList<>();

@@ -43,8 +43,7 @@ public class TestThatGeneratesTheFinalReleaseTrainDocumentationTests {
 		String unzippedDocs = System.getProperty("unzippedDocs");
 		String generatedTrainDocs = System.getProperty("generatedTrainDocs");
 
-		GenerateReleaseTrainDocs.main(bomPath, starterParentPath, repoUrl, unzippedDocs,
-				generatedTrainDocs);
+		GenerateReleaseTrainDocs.main(bomPath, starterParentPath, repoUrl, unzippedDocs, generatedTrainDocs);
 
 		BDDAssertions.then(new File(generatedTrainDocs)).isNotEmptyDirectory();
 	}
