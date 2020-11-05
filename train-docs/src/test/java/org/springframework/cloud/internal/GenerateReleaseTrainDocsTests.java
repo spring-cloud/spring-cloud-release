@@ -23,6 +23,7 @@ import java.nio.file.Files;
 import java.util.Arrays;
 import java.util.List;
 
+import org.apache.maven.model.Model;
 import org.assertj.core.api.BDDAssertions;
 import org.junit.jupiter.api.Test;
 
@@ -33,6 +34,8 @@ public class GenerateReleaseTrainDocsTests {
 	@Test
 	void should_return_a_list_of_docs_modules_to_download() throws URISyntaxException {
 		File testPom = new File(GenerateReleaseTrainDocsTests.class.getResource("/test/pom.xml").toURI());
+		Model pom = PomReader.readPom(testPom);
+		String busVersion = pom.getProperties().getProperty("spring-cloud-bus.version");
 
 		List<Project> projects = new GenerateReleaseTrainDocs().mavenPropertiesToDocsProjects(testPom);
 
@@ -42,7 +45,7 @@ public class GenerateReleaseTrainDocsTests {
 				"spring-cloud-gateway", "spring-cloud-kubernetes", "spring-cloud-netflix", "spring-cloud-openfeign",
 				"spring-cloud-security", "spring-cloud-sleuth", "spring-cloud-stream", "spring-cloud-task",
 				"spring-cloud-vault", "spring-cloud-zookeeper", "spring-cloud-cli");
-		BDDAssertions.then(projects).contains(new Project("spring-cloud-bus", "1.2.3-SNAPSHOT"));
+		BDDAssertions.then(projects).contains(new Project("spring-cloud-bus", busVersion));
 	}
 
 	@Test
