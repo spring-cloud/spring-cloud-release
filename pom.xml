@@ -6,7 +6,7 @@
 	<packaging>pom</packaging>
 	<name>Spring Cloud Starter Build</name>
 	<description>Spring Cloud Starter Build</description>
-	<version>Hoxton.BUILD-SNAPSHOT</version>
+	<version>Hoxton.SR9</version>
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-build</artifactId>
