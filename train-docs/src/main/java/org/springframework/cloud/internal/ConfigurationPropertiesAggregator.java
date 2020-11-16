@@ -39,8 +39,14 @@ class ConfigurationPropertiesAggregator {
 								// |foo|bar|baz -> foo|bar|baz -> split ->
 								// foo,bar,baz
 								String[] strings = s.substring(1).split("\\|");
-								return new ConfigurationProperty(strings[0].trim(), strings[1].trim(),
-										strings[2].trim());
+								if (strings.length == 3) {
+									return new ConfigurationProperty(strings[0].trim(), strings[1].trim(),
+											strings[2].trim());
+								}
+								else if (strings.length == 2) {
+									return new ConfigurationProperty(strings[0].trim(), strings[1].trim(), "");
+								}
+								return new ConfigurationProperty(strings[0].trim(), "", "");
 							});
 				}
 				catch (IOException e) {
