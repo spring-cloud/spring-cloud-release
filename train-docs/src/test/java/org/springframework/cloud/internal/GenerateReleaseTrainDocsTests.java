@@ -104,7 +104,7 @@ public class GenerateReleaseTrainDocsTests {
 
 		BDDAssertions.then(generatedAdocs).isNotEmptyDirectory();
 		BDDAssertions.then(configProps(generatedAdocs)).contains(
-				"|spring.sleuth.async.configurer.enabled | true | Enable default AsyncConfigurer.");
+				"|spring.sleuth.async.configurer.enabled | `true` | Enable default AsyncConfigurer.");
 	}
 
 	private String configProps(File file) throws IOException {
