@@ -40,11 +40,12 @@ class ConfigurationPropertiesAggregator {
 								// foo,bar,baz
 								String[] strings = s.substring(1).split("\\|");
 								if (strings.length == 3) {
-									return new ConfigurationProperty(strings[0].trim(), strings[1].trim(),
-											strings[2].trim());
+									return new ConfigurationProperty(strings[0].trim(),
+											strings[1].trim().replace("`", ""), strings[2].trim());
 								}
 								else if (strings.length == 2) {
-									return new ConfigurationProperty(strings[0].trim(), strings[1].trim(), "");
+									return new ConfigurationProperty(strings[0].trim(),
+											strings[1].trim().replace("`", ""), "");
 								}
 								return new ConfigurationProperty(strings[0].trim(), "", "");
 							});
