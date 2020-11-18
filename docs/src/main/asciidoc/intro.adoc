@@ -19,3 +19,5 @@ In order to upload the documentation to the documentation server just execute th
 ```bash
 $ ./mvnw clean deploy -Pdocs,train-docs -pl train-docs
 ```
+
+IMPORTANT: If you're releasing milestones don't forget to add `-Pmilestone` and if GA `-Pcentral`.
