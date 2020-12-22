@@ -40,9 +40,9 @@ public class GenerateReleaseTrainDocsTests {
 				"spring-cloud-foo-cloudfoundry", "spring-cloud-foo-commons", "spring-cloud-foo-circuitbreaker",
 				"spring-cloud-foo-config", "spring-cloud-foo-consul", "spring-cloud-foo-contract",
 				"spring-cloud-foo-function", "spring-cloud-foo-gateway", "spring-cloud-foo-kubernetes",
-				"spring-cloud-foo-netflix", "spring-cloud-foo-openfeign", "spring-cloud-foo-security",
-				"spring-cloud-foo-sleuth", "spring-cloud-foo-task", "spring-cloud-foo-vault",
-				"spring-cloud-foo-zookeeper", "spring-cloud-foo-cli");
+				"spring-cloud-foo-netflix", "spring-cloud-foo-openfeign", "spring-cloud-foo-sleuth",
+				"spring-cloud-foo-task", "spring-cloud-foo-vault", "spring-cloud-foo-zookeeper",
+				"spring-cloud-foo-cli");
 		BDDAssertions.then(projects).contains(new Project("spring-cloud-foo-bus", "2.2.3.RELEASE"));
 	}
 
