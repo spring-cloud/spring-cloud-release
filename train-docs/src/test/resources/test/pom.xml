@@ -28,7 +28,6 @@
 		<spring-cloud-foo-kubernetes.version>1.1.4.RELEASE</spring-cloud-foo-kubernetes.version>
 		<spring-cloud-foo-netflix.version>2.2.4.RELEASE</spring-cloud-foo-netflix.version>
 		<spring-cloud-foo-openfeign.version>2.2.4.RELEASE</spring-cloud-foo-openfeign.version>
-		<spring-cloud-foo-security.version>2.2.3.RELEASE</spring-cloud-foo-security.version>
 		<spring-cloud-foo-sleuth.version>2.2.4.RELEASE</spring-cloud-foo-sleuth.version>
 		<spring-cloud-foo-task.version>2.2.3.RELEASE</spring-cloud-foo-task.version>
 		<spring-cloud-foo-vault.version>2.2.4.RELEASE</spring-cloud-foo-vault.version>
@@ -119,13 +118,6 @@
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-zookeeper-dependencies</artifactId>
 				<version>${spring-cloud-zookeeper.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-security-dependencies</artifactId>
-				<version>${spring-cloud-security.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
