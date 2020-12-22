@@ -9,28 +9,28 @@
 		<relativePath/>
 	</parent>
 	<artifactId>spring-cloud-dependencies</artifactId>
-	<version>2020.0.0-SNAPSHOT</version>
+	<version>2020.0.1-SNAPSHOT</version>
 	<name>spring-cloud-dependencies</name>
 	<description>Spring Cloud Dependencies</description>
 	<packaging>pom</packaging>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
 		<spring-cloud-bus.version>3.0.1-SNAPSHOT</spring-cloud-bus.version>
-		<spring-cloud-build.version>3.0.0</spring-cloud-build.version>
+		<spring-cloud-build.version>3.0.1-SNAPSHOT</spring-cloud-build.version>
 		<spring-cloud-cloudfoundry.version>3.0.1-SNAPSHOT</spring-cloud-cloudfoundry.version>
 		<spring-cloud-commons.version>3.0.1-SNAPSHOT</spring-cloud-commons.version>
 		<spring-cloud-circuitbreaker.version>2.0.1-SNAPSHOT</spring-cloud-circuitbreaker.version>
 		<spring-cloud-config.version>3.0.1-SNAPSHOT</spring-cloud-config.version>
 		<spring-cloud-consul.version>3.0.1-SNAPSHOT</spring-cloud-consul.version>
 		<spring-cloud-contract.version>3.0.1-SNAPSHOT</spring-cloud-contract.version>
-		<spring-cloud-function.version>3.1.0</spring-cloud-function.version>
+		<spring-cloud-function.version>3.1.0-SNAPSHOT</spring-cloud-function.version>
 		<spring-cloud-gateway.version>3.0.1-SNAPSHOT</spring-cloud-gateway.version>
 		<spring-cloud-kubernetes.version>2.0.1-SNAPSHOT</spring-cloud-kubernetes.version>
 		<spring-cloud-netflix.version>3.0.1-SNAPSHOT</spring-cloud-netflix.version>
 		<spring-cloud-openfeign.version>3.0.1-SNAPSHOT</spring-cloud-openfeign.version>
 		<spring-cloud-sleuth.version>3.0.1-SNAPSHOT</spring-cloud-sleuth.version>
-		<spring-cloud-stream.version>3.1.0</spring-cloud-stream.version>
-		<spring-cloud-task.version>2.3.0</spring-cloud-task.version>
+		<spring-cloud-stream.version>3.1.0-SNAPSHOT</spring-cloud-stream.version>
+		<spring-cloud-task.version>2.3.1-SNAPSHOT</spring-cloud-task.version>
 		<spring-cloud-vault.version>3.0.1-SNAPSHOT</spring-cloud-vault.version>
 		<spring-cloud-zookeeper.version>3.0.1-SNAPSHOT</spring-cloud-zookeeper.version>
 		<spring-cloud-cli.version>3.0.1-SNAPSHOT</spring-cloud-cli.version>
