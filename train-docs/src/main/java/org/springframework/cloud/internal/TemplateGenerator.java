@@ -70,10 +70,6 @@ class TemplateGenerator {
 
 	private List<TemplateProject> templateProjects(List<Project> projects) {
 		return projects.stream().filter(project -> project.name.startsWith("spring-cloud-")).map(project -> {
-			if (project.name.contains("spring-cloud-task")) {
-				return new TemplateProject(project.name, project.version, "{basedir}/" + project.name
-						+ "/spring-cloud-task-docs/src/main/asciidoc/index.adoc[leveloffset=+1]");
-			}
 			return new TemplateProject(project.name, project.version,
 					"{basedir}/" + project.name + "/docs/src/main/asciidoc/" + project.name + ".adoc[leveloffset=+1]");
 		}).collect(Collectors.toCollection(LinkedList::new));
