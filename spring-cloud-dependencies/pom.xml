@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-dependencies-parent</artifactId>
-		<version>2.3.3.BUILD-SNAPSHOT</version>
+		<version>2.3.4.RELEASE</version>
 		<relativePath/>
 	</parent>
 	<artifactId>spring-cloud-dependencies</artifactId>
@@ -16,9 +16,9 @@
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
 		<spring-cloud-aws.version>2.2.7.BUILD-SNAPSHOT</spring-cloud-aws.version>
-		<spring-cloud-bus.version>2.2.3.RELEASE</spring-cloud-bus.version>
-		<spring-cloud-build.version>2.3.2.RELEASE</spring-cloud-build.version>
-		<spring-cloud-cloudfoundry.version>2.2.3.RELEASE</spring-cloud-cloudfoundry.version>
+		<spring-cloud-bus.version>2.2.4.BUILD-SNAPSHOT</spring-cloud-bus.version>
+		<spring-cloud-build.version>2.3.4.RELEASE</spring-cloud-build.version>
+		<spring-cloud-cloudfoundry.version>2.2.4.BUILD-SNAPSHOT</spring-cloud-cloudfoundry.version>
 		<spring-cloud-commons.version>2.2.8.BUILD-SNAPSHOT</spring-cloud-commons.version>
 		<spring-cloud-circuitbreaker.version>1.0.4.RELEASE</spring-cloud-circuitbreaker.version>
 		<spring-cloud-config.version>2.2.8.BUILD-SNAPSHOT</spring-cloud-config.version>
@@ -30,12 +30,12 @@
 		<spring-cloud-kubernetes.version>1.1.9.BUILD-SNAPSHOT</spring-cloud-kubernetes.version>
 		<spring-cloud-netflix.version>2.2.8.BUILD-SNAPSHOT</spring-cloud-netflix.version>
 		<spring-cloud-openfeign.version>2.2.8.BUILD-SNAPSHOT</spring-cloud-openfeign.version>
-		<spring-cloud-security.version>2.2.4.RELEASE</spring-cloud-security.version>
+		<spring-cloud-security.version>2.2.5.BUILD-SNAPSHOT</spring-cloud-security.version>
 		<spring-cloud-sleuth.version>2.2.8.BUILD-SNAPSHOT</spring-cloud-sleuth.version>
 		<spring-cloud-stream.version>Horsham.BUILD-SNAPSHOT</spring-cloud-stream.version>
-		<spring-cloud-task.version>2.2.5.RELEASE</spring-cloud-task.version>
+		<spring-cloud-task.version>2.2.6.BUILD-SNAPSHOT</spring-cloud-task.version>
 		<spring-cloud-vault.version>2.2.8.BUILD-SNAPSHOT</spring-cloud-vault.version>
-		<spring-cloud-zookeeper.version>2.2.4.RELEASE</spring-cloud-zookeeper.version>
+		<spring-cloud-zookeeper.version>2.2.5.BUILD-SNAPSHOT</spring-cloud-zookeeper.version>
 		<spring-cloud-cli.version>2.2.5.BUILD-SNAPSHOT</spring-cloud-cli.version>
 	</properties>
 	<dependencyManagement>
