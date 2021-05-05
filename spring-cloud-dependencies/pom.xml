@@ -32,7 +32,7 @@
 		<spring-cloud-openfeign.version>2.2.9.BUILD-SNAPSHOT</spring-cloud-openfeign.version>
 		<spring-cloud-security.version>2.2.6.BUILD-SNAPSHOT</spring-cloud-security.version>
 		<spring-cloud-sleuth.version>2.2.9.BUILD-SNAPSHOT</spring-cloud-sleuth.version>
-		<spring-cloud-stream.version>Horsham.SR12</spring-cloud-stream.version>
+		<spring-cloud-stream.version>Horsham.BUILD-SNAPSHOT</spring-cloud-stream.version>
 		<spring-cloud-task.version>2.2.5.RELEASE</spring-cloud-task.version>
 		<spring-cloud-vault.version>2.2.7.RELEASE</spring-cloud-vault.version>
 		<spring-cloud-zookeeper.version>2.2.6.BUILD-SNAPSHOT</spring-cloud-zookeeper.version>
