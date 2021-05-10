@@ -108,6 +108,7 @@ class ArtifactFetcher {
 			sourcesUrls
 					.add(sourcesUrl + splitVersion[0] + "." + splitVersion[1] + ".x.zip");
 			// fallback
+			sourcesUrls.add(sourcesUrl + "main.zip");
 			sourcesUrls.add(sourcesUrl + "master.zip");
 		}
 		else {
