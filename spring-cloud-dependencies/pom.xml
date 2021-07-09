@@ -15,7 +15,7 @@
 	<packaging>pom</packaging>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
-		<spring-cloud-bus.version>3.0.4-SNAPSHOT</spring-cloud-bus.version>
+		<spring-cloud-bus.version>3.1.0-SNAPSHOT</spring-cloud-bus.version>
 		<spring-cloud-build.version>3.1.0-SNAPSHOT</spring-cloud-build.version>
 		<spring-cloud-cloudfoundry.version>3.0.3-SNAPSHOT</spring-cloud-cloudfoundry.version>
 		<spring-cloud-commons.version>3.1.0-SNAPSHOT</spring-cloud-commons.version>
