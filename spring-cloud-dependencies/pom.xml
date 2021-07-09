@@ -24,7 +24,7 @@
 		<spring-cloud-consul.version>3.0.4-SNAPSHOT</spring-cloud-consul.version>
 		<spring-cloud-contract.version>3.0.4-SNAPSHOT</spring-cloud-contract.version>
 		<spring-cloud-function.version>3.1.4-SNAPSHOT</spring-cloud-function.version>
-		<spring-cloud-gateway.version>3.0.4-SNAPSHOT</spring-cloud-gateway.version>
+		<spring-cloud-gateway.version>3.1.0-SNAPSHOT</spring-cloud-gateway.version>
 		<spring-cloud-kubernetes.version>2.0.4-SNAPSHOT</spring-cloud-kubernetes.version>
 		<spring-cloud-netflix.version>3.1.0-SNAPSHOT</spring-cloud-netflix.version>
 		<spring-cloud-openfeign.version>3.0.4-SNAPSHOT</spring-cloud-openfeign.version>
