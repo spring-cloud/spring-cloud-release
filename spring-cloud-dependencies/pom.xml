@@ -31,7 +31,7 @@
 		<spring-cloud-sleuth.version>3.1.0-SNAPSHOT</spring-cloud-sleuth.version>
 		<spring-cloud-stream.version>3.1.4-SNAPSHOT</spring-cloud-stream.version>
 		<spring-cloud-task.version>2.3.3-SNAPSHOT</spring-cloud-task.version>
-		<spring-cloud-vault.version>3.0.4-SNAPSHOT</spring-cloud-vault.version>
+		<spring-cloud-vault.version>3.1.0-SNAPSHOT</spring-cloud-vault.version>
 		<spring-cloud-zookeeper.version>3.1.0-SNAPSHOT</spring-cloud-zookeeper.version>
 		<spring-cloud-cli.version>3.0.4-SNAPSHOT</spring-cloud-cli.version>
 	</properties>
