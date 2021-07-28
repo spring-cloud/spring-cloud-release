@@ -30,7 +30,7 @@
 		<spring-cloud-openfeign.version>3.1.0-SNAPSHOT</spring-cloud-openfeign.version>
 		<spring-cloud-sleuth.version>3.1.0-SNAPSHOT</spring-cloud-sleuth.version>
 		<spring-cloud-stream.version>3.2.0-SNAPSHOT</spring-cloud-stream.version>
-		<spring-cloud-task.version>2.3.3-SNAPSHOT</spring-cloud-task.version>
+		<spring-cloud-task.version>2.4.0-SNAPSHOT</spring-cloud-task.version>
 		<spring-cloud-vault.version>3.1.0-SNAPSHOT</spring-cloud-vault.version>
 		<spring-cloud-zookeeper.version>3.1.0-SNAPSHOT</spring-cloud-zookeeper.version>
 		<spring-cloud-cli.version>3.1.0-SNAPSHOT</spring-cloud-cli.version>
