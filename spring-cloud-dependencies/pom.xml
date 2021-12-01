@@ -15,7 +15,7 @@
 	<packaging>pom</packaging>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
-		<spring-cloud-function.version>3.2.0</spring-cloud-function.version>
+		<spring-cloud-function.version>3.2.1</spring-cloud-function.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
