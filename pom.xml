@@ -23,7 +23,6 @@
 
 	<properties>
 		<bintray.package>starters</bintray.package>
-		<maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
 	</properties>
 
 	<modules>
