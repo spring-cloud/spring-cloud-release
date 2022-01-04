@@ -29,7 +29,7 @@
 		<spring-cloud-netflix.version>4.0.0-SNAPSHOT</spring-cloud-netflix.version>
 		<spring-cloud-openfeign.version>4.0.0-SNAPSHOT</spring-cloud-openfeign.version>
 		<spring-cloud-sleuth.version>4.0.0-SNAPSHOT</spring-cloud-sleuth.version>
-		<spring-cloud-stream.version>3.2.1-SNAPSHOT</spring-cloud-stream.version>
+		<spring-cloud-stream.version>4.0.0-SNAPSHOT</spring-cloud-stream.version>
 		<spring-cloud-task.version>3.0.0-SNAPSHOT</spring-cloud-task.version>
 		<spring-cloud-vault.version>4.0.0-SNAPSHOT</spring-cloud-vault.version>
 		<spring-cloud-zookeeper.version>4.0.0-SNAPSHOT</spring-cloud-zookeeper.version>
@@ -49,13 +49,6 @@
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-netflix-dependencies</artifactId>
 				<version>${spring-cloud-netflix.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-stream</artifactId>
-				<version>4.0.0-SNAPSHOT</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
