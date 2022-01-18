@@ -15,7 +15,7 @@
 	<packaging>pom</packaging>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
-		<spring-cloud-sleuth.version>3.0.0-SNAPSHOT</spring-cloud-sleuth.version>
+		<spring-cloud-commons.version>3.0.0-SNAPSHOT</spring-cloud-commons.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -85,13 +85,6 @@
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-sleuth-dependencies</artifactId>
-				<version>${spring-cloud-sleuth.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-vault-dependencies</artifactId>
 				<version>${spring-cloud-vault.version}</version>
 				<type>pom</type>
@@ -101,13 +94,6 @@
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-zookeeper-dependencies</artifactId>
 				<version>${spring-cloud-zookeeper.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-cloudfoundry-dependencies</artifactId>
-				<version>${spring-cloud-cloudfoundry.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>

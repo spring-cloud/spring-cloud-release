@@ -17,7 +17,6 @@
 		<main.basedir>${basedir}/../..</main.basedir>
 		<spring-cloud-foo-bus.version>2.2.3.RELEASE</spring-cloud-foo-bus.version>
 		<spring-cloud-foo-build.version>2.3.1.RELEASE</spring-cloud-foo-build.version>
-		<spring-cloud-foo-cloudfoundry.version>2.2.3.RELEASE</spring-cloud-foo-cloudfoundry.version>
 		<spring-cloud-foo-commons.version>2.2.4.RELEASE</spring-cloud-foo-commons.version>
 		<spring-cloud-foo-circuitbreaker.version>1.0.4.RELEASE</spring-cloud-foo-circuitbreaker.version>
 		<spring-cloud-foo-config.version>2.2.4.RELEASE</spring-cloud-foo-config.version>
@@ -28,11 +27,9 @@
 		<spring-cloud-foo-kubernetes.version>1.1.4.RELEASE</spring-cloud-foo-kubernetes.version>
 		<spring-cloud-foo-netflix.version>2.2.4.RELEASE</spring-cloud-foo-netflix.version>
 		<spring-cloud-foo-openfeign.version>2.2.4.RELEASE</spring-cloud-foo-openfeign.version>
-		<spring-cloud-foo-sleuth.version>2.2.4.RELEASE</spring-cloud-foo-sleuth.version>
 		<spring-cloud-foo-task.version>2.2.3.RELEASE</spring-cloud-foo-task.version>
 		<spring-cloud-foo-vault.version>2.2.4.RELEASE</spring-cloud-foo-vault.version>
 		<spring-cloud-foo-zookeeper.version>2.2.3.RELEASE</spring-cloud-foo-zookeeper.version>
-		<spring-cloud-foo-cli.version>2.2.1.RELEASE</spring-cloud-foo-cli.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -102,13 +99,6 @@
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-sleuth-dependencies</artifactId>
-				<version>${spring-cloud-sleuth.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-vault-dependencies</artifactId>
 				<version>${spring-cloud-vault.version}</version>
 				<type>pom</type>
@@ -118,13 +108,6 @@
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-zookeeper-dependencies</artifactId>
 				<version>${spring-cloud-zookeeper.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-cloudfoundry-dependencies</artifactId>
-				<version>${spring-cloud-cloudfoundry.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>

@@ -37,18 +37,17 @@ public class GenerateReleaseTrainDocsTests {
 		List<Project> projects = new GenerateReleaseTrainDocs().mavenPropertiesToDocsProjects(testPom);
 
 		BDDAssertions.then(projects).extracting("name").containsOnly("spring-cloud-foo-bus", "spring-cloud-foo-build",
-				"spring-cloud-foo-cloudfoundry", "spring-cloud-foo-commons", "spring-cloud-foo-circuitbreaker",
+				"spring-cloud-foo-commons", "spring-cloud-foo-circuitbreaker",
 				"spring-cloud-foo-config", "spring-cloud-foo-consul", "spring-cloud-foo-contract",
 				"spring-cloud-foo-function", "spring-cloud-foo-gateway", "spring-cloud-foo-kubernetes",
-				"spring-cloud-foo-netflix", "spring-cloud-foo-openfeign", "spring-cloud-foo-sleuth",
-				"spring-cloud-foo-task", "spring-cloud-foo-vault", "spring-cloud-foo-zookeeper",
-				"spring-cloud-foo-cli");
+				"spring-cloud-foo-netflix", "spring-cloud-foo-openfeign",
+				"spring-cloud-foo-task", "spring-cloud-foo-vault", "spring-cloud-foo-zookeeper");
 		BDDAssertions.then(projects).contains(new Project("spring-cloud-foo-bus", "2.2.3.RELEASE"));
 	}
 
 	@Test
 	void should_unpack_starters_docs() throws URISyntaxException {
-		File testPom = new File(GenerateReleaseTrainDocsTests.class.getResource("/test/sleuth-only.xml").toURI());
+		File testPom = new File(GenerateReleaseTrainDocsTests.class.getResource("/test/commons-only.xml").toURI());
 		File unzippedDocs = new File("target/test-unpacked-docs/");
 		List<Project> projects = new GenerateReleaseTrainDocs().mavenPropertiesToDocsProjects(testPom);
 
@@ -74,19 +73,19 @@ public class GenerateReleaseTrainDocsTests {
 	}
 
 	@Test
-	void should_generate_adocs_from_spring_cloud_sleuth_docs() throws URISyntaxException, IOException {
-		File generatedAdocs = new File("target/test-train-sleuth-docs");
+	void should_generate_adocs_from_spring_cloud_commons_docs() throws URISyntaxException, IOException {
+		File generatedAdocs = new File("target/test-train-commons-docs");
 		FileSystemUtils.deleteRecursively(generatedAdocs);
-		File testPom = new File(GenerateReleaseTrainDocsTests.class.getResource("/test/sleuth-only.xml").toURI());
+		File testPom = new File(GenerateReleaseTrainDocsTests.class.getResource("/test/commons-only.xml").toURI());
 		File starterPom = new File(GenerateReleaseTrainDocsTests.class.getResource("/test/starter-pom.xml").toURI());
-		File unzippedDocs = new File("target/test-unpacked-sleuth-docs/");
+		File unzippedDocs = new File("target/test-unpacked-commons-docs/");
 
 		GenerateReleaseTrainDocs.main(testPom.getAbsolutePath(), starterPom.getAbsolutePath(),
 				"https://github.com/spring-cloud/", unzippedDocs.getAbsolutePath(), generatedAdocs.getAbsolutePath());
 
 		BDDAssertions.then(generatedAdocs).isNotEmptyDirectory();
 		BDDAssertions.then(configProps(generatedAdocs))
-				.contains("|spring.sleuth.async.configurer.enabled | `true` | Enable default AsyncConfigurer.");
+				.contains("|spring.cloud.compatibility-verifier.enabled | `false` | Enables creation of Spring Cloud compatibility verification.");
 	}
 
 	private String configProps(File file) throws IOException {
