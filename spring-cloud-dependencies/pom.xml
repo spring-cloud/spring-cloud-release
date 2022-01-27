@@ -21,7 +21,7 @@
 		<spring-cloud-circuitbreaker.version>3.0.0-SNAPSHOT</spring-cloud-circuitbreaker.version>
 		<spring-cloud-config.version>4.0.0-SNAPSHOT</spring-cloud-config.version>
 		<spring-cloud-consul.version>4.0.0-SNAPSHOT</spring-cloud-consul.version>
-		<spring-cloud-contract.version>4.0.0-SNAPSHOT</spring-cloud-contract.version>
+		<!--<spring-cloud-contract.version>4.0.0-SNAPSHOT</spring-cloud-contract.version>-->
 		<spring-cloud-function.version>4.0.0-SNAPSHOT</spring-cloud-function.version>
 		<spring-cloud-gateway.version>4.0.0-SNAPSHOT</spring-cloud-gateway.version>
 		<spring-cloud-kubernetes.version>3.0.0-SNAPSHOT</spring-cloud-kubernetes.version>
@@ -119,13 +119,13 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-			<dependency>
+			<!--<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-contract-dependencies</artifactId>
 				<version>${spring-cloud-contract.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
-			</dependency>
+			</dependency>-->
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-openfeign-dependencies</artifactId>
