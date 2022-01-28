@@ -16,4 +16,3 @@ target/
 *.iws
 .factorypath
 .flattened-pom.xml
-.sdkmanrc
