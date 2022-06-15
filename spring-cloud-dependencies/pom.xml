@@ -5,32 +5,32 @@
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-dependencies-parent</artifactId>
-		<version>4.0.0-SNAPSHOT</version>
+		<version>4.0.0-M3</version>
 		<relativePath/>
 	</parent>
 	<artifactId>spring-cloud-dependencies</artifactId>
-	<version>2022.0.0-SNAPSHOT</version>
+	<version>2022.0.0-M3</version>
 	<name>spring-cloud-dependencies</name>
 	<description>Spring Cloud Dependencies</description>
 	<packaging>pom</packaging>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
-		<spring-cloud-bus.version>4.0.0-SNAPSHOT</spring-cloud-bus.version>
-		<spring-cloud-build.version>4.0.0-SNAPSHOT</spring-cloud-build.version>
-		<spring-cloud-commons.version>4.0.0-SNAPSHOT</spring-cloud-commons.version>
-		<spring-cloud-circuitbreaker.version>3.0.0-SNAPSHOT</spring-cloud-circuitbreaker.version>
-		<spring-cloud-config.version>4.0.0-SNAPSHOT</spring-cloud-config.version>
-		<spring-cloud-consul.version>4.0.0-SNAPSHOT</spring-cloud-consul.version>
-		<spring-cloud-contract.version>4.0.0-SNAPSHOT</spring-cloud-contract.version>
-		<spring-cloud-function.version>4.0.0-SNAPSHOT</spring-cloud-function.version>
-		<spring-cloud-gateway.version>4.0.0-SNAPSHOT</spring-cloud-gateway.version>
-		<spring-cloud-kubernetes.version>3.0.0-SNAPSHOT</spring-cloud-kubernetes.version>
+		<spring-cloud-bus.version>4.0.0-M3</spring-cloud-bus.version>
+		<spring-cloud-build.version>4.0.0-M3</spring-cloud-build.version>
+		<spring-cloud-commons.version>4.0.0-M3</spring-cloud-commons.version>
+		<spring-cloud-circuitbreaker.version>3.0.0-M3</spring-cloud-circuitbreaker.version>
+		<spring-cloud-config.version>4.0.0-M3</spring-cloud-config.version>
+		<spring-cloud-consul.version>4.0.0-M3</spring-cloud-consul.version>
+		<spring-cloud-contract.version>4.0.0-M3</spring-cloud-contract.version>
+		<spring-cloud-function.version>4.0.0-M3</spring-cloud-function.version>
+		<spring-cloud-gateway.version>4.0.0-M3</spring-cloud-gateway.version>
+		<spring-cloud-kubernetes.version>3.0.0-M3</spring-cloud-kubernetes.version>
 		<!--<spring-cloud-netflix.version>4.0.0-SNAPSHOT</spring-cloud-netflix.version>-->
-		<spring-cloud-openfeign.version>4.0.0-SNAPSHOT</spring-cloud-openfeign.version>
-		<spring-cloud-stream.version>4.0.0-SNAPSHOT</spring-cloud-stream.version>
-		<spring-cloud-task.version>3.0.0-SNAPSHOT</spring-cloud-task.version>
-		<spring-cloud-vault.version>4.0.0-SNAPSHOT</spring-cloud-vault.version>
-		<spring-cloud-zookeeper.version>4.0.0-SNAPSHOT</spring-cloud-zookeeper.version>
+		<spring-cloud-openfeign.version>4.0.0-M3</spring-cloud-openfeign.version>
+		<spring-cloud-stream.version>4.0.0-M3</spring-cloud-stream.version>
+		<spring-cloud-task.version>3.0.0-M3</spring-cloud-task.version>
+		<spring-cloud-vault.version>4.0.0-M3</spring-cloud-vault.version>
+		<spring-cloud-zookeeper.version>4.0.0-M3</spring-cloud-zookeeper.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
