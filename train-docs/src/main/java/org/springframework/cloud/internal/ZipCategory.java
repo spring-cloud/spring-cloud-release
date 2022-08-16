@@ -25,6 +25,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.zip.ZipEntry;
+import java.util.zip.ZipException;
 import java.util.zip.ZipInputStream;
 
 import org.springframework.util.StreamUtils;
@@ -53,7 +54,7 @@ final class ZipCategory {
 	 * will be unzipped to.
 	 * @return a {@link Collection} of unzipped {@link File} objects.
 	 */
-	static Collection<File> unzipTo(File self, File destination) {
+	public static Collection<File> unzipTo(File self, File destination) {
 		checkUnzipDestination(destination);
 		// if destination directory is not given, we'll fall back to the parent directory
 		// of 'self'
@@ -65,14 +66,23 @@ final class ZipCategory {
 			try (ZipInputStream zipInput = new ZipInputStream(fileInputStream)) {
 				for (ZipEntry entry = zipInput.getNextEntry(); entry != null; entry = zipInput.getNextEntry()) {
 					if (!entry.isDirectory()) {
-						final File file = new File(destination, entry.getName());
-						if (file.getParentFile() != null) {
-							file.getParentFile().mkdirs();
+						final File destinationFile = new File(destination, entry.getName());
+						/*
+						 * If we see the relative traversal string of ".." we need to make sure
+						 * that the outputdir + name doesn't leave the outputdir.
+						 */
+						String zipEntryName = entry.getName();
+						if (!destinationFile.toPath().normalize().startsWith(destination.toPath())) {
+							throw new ZipException("The file " + zipEntryName +
+									" is trying to leave the target output directory of " + destination);
 						}
-						try (OutputStream output = Files.newOutputStream(file.toPath())) {
+						if (destinationFile.getParentFile() != null) {
+							destinationFile.getParentFile().mkdirs();
+						}
+						try (OutputStream output = Files.newOutputStream(destinationFile.toPath())) {
 							StreamUtils.copy(zipInput, output);
 						}
-						unzippedFiles.add(file);
+						unzippedFiles.add(destinationFile);
 					}
 					else {
 						final File dir = new File(destination, entry.getName());
