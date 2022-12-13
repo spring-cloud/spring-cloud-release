@@ -12,6 +12,7 @@
 	<version>2022.0.0-SNAPSHOT</version>
 	<name>spring-cloud-dependencies</name>
 	<description>Spring Cloud Dependencies</description>
+	<url>https://spring.io/projects/spring-cloud</url>
 	<packaging>pom</packaging>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
@@ -32,6 +33,28 @@
 		<spring-cloud-vault.version>4.0.0-SNAPSHOT</spring-cloud-vault.version>
 		<spring-cloud-zookeeper.version>4.0.0-SNAPSHOT</spring-cloud-zookeeper.version>
 	</properties>
+	<scm>
+		<connection>scm:git:git://github.com/spring-cloud/spring-cloud-release.git/spring-cloud-dependencies</connection>
+		<developerConnection>scm:git:ssh://git@github.com/spring-cloud/spring-cloud-release.git/spring-cloud-dependencies</developerConnection>
+		<url>https://github.com/spring-cloud/spring-cloud-release/spring-cloud-dependencies</url>
+	</scm>
+	<distributionManagement>
+		<repository>
+			<id>repo.spring.io</id>
+			<name>Spring Release Repository</name>
+			<url>https://repo.spring.io/libs-release-local</url>
+		</repository>
+		<snapshotRepository>
+			<id>repo.spring.io</id>
+			<name>Spring Snapshot Repository</name>
+			<url>https://repo.spring.io/libs-snapshot-local</url>
+		</snapshotRepository>
+		<site>
+			<id>spring-docs</id>
+			<url>https://docs.spring.io/spring-cloud/docs/${pom.version}/reference/html/</url>
+		</site>
+		<downloadUrl>https://github.com/spring-cloud/spring-cloud-release</downloadUrl>
+	</distributionManagement>
 	<dependencyManagement>
 		<dependencies>
 			<!-- bom dependencies at the bottom so they can be overridden above -->
