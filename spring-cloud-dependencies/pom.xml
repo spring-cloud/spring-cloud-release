@@ -39,16 +39,6 @@
 		<url>https://github.com/spring-cloud/spring-cloud-release/spring-cloud-dependencies</url>
 	</scm>
 	<distributionManagement>
-		<repository>
-			<id>repo.spring.io</id>
-			<name>Spring Release Repository</name>
-			<url>https://repo.spring.io/libs-release-local</url>
-		</repository>
-		<snapshotRepository>
-			<id>repo.spring.io</id>
-			<name>Spring Snapshot Repository</name>
-			<url>https://repo.spring.io/libs-snapshot-local</url>
-		</snapshotRepository>
 		<site>
 			<id>spring-docs</id>
 			<url>https://docs.spring.io/spring-cloud/docs/${pom.version}/reference/html/</url>
