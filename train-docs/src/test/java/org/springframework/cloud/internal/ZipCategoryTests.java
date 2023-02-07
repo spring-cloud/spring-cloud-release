@@ -34,25 +34,26 @@ class ZipCategoryTests {
 		// when:
 		ZipCategory.unzipTo(zipFile, tempDir);
 		// then:
-		BDDAssertions.then(tempDir.listFiles())
-				.hasOnlyOneElementSatisfying(file -> {
-					BDDAssertions.then(file).hasName("file.txt")
-							.hasContent("test");
-				});
+		BDDAssertions.then(tempDir.listFiles()).hasOnlyOneElementSatisfying(file -> {
+			BDDAssertions.then(file).hasName("file.txt").hasContent("test");
+		});
 	}
 
 	@Test
 	void should_not_allow_malicious_traversal() throws Exception {
 		// given:
-		File zipFile = new File(ZipCategoryTests.class.getClassLoader().getResource("zip/zip-malicious-traversal.zip").toURI());
+		File zipFile = new File(
+				ZipCategoryTests.class.getClassLoader().getResource("zip/zip-malicious-traversal.zip").toURI());
 		File tempDir = Files.createTempDirectory("foo").toFile();
 		tempDir.deleteOnExit();
 		// when:
 		try {
 			ZipCategory.unzipTo(zipFile, tempDir);
 			Assertions.fail("Should throw exception");
-		} catch (Exception e) {
-				BDDAssertions.then(e.getCause()).hasMessageContaining("is trying to leave the target output directory");
+		}
+		catch (Exception e) {
+			BDDAssertions.then(e.getCause()).hasMessageContaining("is trying to leave the target output directory");
 		}
 	}
+
 }

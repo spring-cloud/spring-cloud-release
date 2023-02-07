@@ -20,6 +20,8 @@
 		<handlebars.version>4.3.0</handlebars.version>
 		<asciidoctorj.version>2.5.3</asciidoctorj.version>
 		<commons-io.version>2.11.0</commons-io.version>
+
+		<maven-gpg-plugin.phase>none</maven-gpg-plugin.phase>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -115,10 +117,9 @@
 					</plugin>
 					<plugin>
 						<artifactId>maven-deploy-plugin</artifactId>
-					</plugin>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-gpg-plugin</artifactId>
+						<goals>
+							<goal>deploy-file</goal>
+						</goals>
 					</plugin>
 				</plugins>
 			</build>

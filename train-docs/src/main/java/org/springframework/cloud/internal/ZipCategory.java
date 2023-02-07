@@ -68,13 +68,13 @@ final class ZipCategory {
 					if (!entry.isDirectory()) {
 						final File destinationFile = new File(destination, entry.getName());
 						/*
-						 * If we see the relative traversal string of ".." we need to make sure
-						 * that the outputdir + name doesn't leave the outputdir.
+						 * If we see the relative traversal string of ".." we need to make
+						 * sure that the outputdir + name doesn't leave the outputdir.
 						 */
 						String zipEntryName = entry.getName();
 						if (!destinationFile.toPath().normalize().startsWith(destination.toPath())) {
-							throw new ZipException("The file " + zipEntryName +
-									" is trying to leave the target output directory of " + destination);
+							throw new ZipException("The file " + zipEntryName
+									+ " is trying to leave the target output directory of " + destination);
 						}
 						if (destinationFile.getParentFile() != null) {
 							destinationFile.getParentFile().mkdirs();
