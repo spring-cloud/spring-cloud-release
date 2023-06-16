@@ -110,6 +110,7 @@
 							<sourceDirectory>${project.build.directory}/train-docs/</sourceDirectory>
 							<attributes>
 								<basedir>${project.build.directory}/unpacked-docs</basedir>
+								<releaseTrain>true</releaseTrain>
 							</attributes>
 						</configuration>
 					</plugin>
