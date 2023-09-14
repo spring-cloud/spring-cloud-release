@@ -108,13 +108,6 @@
 				<module>spring-cloud-dependencies</module>
 				<module>spring-cloud-starter-parent</module>
 				<module>docs</module>
-				<module>train-docs</module>
-			</modules>
-		</profile>
-		<profile>
-			<id>train-docs</id>
-			<modules>
-				<module>train-docs</module>
 			</modules>
 		</profile>
 		<profile>

@@ -16,3 +16,10 @@ target/
 *.iws
 .factorypath
 .flattened-pom.xml
+*.log
+
+node
+node_modules
+build
+package.json
+package-lock.json

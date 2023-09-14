@@ -41,7 +41,7 @@
 	<distributionManagement>
 		<site>
 			<id>spring-docs</id>
-			<url>https://docs.spring.io/spring-cloud/docs/${pom.version}/reference/html/</url>
+			<url>https://docs.spring.io/spring-cloud-release/reference/</url>
 		</site>
 		<downloadUrl>https://github.com/spring-cloud/spring-cloud-release</downloadUrl>
 	</distributionManagement>
