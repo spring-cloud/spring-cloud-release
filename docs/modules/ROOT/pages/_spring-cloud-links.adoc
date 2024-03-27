@@ -4,7 +4,7 @@
  https://docs.spring.io/spring-cloud-commons/reference/4.1-SNAPSHOT/[spring-cloud-commons] :: Reference Documentation, version 4.1.2-SNAPSHOT
  https://docs.spring.io/spring-cloud-config/reference/4.1-SNAPSHOT/[spring-cloud-config] :: Reference Documentation, version 4.1.1-SNAPSHOT
  https://docs.spring.io/spring-cloud-consul/reference/4.1-SNAPSHOT/[spring-cloud-consul] :: Reference Documentation, version 4.1.1-SNAPSHOT
- https://docs.spring.io/spring-cloud-contract/reference/4.1-SNAPSHOT/[spring-cloud-contract] :: Reference Documentation, version 4.1.1-SNAPSHOT
+ https://docs.spring.io/spring-cloud-contract/reference/4.1-SNAPSHOT/[spring-cloud-contract] :: Reference Documentation, version 4.1.2-SNAPSHOT
  https://docs.spring.io/spring-cloud-function/reference/4.1-SNAPSHOT/[spring-cloud-function] :: Reference Documentation, version 4.1.1-SNAPSHOT
  https://docs.spring.io/spring-cloud-gateway/reference/4.1-SNAPSHOT/[spring-cloud-gateway] :: Reference Documentation, version 4.1.2-SNAPSHOT
  https://docs.spring.io/spring-cloud-kubernetes/reference/3.1-SNAPSHOT/[spring-cloud-kubernetes] :: Reference Documentation, version 3.1.1-SNAPSHOT
