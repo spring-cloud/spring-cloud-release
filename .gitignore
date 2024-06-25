@@ -23,6 +23,6 @@ _configprops.adoc
 _spans.adoc
 _metrics.adoc
 _conventions.adoc
-package.json
+docs/package.json
 package-lock.json
 .flattened-pom.xml
