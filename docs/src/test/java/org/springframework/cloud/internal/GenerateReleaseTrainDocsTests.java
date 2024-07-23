@@ -34,12 +34,13 @@ public class GenerateReleaseTrainDocsTests {
 
 		List<Project> projects = new GenerateReleaseTrainDocs().mavenPropertiesToDocsProjects(testPom);
 
-		BDDAssertions.then(projects).extracting("name").containsOnly("spring-cloud-foo-bus", "spring-cloud-foo-build",
-				"spring-cloud-foo-commons", "spring-cloud-foo-circuitbreaker", "spring-cloud-foo-config",
-				"spring-cloud-foo-consul", "spring-cloud-foo-contract", "spring-cloud-foo-function",
-				"spring-cloud-foo-gateway", "spring-cloud-foo-kubernetes", "spring-cloud-foo-netflix",
-				"spring-cloud-foo-openfeign", "spring-cloud-foo-task", "spring-cloud-foo-vault",
-				"spring-cloud-foo-zookeeper");
+		BDDAssertions.then(projects)
+			.extracting("name")
+			.containsOnly("spring-cloud-foo-bus", "spring-cloud-foo-build", "spring-cloud-foo-commons",
+					"spring-cloud-foo-circuitbreaker", "spring-cloud-foo-config", "spring-cloud-foo-consul",
+					"spring-cloud-foo-contract", "spring-cloud-foo-function", "spring-cloud-foo-gateway",
+					"spring-cloud-foo-kubernetes", "spring-cloud-foo-netflix", "spring-cloud-foo-openfeign",
+					"spring-cloud-foo-task", "spring-cloud-foo-vault", "spring-cloud-foo-zookeeper");
 		BDDAssertions.then(projects).contains(new Project("spring-cloud-foo-bus", "2.2.3.RELEASE"));
 	}
 

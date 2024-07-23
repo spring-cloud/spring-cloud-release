@@ -34,21 +34,23 @@ class ConfigurationPropertiesAggregator {
 		try {
 			return Files.walk(unpackedDocs).filter(path -> path.endsWith("_configprops.adoc")).flatMap(path -> {
 				try {
-					return Files.readAllLines(path).stream()
-							.filter(s -> !StringUtils.isEmpty(s) && !wordsToIgnore.contains(s)).map(s -> {
-								// |foo|bar|baz -> foo|bar|baz -> split ->
-								// foo,bar,baz
-								String[] strings = s.substring(1).split("\\|");
-								if (strings.length == 3) {
-									return new ConfigurationProperty(strings[0].trim(),
-											strings[1].trim().replace("`", ""), strings[2].trim());
-								}
-								else if (strings.length == 2) {
-									return new ConfigurationProperty(strings[0].trim(),
-											strings[1].trim().replace("`", ""), "");
-								}
-								return new ConfigurationProperty(strings[0].trim(), "", "");
-							});
+					return Files.readAllLines(path)
+						.stream()
+						.filter(s -> !StringUtils.isEmpty(s) && !wordsToIgnore.contains(s))
+						.map(s -> {
+							// |foo|bar|baz -> foo|bar|baz -> split ->
+							// foo,bar,baz
+							String[] strings = s.substring(1).split("\\|");
+							if (strings.length == 3) {
+								return new ConfigurationProperty(strings[0].trim(), strings[1].trim().replace("`", ""),
+										strings[2].trim());
+							}
+							else if (strings.length == 2) {
+								return new ConfigurationProperty(strings[0].trim(), strings[1].trim().replace("`", ""),
+										"");
+							}
+							return new ConfigurationProperty(strings[0].trim(), "", "");
+						});
 				}
 				catch (IOException e) {
 					throw new IllegalStateException(e);

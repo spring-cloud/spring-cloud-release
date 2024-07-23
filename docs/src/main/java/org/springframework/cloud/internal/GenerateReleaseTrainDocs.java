@@ -48,9 +48,11 @@ public class GenerateReleaseTrainDocs {
 	List<Project> mavenPropertiesToDocsProjects(File file) {
 		Model model = PomReader.readPom(file);
 		Properties properties = model.getProperties();
-		return properties.entrySet().stream().filter(e -> e.getKey().toString().endsWith(".version"))
-				.map(e -> new Project(e.getKey().toString().replace(".version", ""), e.getValue().toString()))
-				.collect(Collectors.toCollection(LinkedList::new));
+		return properties.entrySet()
+			.stream()
+			.filter(e -> e.getKey().toString().endsWith(".version"))
+			.map(e -> new Project(e.getKey().toString().replace(".version", ""), e.getValue().toString()))
+			.collect(Collectors.toCollection(LinkedList::new));
 	}
 
 	Project springBootVersion(File file) {

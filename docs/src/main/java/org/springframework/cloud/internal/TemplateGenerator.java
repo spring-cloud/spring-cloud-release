@@ -55,8 +55,12 @@ class TemplateGenerator {
 				Template template = template(templateFile.getName().replace(".hbs", ""));
 				Map<String, Object> map = new HashMap<>();
 				map.put("projects", projects);
-				map.put("springBootVersion", projects.stream().filter(project -> project.name.equals("spring-boot"))
-						.findFirst().orElse(new Project("spring-boot", "")).getVersion());
+				map.put("springBootVersion",
+						projects.stream()
+							.filter(project -> project.name.equals("spring-boot"))
+							.findFirst()
+							.orElse(new Project("spring-boot", ""))
+							.getVersion());
 				map.put("springCloudProjects", templateProjects);
 				String applied = template.apply(map);
 				Files.write(outputFile.toPath(), applied.getBytes());
