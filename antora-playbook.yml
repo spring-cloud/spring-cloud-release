@@ -13,7 +13,7 @@ content:
     - url: https://github.com/spring-cloud/spring-cloud-release
       # Refname matching:
       # https://docs.antora.org/antora/latest/playbook/content-refname-matching/
-      branches: [ main ]
+      branches: [ main, 2023.0.x ]
       # 20[3-9][0-9].[0-9].[0-9]
       # 202[3-9].[0-9].[0-9] without 2023.0.0-M1
       tags: [ 'v20{2..9}+({3..9}).+({0..9}).+({0..9})?(-{RC,M}*)', '!v2023.0.0-M1' ]
