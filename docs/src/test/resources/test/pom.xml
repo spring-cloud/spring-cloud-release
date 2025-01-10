@@ -9,7 +9,7 @@
 		<relativePath/>
 	</parent>
 	<artifactId>spring-cloud-dependencies</artifactId>
-	<version>2023.0.5-SNAPSHOT</version>
+	<version>2023.0.6-SNAPSHOT</version>
 	<name>spring-cloud-dependencies</name>
 	<description>Spring Cloud Dependencies</description>
 	<packaging>pom</packaging>
