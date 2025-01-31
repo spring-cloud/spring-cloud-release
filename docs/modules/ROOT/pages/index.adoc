@@ -1,4 +1,4 @@
-= Spring Cloud Train Reference Documentation
+= Spring Cloud Release Train Reference Documentation
 
 :spring-boot-version: 3.5.0-SNAPSHOT
 
