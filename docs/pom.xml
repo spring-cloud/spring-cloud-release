@@ -17,7 +17,7 @@
 		<maven.version>3.8.5</maven.version>
 		<handlebars.version>4.3.0</handlebars.version>
 		<asciidoctorj.version>2.5.3</asciidoctorj.version>
-		<commons-io.version>2.14.0</commons-io.version>
+		<commons-io.version>2.18.0</commons-io.version>
 	</properties>
 	<dependencies>
 		<dependency>
