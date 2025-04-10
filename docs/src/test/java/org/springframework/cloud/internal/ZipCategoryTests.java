@@ -20,8 +20,9 @@ import java.io.File;
 import java.nio.file.Files;
 
 import org.assertj.core.api.BDDAssertions;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Fail.fail;
 
 class ZipCategoryTests {
 
@@ -49,7 +50,7 @@ class ZipCategoryTests {
 		// when:
 		try {
 			ZipCategory.unzipTo(zipFile, tempDir);
-			Assertions.fail("Should throw exception");
+			fail("Should throw exception");
 		}
 		catch (Exception e) {
 			BDDAssertions.then(e.getCause()).hasMessageContaining("is trying to leave the target output directory");
