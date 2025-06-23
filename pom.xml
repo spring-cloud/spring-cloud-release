@@ -46,7 +46,7 @@
 							<rules>
 								<bannedDependencies>
 									<excludes>
-										<exclude>commons-logging:*:*</exclude>
+										<exclude>commons-logging:*:*:*.*</exclude>
 									</excludes>
 									<searchTransitive>true</searchTransitive>
 								</bannedDependencies>
