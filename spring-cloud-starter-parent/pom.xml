@@ -19,6 +19,69 @@
 		<name>Pivotal Software, Inc.</name>
 		<url>https://www.spring.io</url>
 	</organization>
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0</url>
+			<comments>
+				Copyright 2014-2025 the original author or authors.
+
+				Licensed under the Apache License, Version 2.0 (the "License");
+				you may not use this file except in compliance with the License.
+				You may obtain a copy of the License at
+
+				https://www.apache.org/licenses/LICENSE-2.0
+
+				Unless required by applicable law or agreed to in writing, software
+				distributed under the License is distributed on an "AS IS" BASIS,
+				WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+				implied.
+
+				See the License for the specific language governing permissions and
+				limitations under the License.
+			</comments>
+		</license>
+	</licenses>
+	<scm>
+		<url>https://github.com/spring-cloud/spring-cloud-release</url>
+		<connection>scm:git:git://github.com/spring-cloud/spring-cloud-release.git</connection>
+		<developerConnection>
+			scm:git:ssh://git@github.com/spring-cloud/spring-cloud-release.git
+		</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+	<developers>
+		<developer>
+			<id>sgibb</id>
+			<name>Spencer Gibb</name>
+			<email>spencer dot gibb at broadcom.com</email>
+			<organization>Broadcom, Inc.</organization>
+			<organizationUrl>https://www.spring.io</organizationUrl>
+			<roles>
+				<role>lead</role>
+			</roles>
+		</developer>
+		<developer>
+			<id>rbaxter</id>
+			<name>Ryan Baxter</name>
+			<email>ryan dot baxter at broadcom.com</email>
+			<organization>Broadcom, Inc.</organization>
+			<organizationUrl>https://www.spring.io</organizationUrl>
+			<roles>
+				<role>developer</role>
+			</roles>
+		</developer>
+		<developer>
+			<id>omaciaszeksharma</id>
+			<name>Olga Maciaszek-Sharma</name>
+			<email>olga dot maciaszek-sharma at broadcom.com</email>
+			<organization>Broadcom, Inc</organization>
+			<organizationUrl>https://www.spring.io</organizationUrl>
+			<roles>
+				<role>developer</role>
+			</roles>
+		</developer>
+	</developers>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
 		<spring-cloud.version>2023.0.6-SNAPSHOT</spring-cloud.version>
