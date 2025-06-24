@@ -22,6 +22,7 @@
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
 		<spring-cloud.version>2023.0.6-SNAPSHOT</spring-cloud.version>
+		<central-publishing-maven-plugin.version>0.7.0</central-publishing-maven-plugin.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -138,6 +139,15 @@
 							</execution>
 						</executions>
 					</plugin>
+					<plugin>
+						<groupId>org.sonatype.central</groupId>
+						<artifactId>central-publishing-maven-plugin</artifactId>
+						<version>${central-publishing-maven-plugin.version}</version>
+						<extensions>true</extensions>
+						<configuration>
+							<deploymentName>${project.artifactId} - ${project.version}</deploymentName>
+						</configuration>
+					</plugin>
 				</plugins>
 			</build>
 			<distributionManagement>
@@ -146,11 +156,6 @@
 					<name>Sonatype Nexus Snapshots</name>
 					<url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
 				</snapshotRepository>
-				<repository>
-					<id>sonatype-nexus-staging</id>
-					<name>Nexus Release Repository</name>
-					<url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/	</url>
-				</repository>
 			</distributionManagement>
 		</profile>
 	</profiles>
