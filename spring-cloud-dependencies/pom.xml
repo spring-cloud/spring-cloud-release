@@ -19,7 +19,7 @@
 		<spring-cloud-bus.version>4.1.4-SNAPSHOT</spring-cloud-bus.version>
 		<spring-cloud-build.version>4.1.6-SNAPSHOT</spring-cloud-build.version>
 		<spring-cloud-commons.version>4.1.6-SNAPSHOT</spring-cloud-commons.version>
-		<spring-cloud-circuitbreaker.version>3.1.5-SNAPSHOT</spring-cloud-circuitbreaker.version>
+		<spring-cloud-circuitbreaker.version>3.1.6-SNAPSHOT</spring-cloud-circuitbreaker.version>
 		<spring-cloud-config.version>4.1.7-SNAPSHOT</spring-cloud-config.version>
 		<spring-cloud-consul.version>4.1.4-SNAPSHOT</spring-cloud-consul.version>
 		<spring-cloud-contract.version>4.1.6-SNAPSHOT</spring-cloud-contract.version>
