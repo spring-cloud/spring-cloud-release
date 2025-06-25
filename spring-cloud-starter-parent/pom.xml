@@ -85,7 +85,7 @@
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
 		<spring-cloud.version>2025.1.0-SNAPSHOT</spring-cloud.version>
-		<central-publishing-maven-plugin.version>0.7.0</central-publishing-maven-plugin.version>
+		<central-publishing-maven-plugin.version>0.8.0</central-publishing-maven-plugin.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
