@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>org.springframework.cloud</groupId>
 	<artifactId>spring-cloud-starter-parent</artifactId>
-	<version>2024.0.2-SNAPSHOT</version>
+	<version>2024.0.3-SNAPSHOT</version>
 	<name>spring-cloud-starter-parent</name>
 	<description>Spring Cloud Starter Parent</description>
 	<packaging>pom</packaging>
@@ -84,7 +84,7 @@
 	</developers>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
-		<spring-cloud.version>2024.0.2-SNAPSHOT</spring-cloud.version>
+		<spring-cloud.version>2024.0.3-SNAPSHOT</spring-cloud.version>
 		<central-publishing-maven-plugin.version>0.7.0</central-publishing-maven-plugin.version>
 	</properties>
 	<dependencyManagement>
