@@ -21,7 +21,7 @@
 		<spring-cloud-commons.version>4.2.2-SNAPSHOT</spring-cloud-commons.version>
 		<spring-cloud-circuitbreaker.version>3.2.2-SNAPSHOT</spring-cloud-circuitbreaker.version>
 		<spring-cloud-config.version>4.2.3-SNAPSHOT</spring-cloud-config.version>
-		<spring-cloud-consul.version>4.2.2-SNAPSHOT</spring-cloud-consul.version>
+		<spring-cloud-consul.version>4.2.3-SNAPSHOT</spring-cloud-consul.version>
 		<spring-cloud-contract.version>4.2.2-SNAPSHOT</spring-cloud-contract.version>
 		<spring-cloud-function.version>4.2.3-SNAPSHOT</spring-cloud-function.version>
 		<spring-cloud-gateway.version>4.2.3-SNAPSHOT</spring-cloud-gateway.version>
