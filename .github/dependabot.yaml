@@ -18,7 +18,7 @@ updates:
       interval: "weekly"
   - package-ecosystem: "github-actions"
     directory: "/"
-    target-branch: "2023.0.x"
+    target-branch: "2025.0.x"
     schedule:
       interval: "weekly"
   - package-ecosystem: maven
@@ -53,7 +53,7 @@ updates:
     directory: /
     schedule:
       interval: daily
-    target-branch: 2023.0.x
+    target-branch: 2025.0.x
     ignore:
       # only upgrade by minor or patch
       - dependency-name: "*"
@@ -76,7 +76,7 @@ updates:
     schedule:
       interval: weekly
   - package-ecosystem: npm
-    target-branch: 2023.0.x
+    target-branch: 2025.0.x
     directory: /docs
     schedule:
       interval: weekly
