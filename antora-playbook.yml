@@ -13,10 +13,10 @@ content:
     - url: https://github.com/spring-cloud/spring-cloud-release
       # Refname matching:
       # https://docs.antora.org/antora/latest/playbook/content-refname-matching/
-      branches: [ main, 2023.0.x ]
+      branches: [ main, 2025.0.x, 2024.0.x ]
       # 20[3-9][0-9].[0-9].[0-9]
       # 202[3-9].[0-9].[0-9] without 2023.0.0-M1
-      tags: [ 'v20{2..9}+({3..9}).+({0..9}).+({0..9})?(-{RC,M}*)', '!v2023.0.0-M1' ]
+      tags: [ 'v20{2..9}+({0..9}).+({0..9}).+({0..9})?(-{RC,M}*)', '!v2023.0.0-M1', '!v2022.0.*' ]
       start_path: docs
 asciidoc:
   attributes:
@@ -33,7 +33,7 @@ urls:
   redirect_facility: httpd
 ui:
   bundle:
-    url: https://github.com/spring-io/antora-ui-spring/releases/download/v0.4.15/ui-bundle.zip
+    url: https://github.com/spring-io/antora-ui-spring/releases/download/v0.4.18/ui-bundle.zip
     snapshot: true
 runtime:
   log:
