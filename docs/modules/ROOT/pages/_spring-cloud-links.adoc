@@ -6,7 +6,7 @@
  https://docs.spring.io/spring-cloud-consul/reference/4.2-SNAPSHOT/[spring-cloud-consul] :: Reference Documentation, version 4.2.3-SNAPSHOT
  https://docs.spring.io/spring-cloud-contract/reference/4.2-SNAPSHOT/[spring-cloud-contract] :: Reference Documentation, version 4.2.3-SNAPSHOT
  https://docs.spring.io/spring-cloud-function/reference/4.2-SNAPSHOT/[spring-cloud-function] :: Reference Documentation, version 4.2.4-SNAPSHOT
- https://docs.spring.io/spring-cloud-gateway/reference/4.2-SNAPSHOT/[spring-cloud-gateway] :: Reference Documentation, version 4.2.6-SNAPSHOT
+ https://docs.spring.io/spring-cloud-gateway/reference/4.2-SNAPSHOT/[spring-cloud-gateway] :: Reference Documentation, version 4.2.7-SNAPSHOT
  https://docs.spring.io/spring-cloud-kubernetes/reference/3.2-SNAPSHOT/[spring-cloud-kubernetes] :: Reference Documentation, version 3.2.3-SNAPSHOT
  https://docs.spring.io/spring-cloud-netflix/reference/4.2-SNAPSHOT/[spring-cloud-netflix] :: Reference Documentation, version 4.2.3-SNAPSHOT
  https://docs.spring.io/spring-cloud-openfeign/reference/4.2-SNAPSHOT/[spring-cloud-openfeign] :: Reference Documentation, version 4.2.3-SNAPSHOT
