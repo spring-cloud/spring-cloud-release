@@ -1,4 +1,4 @@
- https://docs.spring.io/spring-cloud-build/reference/4.3-SNAPSHOT/[spring-cloud-build] :: Reference Documentation, version 4.3.1-SNAPSHOT
+ https://docs.spring.io/spring-cloud-build/reference/4.3-SNAPSHOT/[spring-cloud-build] :: Reference Documentation, version 4.3.2-SNAPSHOT
  https://docs.spring.io/spring-cloud-bus/reference/4.3-SNAPSHOT/[spring-cloud-bus] :: Reference Documentation, version 4.3.1-SNAPSHOT
  https://docs.spring.io/spring-cloud-circuitbreaker/reference/3.3-SNAPSHOT/[spring-cloud-circuitbreaker] :: Reference Documentation, version 3.3.1-SNAPSHOT
  https://docs.spring.io/spring-cloud-commons/reference/4.3-SNAPSHOT/[spring-cloud-commons] :: Reference Documentation, version 4.3.1-SNAPSHOT
