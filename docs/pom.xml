@@ -132,7 +132,6 @@
 									<mainClass>org.springframework.cloud.internal.GenerateReleaseTrainDocs</mainClass>
 									<arguments>
 										<argument>${maven.multiModuleProjectDirectory}/spring-cloud-dependencies/pom.xml</argument>
-										<argument>${maven.multiModuleProjectDirectory}/spring-cloud-starter-parent/pom.xml</argument>
 										<argument>${project.basedir}/modules/ROOT/pages/</argument>
 									</arguments>
 								</configuration>

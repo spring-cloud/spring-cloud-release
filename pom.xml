@@ -85,7 +85,6 @@
 
 	<modules>
 		<module>spring-cloud-dependencies</module>
-		<module>spring-cloud-starter-parent</module>
 		<module>docs</module>
 	</modules>
 
@@ -164,7 +163,6 @@
 			<id>all</id>
 			<modules>
 				<module>spring-cloud-dependencies</module>
-				<module>spring-cloud-starter-parent</module>
 				<module>docs</module>
 			</modules>
 		</profile>
