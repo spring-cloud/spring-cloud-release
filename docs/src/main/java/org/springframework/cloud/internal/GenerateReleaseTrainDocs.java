@@ -31,15 +31,14 @@ public class GenerateReleaseTrainDocs {
 
 	public static void main(String... args) {
 		File bomPath = new File(args[0]);
-		File starterParentPath = new File(args[1]);
-		File generatedTrainDocs = new File(args[2]);
-		new GenerateReleaseTrainDocs().generate(bomPath, starterParentPath, generatedTrainDocs);
+		File generatedTrainDocs = new File(args[1]);
+		new GenerateReleaseTrainDocs().generate(bomPath, generatedTrainDocs);
 	}
 
-	void generate(File bomPath, File starterParentPath, File generatedTrainDocs) {
+	void generate(File bomPath, File generatedTrainDocs) {
 		List<Project> projects = mavenPropertiesToDocsProjects(bomPath);
 		info("Found the following projects [" + projects + "]");
-		projects.add(springBootVersion(starterParentPath));
+		projects.add(springBootVersion(bomPath));
 		projects.sort(Comparator.comparing(o -> o.name));
 		File file = renderAsciidocTemplates(generatedTrainDocs, projects);
 		info("Rendered docs templates to [" + file + "]");
@@ -57,7 +56,8 @@ public class GenerateReleaseTrainDocs {
 
 	Project springBootVersion(File file) {
 		Model model = PomReader.readPom(file);
-		return new Project("spring-boot", model.getParent().getVersion());
+		Properties properties = model.getProperties();
+		return new Project("spring-boot", properties.getProperty("spring-boot.version"));
 	}
 
 	File renderAsciidocTemplates(File generatedTrainDocs, List<Project> projects) {

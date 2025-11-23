@@ -16,6 +16,8 @@
 	<packaging>pom</packaging>
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
+		<!-- boot version used in docs generation, previously from starter-parent -->
+		<spring-boot.version>4.0.0</spring-boot.version>
 		<spring-cloud-bus.version>5.0.0-SNAPSHOT</spring-cloud-bus.version>
 		<spring-cloud-build.version>5.0.0-SNAPSHOT</spring-cloud-build.version>
 		<spring-cloud-commons.version>5.0.0-SNAPSHOT</spring-cloud-commons.version>
