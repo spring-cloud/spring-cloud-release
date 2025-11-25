@@ -17,7 +17,7 @@
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
 		<!-- boot version used in docs generation, previously from starter-parent -->
-		<spring-boot.version>4.0.0</spring-boot.version>
+		<spring-boot.version>4.0.1-SNAPSHOT</spring-boot.version>
 		<spring-cloud-bus.version>5.0.1-SNAPSHOT</spring-cloud-bus.version>
 		<spring-cloud-build.version>5.0.1-SNAPSHOT</spring-cloud-build.version>
 		<spring-cloud-commons.version>5.0.1-SNAPSHOT</spring-cloud-commons.version>
