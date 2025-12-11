@@ -7,7 +7,7 @@
 	<name>Spring Cloud Starter Build</name>
 	<description>Spring Cloud Starter Build</description>
 	<url>https://github.com/spring-cloud/spring-cloud-release</url>
-	<version>2024.0.3-SNAPSHOT</version>
+	<version>2024.0.4-SNAPSHOT</version>
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-build</artifactId>
