@@ -1,6 +1,6 @@
 = Spring Cloud Train Reference Documentation
 
-:spring-boot-version: 3.5.8
+:spring-boot-version: 3.5.9-SNAPSHOT
 
 Spring Cloud provides tools for developers to quickly build some of
 the common patterns in distributed systems (e.g. configuration
