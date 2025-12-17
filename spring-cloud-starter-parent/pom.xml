@@ -13,7 +13,7 @@
 	<version>2025.0.1-SNAPSHOT</version>
 	<name>spring-cloud-starter-parent</name>
 	<description>Spring Cloud Starter Parent</description>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 	<url>https://projects.spring.io/spring-cloud</url>
 	<organization>
 		<name>Pivotal Software, Inc.</name>
@@ -98,17 +98,6 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-autoconfigure</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
 	<distributionManagement>
 		<downloadUrl>https://github.com/spring-cloud</downloadUrl>
 		<site>
