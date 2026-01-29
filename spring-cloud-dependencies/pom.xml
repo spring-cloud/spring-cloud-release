@@ -26,7 +26,7 @@
 		<spring-cloud-consul.version>5.0.1-SNAPSHOT</spring-cloud-consul.version>
 		<spring-cloud-contract.version>5.0.2-SNAPSHOT</spring-cloud-contract.version>
 		<spring-cloud-function.version>5.0.1-SNAPSHOT</spring-cloud-function.version>
-		<spring-cloud-gateway.version>5.0.1-SNAPSHOT</spring-cloud-gateway.version>
+		<spring-cloud-gateway.version>5.0.2-SNAPSHOT</spring-cloud-gateway.version>
 		<spring-cloud-kubernetes.version>5.0.1-SNAPSHOT</spring-cloud-kubernetes.version>
 		<spring-cloud-netflix.version>5.0.1-SNAPSHOT</spring-cloud-netflix.version>
 		<spring-cloud-openfeign.version>5.0.1-SNAPSHOT</spring-cloud-openfeign.version>
