@@ -13,11 +13,6 @@ updates:
       interval: "weekly"
   - package-ecosystem: "github-actions"
     directory: "/"
-    target-branch: "2024.0.x"
-    schedule:
-      interval: "weekly"
-  - package-ecosystem: "github-actions"
-    directory: "/"
     target-branch: "2025.0.x"
     schedule:
       interval: "weekly"
@@ -42,17 +37,6 @@ updates:
     directory: /
     schedule:
       interval: daily
-    target-branch: 2024.0.x
-    ignore:
-      # only upgrade by minor or patch
-      - dependency-name: "*"
-        update-types:
-          - version-update:semver-major
-          - version-update:semver-minor
-  - package-ecosystem: maven
-    directory: /
-    schedule:
-      interval: daily
     target-branch: 2025.0.x
     ignore:
       # only upgrade by minor or patch
@@ -67,11 +51,6 @@ updates:
       interval: weekly
   - package-ecosystem: npm
     target-branch: main
-    directory: /docs
-    schedule:
-      interval: weekly
-  - package-ecosystem: npm
-    target-branch: 2024.0.x
     directory: /docs
     schedule:
       interval: weekly
