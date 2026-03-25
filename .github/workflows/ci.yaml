@@ -4,7 +4,6 @@ name: Spring Cloud Release CI Job
 on:
   push:
     branches:
-      - main
       - 2025.0.x
 
   # Scheduled builds run daily at midnight UTC
