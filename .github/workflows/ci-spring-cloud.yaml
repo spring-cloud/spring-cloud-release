@@ -1,0 +1,16 @@
+name: Spring Cloud Release (Test)
+on:
+  workflow_dispatch:
+    inputs:
+      your-name:
+        description: 'Your name'     
+        required: true
+        default: Unknown   
+jobs:
+  #BUILD
+  spring-cloud-build:
+     uses: spring-cloud/spring-cloud-build/.github/workflows/ci.yaml@main
+  #FUNCTION
+  spring-cloud-function:
+    needs: spring-cloud-build
+    uses: spring-cloud/spring-cloud-function/.github/workflows/ci.yaml@main
