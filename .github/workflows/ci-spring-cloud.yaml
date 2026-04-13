@@ -10,7 +10,12 @@ jobs:
   #BUILD
   spring-cloud-build:
      uses: spring-cloud/spring-cloud-build/.github/workflows/ci.yaml@main
-  #FUNCTION
-  spring-cloud-function:
-    needs: spring-cloud-build
-    uses: spring-cloud/spring-cloud-function/.github/workflows/ci.yaml@main
+     with:
+        branches: main
+     secrets:
+        ARTIFACTORY_USERNAME: ${{ secrets.ARTIFACTORY_USERNAME }}
+        ARTIFACTORY_PASSWORD: ${{ secrets.ARTIFACTORY_PASSWORD }}
+        COMMERCIAL_ARTIFACTORY_USERNAME: ${{ secrets.COMMERCIAL_ARTIFACTORY_USERNAME }}
+        COMMERCIAL_ARTIFACTORY_PASSWORD: ${{ secrets.COMMERCIAL_ARTIFACTORY_PASSWORD }}
+        DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+        DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
