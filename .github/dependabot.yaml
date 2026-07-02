@@ -4,16 +4,10 @@
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
 version: 2
-
 updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     target-branch: "main"
-    schedule:
-      interval: "weekly"
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    target-branch: "2025.0.x"
     schedule:
       interval: "weekly"
   - package-ecosystem: maven
@@ -33,17 +27,6 @@ updates:
       - dependency-name: "*"
         update-types:
           - version-update:semver-major
-  - package-ecosystem: maven
-    directory: /
-    schedule:
-      interval: daily
-    target-branch: 2025.0.x
-    ignore:
-      # only upgrade by minor or patch
-      - dependency-name: "*"
-        update-types:
-          - version-update:semver-major
-          - version-update:semver-minor
   - package-ecosystem: npm
     target-branch: docs-build
     directory: /
@@ -51,11 +34,6 @@ updates:
       interval: weekly
   - package-ecosystem: npm
     target-branch: main
-    directory: /docs
-    schedule:
-      interval: weekly
-  - package-ecosystem: npm
-    target-branch: 2025.0.x
     directory: /docs
     schedule:
       interval: weekly
