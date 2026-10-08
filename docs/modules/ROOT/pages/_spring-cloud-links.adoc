@@ -1,5 +1,4 @@
  link:/spring-cloud-build/reference/5.1-SNAPSHOT/[spring-cloud-build] :: Reference Documentation, version 5.1.0-SNAPSHOT
- link:/spring-cloud-bus/reference/5.1-SNAPSHOT/[spring-cloud-bus] :: Reference Documentation, version 5.1.0-SNAPSHOT
  link:/spring-cloud-circuitbreaker/reference/5.1-SNAPSHOT/[spring-cloud-circuitbreaker] :: Reference Documentation, version 5.1.0-SNAPSHOT
  link:/spring-cloud-commons/reference/5.1-SNAPSHOT/[spring-cloud-commons] :: Reference Documentation, version 5.1.0-SNAPSHOT
  link:/spring-cloud-config/reference/5.1-SNAPSHOT/[spring-cloud-config] :: Reference Documentation, version 5.1.0-SNAPSHOT
