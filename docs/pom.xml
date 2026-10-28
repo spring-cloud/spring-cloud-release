@@ -15,7 +15,7 @@
 		<main.basedir>${basedir}/..</main.basedir>
 
 		<maven.version>3.10.0</maven.version>
-		<handlebars.version>4.5.5</handlebars.version>
+		<handlebars.version>4.5.7</handlebars.version>
 		<asciidoctorj.version>2.5.3</asciidoctorj.version>
 		<commons-io.version>2.22.0</commons-io.version>
 	</properties>
