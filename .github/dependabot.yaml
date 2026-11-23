@@ -17,15 +17,10 @@ updates:
     directory: /
     schedule:
       interval: daily
+    target-branch: main
     ignore:
       # JRuby updates are causing docs generation to fail
       - dependency-name: "org.jruby:jruby-complete"
-  - package-ecosystem: maven
-    directory: /
-    schedule:
-      interval: daily
-    target-branch: main
-    ignore:
       # only upgrade by patch
       - dependency-name: "*"
         update-types:
@@ -53,20 +48,15 @@ updates:
     directory: /
     schedule:
       interval: daily
+    target-branch: 2025.1.x
     ignore:
       # JRuby updates are causing docs generation to fail
       - dependency-name: "org.jruby:jruby-complete"
-    target-branch: 2025.1.x
-  - package-ecosystem: maven
-    directory: /
-    schedule:
-      interval: daily
-    target-branch: 2025.1.x
-    ignore:
       # only upgrade by minor or patch
       - dependency-name: "*"
         update-types:
           - version-update:semver-major
+          - version-update:semver-minor
   - package-ecosystem: npm
     target-branch: 2025.1.x
     directory: /docs
