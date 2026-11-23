@@ -26,10 +26,11 @@ updates:
       interval: daily
     target-branch: main
     ignore:
-      # only upgrade by minor or patch
+      # only upgrade by patch
       - dependency-name: "*"
         update-types:
           - version-update:semver-major
+          - version-update:semver-minor
   - package-ecosystem: npm
     target-branch: docs-build
     directory: /
