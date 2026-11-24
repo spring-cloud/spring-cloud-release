@@ -4,4 +4,6 @@ runs:
   steps:
     - name: Test Release
       shell: bash
+      env:
+        RELEASER_GIT_OAUTH_TOKEN: ${{ env.GH_ACTIONS_REPO_TOKEN }}
       run: ./mvnw --batch-mode --settings release-train-settings.xml clean verify --activate-profiles releaseTrain
